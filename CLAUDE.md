@@ -2,6 +2,8 @@
 
 Tracks version updates for Genshin Impact, Honkai: Star Rail and Zenless Zone Zero on one page. Uses the Dusk theme shared with the home page (see its CLAUDE.md): a soft gradient background, translucent rounded cards, Bricolage Grotesque headings and Inter text, in light and dark. Graph paper is reserved for Paper Arcade. Each game has an accent color: Genshin `--leaf`, Star Rail `--pen`, ZZZ `--win`.
 
+Has the site-wide light/dark switch (top right; see the home page CLAUDE.md). The timeline redraws on the `themechange` event.
+
 - Repository: https://github.com/mentalplatypus/HoyoVersionTracker (public, branch `main`)
 - Live site: https://mentalplatypus.github.io/HoyoVersionTracker/ (GitHub Pages redeploys on every push to `main`)
 - Listed under "Finished projects" on the home page (`mentalplatypus/mentalplatypus.github.io`, branch `master`), above Paper Arcade; David marked it finished on 2026-10-28. The data workflow keeps running.
