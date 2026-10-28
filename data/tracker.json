@@ -361,6 +361,24 @@
       },
       "news": [
         {
+          "id": "47231296",
+          "title": "Mitya's Flights of Fancy",
+          "time": "2026-10-28T10:30:06Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47230963",
+          "title": "Version 7.2 \"Hour of Ruin\" New Weapon Overview",
+          "time": "2026-10-28T10:00:06Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47228525",
+          "title": "Character Introduction and Skill Showcase - \"Fort Fulguration\" Valeriy",
+          "time": "2026-10-28T04:00:10Z",
+          "kind": "Info"
+        },
+        {
           "id": "47220086",
           "title": "Version 7.2 - \"Raiment Collection\" Event Elite Cosmetics",
           "time": "2026-10-27T08:00:02Z",
@@ -412,24 +430,6 @@
           "id": "47208256",
           "title": "Version 7.2 - Event Ode Legendary Cosmetics",
           "time": "2026-10-26T04:00:04Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47185414",
-          "title": "\"Overflowing Favor\" Event: Double Drops With Artifacts",
-          "time": "2026-10-24T04:00:06Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47177975",
-          "title": "Version 7.2 Event Calendar",
-          "time": "2026-10-23T13:35:05Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47176929",
-          "title": "The \"Miliastra Wonderland Creator Contest: Moments to Treasure\" Event Is Coming Soon",
-          "time": "2026-10-23T12:55:02Z",
           "kind": "Info"
         }
       ]
@@ -616,6 +616,12 @@
       },
       "news": [
         {
+          "id": "47228524",
+          "title": "Extraterrestrial Satellite Communication | Astra Yao",
+          "time": "2026-10-28T04:00:08Z",
+          "kind": "Info"
+        },
+        {
           "id": "47218607",
           "title": "Extraterrestrial Satellite Communication | Ellen",
           "time": "2026-10-27T04:00:06Z",
@@ -680,12 +686,6 @@
           "title": "Planar Fissure Event: Planar Ornaments Drop Rate Doubled for a Limited Time",
           "time": "2026-10-11T03:00:03Z",
           "kind": "Notice"
-        },
-        {
-          "id": "47030882",
-          "title": "New Honkai: Star Rail Merchandise Available on Amazon!",
-          "time": "2026-10-10T02:00:02Z",
-          "kind": "Info"
         }
       ]
     },
@@ -930,5 +930,5 @@
       ]
     }
   },
-  "updated": "2026-10-28T03:46:59Z"
+  "updated": "2026-10-28T13:06:36Z"
 }
