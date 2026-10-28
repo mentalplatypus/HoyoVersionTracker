@@ -6,141 +6,150 @@
 <meta name="description" content="Current and upcoming versions of Genshin Impact, Honkai: Star Rail and Zenless Zone Zero, with countdowns, livestream times and official news.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Chivo+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Inter:wght@400;500;600&display=swap">
 <style>
   /* Layout: header, "Coming up" list, one card per game, a timeline of versions, then version history.
-     Same design tokens as Paper Arcade and the home page. Each game has an accent: Genshin green, Star Rail blue, ZZZ yellow. */
+     Dusk theme, shared with the home page: a soft indigo → lilac → peach gradient (night blue → violet → plum in dark mode)
+     with translucent rounded cards. Each game has an accent: Genshin green, Star Rail blue, ZZZ yellow. */
   :root {
-    --paper: #eef3f7;
-    --board: #fbfdff;
-    --grid: #cfe0ee;
-    --grid-major: #a9c6de;
-    --ink: #1d2a44;
-    --ink-soft: #5b6a85;
-    --apple: #d6372b;
-    --pen: #2459c9;
-    --win: #e8a400;
-    --leaf: #2f8a3e;
+    --bg-1: #eef0ff; --bg-2: #f6eefc; --bg-3: #fff1ea;
+    --surface: rgba(255, 255, 255, 0.78);
+    --board: #ffffff;
+    --line: rgba(40, 34, 110, 0.12);
+    --grid: #e3e5f6;
+    --ink: #1e1b3a;
+    --ink-soft: #5d5a7a;
+    --accent: #5b5bd6;
+    --shadow: 0 1px 2px rgba(40, 34, 110, 0.06), 0 12px 32px rgba(40, 34, 110, 0.08);
+    --apple: #d6453b;
+    --pen: #4a5fd6;
+    --win: #e3a21a;
+    --leaf: #2f9a5a;
     --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
-    --font-mono: "Chivo Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+    --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --paper: #0c1830; --board: #10203d; --grid: #1c3358; --grid-major: #2a4a7a;
-      --ink: #e8f0ff; --ink-soft: #8ea3c7; --apple: #ff6a55; --pen: #7aa7ff; --win: #ffc93d; --leaf: #6cc77a; color-scheme: dark;
+      --bg-1: #0f1226; --bg-2: #1d1438; --bg-3: #2a1a2e;
+      --surface: rgba(255, 255, 255, 0.06); --board: #1a1833; --line: rgba(255, 255, 255, 0.12); --grid: #2b2850;
+      --ink: #ecebff; --ink-soft: #a6a3c8; --accent: #8f8cff; --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px rgba(0, 0, 0, 0.35);
+      --apple: #ff7a6b; --pen: #8f9cff; --win: #ffc85a; --leaf: #6fd59a; color-scheme: dark;
     }
   }
   :root[data-theme="dark"] {
-    --paper: #0c1830; --board: #10203d; --grid: #1c3358; --grid-major: #2a4a7a;
-    --ink: #e8f0ff; --ink-soft: #8ea3c7; --apple: #ff6a55; --pen: #7aa7ff; --win: #ffc93d; --leaf: #6cc77a; color-scheme: dark;
+    --bg-1: #0f1226; --bg-2: #1d1438; --bg-3: #2a1a2e;
+    --surface: rgba(255, 255, 255, 0.06); --board: #1a1833; --line: rgba(255, 255, 255, 0.12); --grid: #2b2850;
+    --ink: #ecebff; --ink-soft: #a6a3c8; --accent: #8f8cff; --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px rgba(0, 0, 0, 0.35);
+    --apple: #ff7a6b; --pen: #8f9cff; --win: #ffc85a; --leaf: #6fd59a; color-scheme: dark;
   }
 
   body {
     margin: 0;
-    background-color: var(--paper);
-    background-image:
-      linear-gradient(var(--grid) 1px, transparent 1px),
-      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-    background-size: 24px 24px;
+    min-height: 100vh;
+    background-color: var(--bg-1);
+    background-image: linear-gradient(160deg, var(--bg-1) 0%, var(--bg-2) 50%, var(--bg-3) 100%);
+    background-attachment: fixed;
     color: var(--ink);
-    font-family: var(--font-mono);
-    padding-block: 48px;
+    font-family: var(--font-body);
+    padding-block: 56px;
     padding-left: max(16px, env(safe-area-inset-left, 0px));
     padding-right: max(16px, env(safe-area-inset-right, 0px));
   }
-  .wrap { max-width: 1040px; margin: 0 auto; display: flex; flex-direction: column; gap: 44px; }
+  .wrap { max-width: 1040px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px; }
   a { color: inherit; }
-  a:focus-visible, button:focus-visible { outline: 3px solid var(--apple); outline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
 
-  .back { font-size: 0.8rem; font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--grid-major); }
-  .back:hover { border-bottom-color: var(--apple); }
+  .back { font-size: 0.85rem; font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--line); }
+  .back:hover { border-bottom-color: var(--accent); }
   h1 {
     font-family: var(--font-display); font-weight: 800; font-size: clamp(2.3rem, 7.5vw, 4rem);
     letter-spacing: -0.04em; line-height: 0.95; margin: 18px 0 0;
   }
-  .lede { margin: 14px 0 0; color: var(--ink-soft); font-size: 0.88rem; line-height: 1.6; max-width: 62ch; }
-  .checked { margin: 8px 0 0; font-size: 0.75rem; color: var(--ink-soft); }
+  .lede { margin: 14px 0 0; color: var(--ink-soft); font-size: 1rem; line-height: 1.6; max-width: 62ch; }
+  .checked { margin: 8px 0 0; font-size: 0.8rem; color: var(--ink-soft); }
 
   section { display: flex; flex-direction: column; gap: 16px; }
   h2 {
     font-family: var(--font-display); font-weight: 800; font-size: 1.7rem; letter-spacing: -0.03em; margin: 0;
     display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
   }
-  h2 small { font-family: var(--font-mono); font-weight: 400; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); }
-  .eyebrow { font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); font-weight: 600; }
+  h2 small { font-family: var(--font-body); font-weight: 500; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+  .eyebrow { font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); font-weight: 600; }
 
   .card {
-    background: var(--board); border: 2px solid var(--ink); border-radius: 4px;
-    box-shadow: 6px 6px 0 var(--grid-major); padding: 18px; box-sizing: border-box; min-width: 0;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+    box-shadow: var(--shadow); padding: 20px; box-sizing: border-box; min-width: 0;
   }
   button.pill {
-    font: 600 0.78rem var(--font-mono); color: var(--ink); background: var(--board); cursor: pointer;
-    padding: 6px 11px; border: 2px solid var(--ink); border-radius: 4px;
+    font: 600 0.82rem var(--font-body); color: var(--ink); background: var(--surface); cursor: pointer;
+    padding: 8px 15px; border: 1px solid var(--line); border-radius: 99px; transition: border-color 0.15s, color 0.15s;
   }
-  button.pill:hover { background: var(--grid); }
+  button.pill:hover { border-color: var(--accent); color: var(--accent); }
 
   /* coming up: the next few releases and livestreams across all three games */
   .soon-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
   .soon { list-style: none; margin: 0; padding: 0; }
   .soon li {
-    display: grid; grid-template-columns: 11px minmax(0, 1fr) auto; gap: 12px; align-items: baseline;
-    padding: 11px 0; border-bottom: 1px dashed var(--grid-major); font-size: 0.85rem;
+    display: grid; grid-template-columns: 10px minmax(0, 1fr) auto; gap: 14px; align-items: baseline;
+    padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 0.92rem;
   }
   .soon li:first-child { padding-top: 0; }
   .soon li:last-child { border-bottom: 0; padding-bottom: 0; }
-  .soon .dot { width: 11px; height: 11px; border-radius: 50%; background: var(--accent); align-self: center; }
+  .soon .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); align-self: center; }
   .soon .what { font-weight: 600; }
-  .soon .when { display: block; color: var(--ink-soft); font-size: 0.75rem; margin-top: 3px; }
-  .soon .in { font-family: var(--font-display); font-weight: 800; font-size: 1.15rem; letter-spacing: -0.02em; white-space: nowrap; }
+  .soon .when { display: block; color: var(--ink-soft); font-size: 0.8rem; margin-top: 3px; }
+  .soon .in { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; letter-spacing: -0.02em; white-space: nowrap; }
 
-  /* one card per game */
+  /* one card per game, with a thin band of its accent color along the top */
   .games { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 22px; align-items: start; }
-  .game { display: flex; flex-direction: column; gap: 16px; border-top: 8px solid var(--accent); }
-  .game h3 { font-family: var(--font-display); font-weight: 800; font-size: 1.35rem; letter-spacing: -0.02em; margin: 0; line-height: 1.1; }
+  .game { display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; }
+  .game::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 5px; background: var(--accent); }
+  .game h3 { font-family: var(--font-display); font-weight: 800; font-size: 1.35rem; letter-spacing: -0.02em; margin: 4px 0 0; line-height: 1.1; }
   .ver { font-family: var(--font-display); font-weight: 800; font-size: 2.6rem; letter-spacing: -0.04em; line-height: 1; margin-top: 4px; }
   .ver.small { font-size: 1.8rem; }
-  .vname { margin: 6px 0 0; font-size: 0.8rem; line-height: 1.45; color: var(--ink-soft); }
-  .bar { position: relative; height: 12px; margin-top: 12px; border: 2px solid var(--ink); border-radius: 3px; background: var(--paper); overflow: hidden; }
-  .bar span { position: absolute; inset: 0 auto 0 0; background: var(--accent); }
-  .meta { margin: 7px 0 0; font-size: 0.75rem; color: var(--ink-soft); line-height: 1.5; }
-  .next { border-top: 2px dashed var(--grid-major); padding-top: 14px; }
-  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-top: 10px; font-size: 0.78rem; }
+  .vname { margin: 6px 0 0; font-size: 0.86rem; line-height: 1.45; color: var(--ink-soft); }
+  .bar { position: relative; height: 8px; margin-top: 14px; border-radius: 99px; background: var(--line); overflow: hidden; }
+  .bar span { position: absolute; inset: 0 auto 0 0; background: var(--accent); border-radius: 99px; }
+  .meta { margin: 8px 0 0; font-size: 0.8rem; color: var(--ink-soft); line-height: 1.5; }
+  .next { border-top: 1px solid var(--line); padding-top: 14px; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-top: 10px; font-size: 0.86rem; }
   .row b { font-weight: 600; }
-  .row .t { display: block; color: var(--ink-soft); font-size: 0.72rem; margin-top: 2px; }
-  .count { font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; white-space: nowrap; }
+  .row .t { display: block; color: var(--ink-soft); font-size: 0.78rem; margin-top: 2px; }
+  .count { font-family: var(--font-display); font-weight: 800; font-size: 1.1rem; white-space: nowrap; }
   .chip {
-    display: inline-block; font-size: 0.6rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-    padding: 1px 6px; border: 1.5px solid currentColor; border-radius: 99px; margin-left: 6px; vertical-align: 1px;
+    display: inline-block; font-size: 0.6rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 2px 8px; border-radius: 99px; margin-left: 6px; vertical-align: 1px;
   }
-  .chip.est { color: var(--ink-soft); border-style: dashed; }
-  .chip.ok { color: var(--leaf); }
-  .news { border-top: 2px dashed var(--grid-major); padding-top: 14px; }
-  .news ul { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
-  .news a { font-size: 0.78rem; line-height: 1.4; text-decoration: none; display: block; }
-  .news a:hover .title { text-decoration: underline; text-decoration-color: var(--apple); text-decoration-thickness: 2px; }
-  .news .t { display: block; font-size: 0.68rem; color: var(--ink-soft); margin-top: 2px; }
+  .chip.est { color: var(--ink-soft); border: 1px dashed var(--ink-soft); }
+  .chip.ok { color: var(--leaf); background: color-mix(in srgb, var(--leaf) 14%, transparent); }
+  .news { border-top: 1px solid var(--line); padding-top: 14px; }
+  .news ul { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .news a { font-size: 0.84rem; line-height: 1.4; text-decoration: none; display: block; }
+  .news a:hover .title { color: var(--accent); }
+  .news .t { display: block; font-size: 0.72rem; color: var(--ink-soft); margin-top: 2px; }
 
   /* timeline: one row per game, a bar per version, dashed bars are estimates */
   .timeline svg { display: block; width: 100%; height: auto; }
-  .legend { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 12px 0 0; padding: 0; list-style: none; font-size: 0.72rem; color: var(--ink-soft); }
-  .legend i { display: inline-block; width: 14px; height: 10px; margin-right: 6px; vertical-align: -1px; border: 1.5px solid var(--ink); }
-  .legend i.est { border-style: dashed; background: none; }
-  .legend i.live { width: 8px; height: 8px; transform: rotate(45deg); background: var(--ink); border: 0; margin-right: 8px; }
-  .legend i.today { width: 2px; height: 12px; background: var(--apple); border: 0; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 12px 0 0; padding: 0; list-style: none; font-size: 0.78rem; color: var(--ink-soft); }
+  .legend i { display: inline-block; width: 14px; height: 10px; margin-right: 6px; vertical-align: -1px; border-radius: 3px; }
+  .legend i.est { border: 1.5px dashed var(--ink-soft); background: none; }
+  .legend i.live { width: 8px; height: 8px; transform: rotate(45deg); background: var(--ink); border-radius: 1px; margin-right: 8px; }
+  .legend i.today { width: 2px; height: 12px; background: var(--apple); border-radius: 0; }
 
   /* version history */
   .history { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 22px; align-items: start; }
-  .history table { width: 100%; border-collapse: collapse; font-size: 0.75rem; margin-top: 10px; }
+  .history table { width: 100%; border-collapse: collapse; font-size: 0.82rem; margin-top: 10px; }
   .history th { text-align: left; font-weight: 600; color: var(--ink-soft); font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0 0 6px; }
-  .history td { padding: 6px 8px 6px 0; border-top: 1px solid var(--grid); vertical-align: top; }
+  .history td { padding: 7px 8px 7px 0; border-top: 1px solid var(--line); vertical-align: top; }
   .history td:first-child { font-weight: 600; white-space: nowrap; }
   .history td:last-child { text-align: right; padding-right: 0; white-space: nowrap; }
-  .history td .n { display: block; color: var(--ink-soft); font-size: 0.68rem; margin-top: 2px; }
-  .history h3 { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; margin: 0; padding-left: 10px; border-left: 6px solid var(--accent); }
-  details summary { cursor: pointer; font-size: 0.75rem; font-weight: 600; margin-top: 10px; color: var(--ink-soft); }
+  .history td .n { display: block; color: var(--ink-soft); font-size: 0.74rem; margin-top: 2px; }
+  .history h3 { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; margin: 0; display: flex; align-items: center; gap: 10px; }
+  .history h3::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+  details summary { cursor: pointer; font-size: 0.8rem; font-weight: 600; margin-top: 10px; color: var(--ink-soft); }
 
-  .error { border: 2px dashed var(--apple); border-radius: 4px; padding: 16px; font-size: 0.85rem; }
-  footer { color: var(--ink-soft); font-size: 0.72rem; line-height: 1.6; }
+  .error { border: 1px dashed var(--apple); border-radius: 16px; padding: 16px; font-size: 0.9rem; }
+  footer { color: var(--ink-soft); font-size: 0.78rem; line-height: 1.6; }
 </style>
 
 <div class="wrap">
@@ -169,7 +178,7 @@
     <div class="card">
       <svg id="chart" role="img" aria-label="Timeline of recent and upcoming versions for each game"></svg>
       <ul class="legend">
-        <li><i style="background: var(--grid-major)"></i>Version</li>
+        <li><i style="background: var(--accent)"></i>Version</li>
         <li><i class="est"></i>Estimated</li>
         <li><i class="live"></i>Livestream</li>
         <li><i class="today"></i>Now</li>
@@ -340,8 +349,8 @@
         const x0 = x(v.t), x1 = x(v.e), w = Math.max(0, x1 - x0 - 2);
         const est = v.estimated || (!vs.includes(v));
         out += est
-          ? `<rect x="${x0 + 1}" y="${y}" width="${w}" height="${h}" rx="2" fill="none" stroke="${accent}" stroke-width="1.5" stroke-dasharray="4 3"/>`
-          : `<rect x="${x0 + 1}" y="${y}" width="${w}" height="${h}" rx="2" fill="${accent}" fill-opacity="${k % 2 ? 0.55 : 0.85}" stroke="${css("--ink")}" stroke-width="1.5"/>`;
+          ? `<rect x="${x0 + 1}" y="${y}" width="${w}" height="${h}" rx="5" fill="none" stroke="${accent}" stroke-width="1.5" stroke-dasharray="4 3"/>`
+          : `<rect x="${x0 + 1}" y="${y}" width="${w}" height="${h}" rx="5" fill="${accent}" fill-opacity="${k % 2 ? 0.55 : 0.9}"/>`;
         const label = v.label.replace("Luna ", small ? "L" : "Luna ");
         if (w > label.length * 7 + 6) out += `<text x="${x0 + 1 + w / 2}" y="${y + h / 2 + 4}" text-anchor="middle" font-size="12" font-weight="600" fill="${est ? css("--ink-soft") : css("--ink")}">${esc(label)}</text>`;
       });
