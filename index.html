@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HoYo Version Tracker</title>
+<meta name="description" content="Current and upcoming versions of Genshin Impact, Honkai: Star Rail and Zenless Zone Zero, with countdowns, livestream times and official news.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Chivo+Mono:wght@400;600&display=swap">
+<style>
+  /* Layout: header, "Coming up" list, one card per game, a timeline of versions, then version history.
+     Same design tokens as Paper Arcade and the home page. Each game has an accent: Genshin green, Star Rail blue, ZZZ yellow. */
+  :root {
+    --paper: #eef3f7;
+    --board: #fbfdff;
+    --grid: #cfe0ee;
+    --grid-major: #a9c6de;
+    --ink: #1d2a44;
+    --ink-soft: #5b6a85;
+    --apple: #d6372b;
+    --pen: #2459c9;
+    --win: #e8a400;
+    --leaf: #2f8a3e;
+    --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --font-mono: "Chivo Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #0c1830; --board: #10203d; --grid: #1c3358; --grid-major: #2a4a7a;
+      --ink: #e8f0ff; --ink-soft: #8ea3c7; --apple: #ff6a55; --pen: #7aa7ff; --win: #ffc93d; --leaf: #6cc77a; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #0c1830; --board: #10203d; --grid: #1c3358; --grid-major: #2a4a7a;
+    --ink: #e8f0ff; --ink-soft: #8ea3c7; --apple: #ff6a55; --pen: #7aa7ff; --win: #ffc93d; --leaf: #6cc77a; color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--paper);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 24px 24px;
+    color: var(--ink);
+    font-family: var(--font-mono);
+    padding-block: 48px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  .wrap { max-width: 1040px; margin: 0 auto; display: flex; flex-direction: column; gap: 44px; }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--apple); outline-offset: 3px; }
+
+  .back { font-size: 0.8rem; font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--grid-major); }
+  .back:hover { border-bottom-color: var(--apple); }
+  h1 {
+    font-family: var(--font-display); font-weight: 800; font-size: clamp(2.3rem, 7.5vw, 4rem);
+    letter-spacing: -0.04em; line-height: 0.95; margin: 18px 0 0;
+  }
+  .lede { margin: 14px 0 0; color: var(--ink-soft); font-size: 0.88rem; line-height: 1.6; max-width: 62ch; }
+  .checked { margin: 8px 0 0; font-size: 0.75rem; color: var(--ink-soft); }
+
+  section { display: flex; flex-direction: column; gap: 16px; }
+  h2 {
+    font-family: var(--font-display); font-weight: 800; font-size: 1.7rem; letter-spacing: -0.03em; margin: 0;
+    display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  }
+  h2 small { font-family: var(--font-mono); font-weight: 400; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); }
+  .eyebrow { font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); font-weight: 600; }
+
+  .card {
+    background: var(--board); border: 2px solid var(--ink); border-radius: 4px;
+    box-shadow: 6px 6px 0 var(--grid-major); padding: 18px; box-sizing: border-box; min-width: 0;
+  }
+  button.pill {
+    font: 600 0.78rem var(--font-mono); color: var(--ink); background: var(--board); cursor: pointer;
+    padding: 6px 11px; border: 2px solid var(--ink); border-radius: 4px;
+  }
+  button.pill:hover { background: var(--grid); }
+
+  /* coming up: the next few releases and livestreams across all three games */
+  .soon-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .soon { list-style: none; margin: 0; padding: 0; }
+  .soon li {
+    display: grid; grid-template-columns: 11px minmax(0, 1fr) auto; gap: 12px; align-items: baseline;
+    padding: 11px 0; border-bottom: 1px dashed var(--grid-major); font-size: 0.85rem;
+  }
+  .soon li:first-child { padding-top: 0; }
+  .soon li:last-child { border-bottom: 0; padding-bottom: 0; }
+  .soon .dot { width: 11px; height: 11px; border-radius: 50%; background: var(--accent); align-self: center; }
+  .soon .what { font-weight: 600; }
+  .soon .when { display: block; color: var(--ink-soft); font-size: 0.75rem; margin-top: 3px; }
+  .soon .in { font-family: var(--font-display); font-weight: 800; font-size: 1.15rem; letter-spacing: -0.02em; white-space: nowrap; }
+
+  /* one card per game */
+  .games { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 22px; align-items: start; }
+  .game { display: flex; flex-direction: column; gap: 16px; border-top: 8px solid var(--accent); }
+  .game h3 { font-family: var(--font-display); font-weight: 800; font-size: 1.35rem; letter-spacing: -0.02em; margin: 0; line-height: 1.1; }
+  .ver { font-family: var(--font-display); font-weight: 800; font-size: 2.6rem; letter-spacing: -0.04em; line-height: 1; margin-top: 4px; }
+  .ver.small { font-size: 1.8rem; }
+  .vname { margin: 6px 0 0; font-size: 0.8rem; line-height: 1.45; color: var(--ink-soft); }
+  .bar { position: relative; height: 12px; margin-top: 12px; border: 2px solid var(--ink); border-radius: 3px; background: var(--paper); overflow: hidden; }
+  .bar span { position: absolute; inset: 0 auto 0 0; background: var(--accent); }
+  .meta { margin: 7px 0 0; font-size: 0.75rem; color: var(--ink-soft); line-height: 1.5; }
+  .next { border-top: 2px dashed var(--grid-major); padding-top: 14px; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-top: 10px; font-size: 0.78rem; }
+  .row b { font-weight: 600; }
+  .row .t { display: block; color: var(--ink-soft); font-size: 0.72rem; margin-top: 2px; }
+  .count { font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; white-space: nowrap; }
+  .chip {
+    display: inline-block; font-size: 0.6rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+    padding: 1px 6px; border: 1.5px solid currentColor; border-radius: 99px; margin-left: 6px; vertical-align: 1px;
+  }
+  .chip.est { color: var(--ink-soft); border-style: dashed; }
+  .chip.ok { color: var(--leaf); }
+  .news { border-top: 2px dashed var(--grid-major); padding-top: 14px; }
+  .news ul { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
+  .news a { font-size: 0.78rem; line-height: 1.4; text-decoration: none; display: block; }
+  .news a:hover .title { text-decoration: underline; text-decoration-color: var(--apple); text-decoration-thickness: 2px; }
+  .news .t { display: block; font-size: 0.68rem; color: var(--ink-soft); margin-top: 2px; }
+
+  /* timeline: one row per game, a bar per version, dashed bars are estimates */
+  .timeline svg { display: block; width: 100%; height: auto; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 12px 0 0; padding: 0; list-style: none; font-size: 0.72rem; color: var(--ink-soft); }
+  .legend i { display: inline-block; width: 14px; height: 10px; margin-right: 6px; vertical-align: -1px; border: 1.5px solid var(--ink); }
+  .legend i.est { border-style: dashed; background: none; }
+  .legend i.live { width: 8px; height: 8px; transform: rotate(45deg); background: var(--ink); border: 0; margin-right: 8px; }
+  .legend i.today { width: 2px; height: 12px; background: var(--apple); border: 0; }
+
+  /* version history */
+  .history { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 22px; align-items: start; }
+  .history table { width: 100%; border-collapse: collapse; font-size: 0.75rem; margin-top: 10px; }
+  .history th { text-align: left; font-weight: 600; color: var(--ink-soft); font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0 0 6px; }
+  .history td { padding: 6px 8px 6px 0; border-top: 1px solid var(--grid); vertical-align: top; }
+  .history td:first-child { font-weight: 600; white-space: nowrap; }
+  .history td:last-child { text-align: right; padding-right: 0; white-space: nowrap; }
+  .history td .n { display: block; color: var(--ink-soft); font-size: 0.68rem; margin-top: 2px; }
+  .history h3 { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; margin: 0; padding-left: 10px; border-left: 6px solid var(--accent); }
+  details summary { cursor: pointer; font-size: 0.75rem; font-weight: 600; margin-top: 10px; color: var(--ink-soft); }
+
+  .error { border: 2px dashed var(--apple); border-radius: 4px; padding: 16px; font-size: 0.85rem; }
+  footer { color: var(--ink-soft); font-size: 0.72rem; line-height: 1.6; }
+</style>
+
+<div class="wrap">
+  <header>
+    <a class="back" href="https://mentalplatypus.github.io/">← David Wang</a>
+    <h1>HoYo Version Tracker</h1>
+    <p class="lede">What's live now and what's next in Genshin Impact, Honkai: Star Rail and Zenless Zone Zero. Dates come from official HoYoLAB announcements, checked every few hours, and are shown in your time zone.</p>
+    <p class="checked" id="checked"></p>
+  </header>
+
+  <section aria-labelledby="soon-h">
+    <div class="soon-head">
+      <h2 id="soon-h">Coming up</h2>
+      <button class="pill" id="ics" type="button">Add to calendar (.ics)</button>
+    </div>
+    <div class="card"><ul class="soon" id="soon"><li>Loading…</li></ul></div>
+  </section>
+
+  <section aria-labelledby="games-h">
+    <h2 id="games-h">Games</h2>
+    <div class="games" id="games"></div>
+  </section>
+
+  <section aria-labelledby="timeline-h" class="timeline">
+    <h2 id="timeline-h">Timeline <small>Past five months and the next three</small></h2>
+    <div class="card">
+      <svg id="chart" role="img" aria-label="Timeline of recent and upcoming versions for each game"></svg>
+      <ul class="legend">
+        <li><i style="background: var(--grid-major)"></i>Version</li>
+        <li><i class="est"></i>Estimated</li>
+        <li><i class="live"></i>Livestream</li>
+        <li><i class="today"></i>Now</li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="history-h">
+    <h2 id="history-h">Version history</h2>
+    <div class="history" id="history"></div>
+  </section>
+
+  <footer>
+    A fan-made tracker, not affiliated with HoYoverse. Update times are when maintenance begins; the new version is usually playable about five hours later.
+    Until a date is announced, the next version is estimated from the usual six-week (42-day) cycle.
+    <a href="https://github.com/mentalplatypus/HoyoVersionTracker">Source</a>
+  </footer>
+</div>
+
+<script>
+  const DAY = 864e5, CYCLE = 42 * DAY;
+  const GAMES = [
+    { key: "genshin", name: "Genshin Impact", accent: "--leaf" },
+    { key: "hsr", name: "Honkai: Star Rail", accent: "--pen" },
+    { key: "zzz", name: "Zenless Zone Zero", accent: "--win" },
+  ];
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const fmtDay = new Intl.DateTimeFormat(undefined, { weekday: "short", month: "short", day: "numeric" });
+  const fmtTime = new Intl.DateTimeFormat(undefined, { hour: "numeric", minute: "2-digit", timeZoneName: "short" });
+  const fmtShort = new Intl.DateTimeFormat(undefined, { month: "short", day: "numeric" });
+  const fmtYear = new Intl.DateTimeFormat(undefined, { month: "short", day: "numeric", year: "numeric" });
+  const when = t => `${fmtDay.format(t)}, ${fmtTime.format(t)}`;
+  const post = id => `https://www.hoyolab.com/article/${id}`;
+
+  function until(t, now) {
+    const ms = t - now;
+    if (ms <= 0) return "now";
+    const d = Math.floor(ms / DAY), h = Math.floor(ms % DAY / 36e5), m = Math.floor(ms % 36e5 / 6e4);
+    return d ? `${d}d ${h}h` : h ? `${h}h ${m}m` : `${m}m`;
+  }
+
+  // the version after "7.1" is "7.2", after "Luna VII" is "Luna VIII"
+  const ROMAN = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"];
+  function bump(label) {
+    const luna = label.match(/^Luna (\w+)$/);
+    if (luna) return `Luna ${ROMAN[ROMAN.indexOf(luna[1]) + 1] || "?"}`;
+    const [major, minor] = label.split(".");
+    return `${major}.${Number(minor) + 1}`;
+  }
+
+  // Works out the current and next version (and a few estimated ones after that) from the recorded facts.
+  function plan(g, now) {
+    const named = Object.fromEntries(g.versions.map(v => [v.label, v.name]));
+    const vs = g.versions.filter(v => v.start).map(v => ({ ...v, t: Date.parse(v.start) }));
+    // a version ends when the next one starts, on its announced end date, or else after the usual 42 days
+    vs.forEach((v, i) => {
+      const after = vs[i + 1];
+      v.e = after ? after.t : v.end ? Date.parse(v.end) : v.t + CYCLE;
+      v.endKnown = Boolean(after || v.end);
+    });
+    let current = vs.findLast(v => v.t <= now) || vs[0];
+    let next = vs.find(v => v.t > now);
+    if (!next) {
+      // name the next version after the first new one HoYoLAB mentions (a livestream post, say), or count up
+      const known = new Set(vs.map(v => v.label));
+      const mentioned = Object.entries(g.mentions)
+        .filter(([label, at]) => !known.has(label) && Date.parse(at) >= current.t - 7 * DAY)
+        .sort((a, b) => a[1].localeCompare(b[1]));
+      const label = mentioned[0]?.[0] || bump(current.label);
+      next = { label, t: current.e, e: current.e + CYCLE, estimated: !current.endKnown };
+    }
+    // if the estimated date has passed before the data caught up, assume the version went live on time
+    while (next.t <= now) {
+      current = { ...next, estimated: true };
+      next = { label: bump(current.label), t: current.e, e: current.e + CYCLE, estimated: true };
+    }
+    next.name ??= named[next.label];
+    const later = [];
+    for (let v = next, i = 0; i < 3; i++) later.push(v = { label: bump(v.label), t: v.e, e: v.e + CYCLE, estimated: true });
+    const live = g.livestreams[next.label];
+    return { vs, current, next, later, livestream: live && { t: Date.parse(live.time), post: live.post } };
+  }
+
+  function render(data) {
+    const now = Date.now();
+    const plans = GAMES.map(game => ({ game, g: data.games[game.key], ...plan(data.games[game.key], now) }));
+    if (data.updated) $("checked").textContent = `Data last changed ${when(Date.parse(data.updated))}.`;
+
+    // coming up, soonest first
+    const events = plans.flatMap(p => {
+      const out = [{ p, t: p.next.t, what: `${p.game.name} ${p.next.label}`, kind: "Update", estimated: p.next.estimated }];
+      if (p.livestream && p.livestream.t > now) out.push({ p, t: p.livestream.t, what: `${p.game.name} ${p.next.label}`, kind: "Livestream" });
+      return out;
+    }).sort((a, b) => a.t - b.t);
+    window.upcoming = events;
+    $("soon").innerHTML = events.map(ev => `
+      <li style="--accent: var(${ev.p.game.accent})">
+        <span class="dot"></span>
+        <span><span class="what">${esc(ev.what)} ${ev.kind.toLowerCase()}</span>${ev.estimated ? '<span class="chip est">Estimated</span>' : ""}
+          <span class="when">${ev.estimated ? `Around ${fmtDay.format(ev.t)}` : when(ev.t)}</span></span>
+        <span class="in">${ev.estimated ? "~" : ""}${until(ev.t, now)}</span>
+      </li>`).join("");
+
+    $("games").innerHTML = plans.map(({ game, g, current, next, livestream }) => {
+      const days = Math.round((current.e - current.t) / DAY), day = Math.min(days, Math.floor((now - current.t) / DAY) + 1);
+      const pct = Math.min(100, Math.max(0, (now - current.t) / (current.e - current.t) * 100));
+      const stream = !livestream
+        ? `<div class="row"><span><b>Livestream</b><span class="t">Not announced yet</span></span></div>`
+        : livestream.t > now
+          ? `<div class="row"><span><b>Livestream</b><span class="t"><a href="${post(livestream.post)}">${when(livestream.t)}</a></span></span><span class="count">${until(livestream.t, now)}</span></div>`
+          : `<div class="row"><span><b>Livestream</b><span class="t"><a href="${post(livestream.post)}">Aired ${fmtDay.format(livestream.t)}</a></span></span></div>`;
+      return `
+      <article class="card game" style="--accent: var(${game.accent})">
+        <h3>${game.name}</h3>
+        <div>
+          <span class="eyebrow">Live now</span>
+          <div class="ver">${esc(current.label)}</div>
+          ${current.name ? `<p class="vname">${esc(current.name)}</p>` : ""}
+          <div class="bar" role="progressbar" aria-label="${esc(current.label)} progress" aria-valuenow="${Math.round(pct)}" aria-valuemin="0" aria-valuemax="100"><span style="width: ${pct}%"></span></div>
+          <p class="meta">Day ${day} of ${days} · ${fmtShort.format(current.t)} – ${fmtShort.format(current.e)}</p>
+        </div>
+        <div class="next">
+          <span class="eyebrow">Next version</span>
+          <div class="ver small">${esc(next.label)}</div>
+          ${next.name ? `<p class="vname">${esc(next.name)}</p>` : ""}
+          <div class="row"><span><b>Update</b>${next.estimated ? '<span class="chip est">Estimated</span>' : '<span class="chip ok">Confirmed</span>'}
+            <span class="t">${next.estimated ? `Around ${fmtDay.format(next.t)}` : when(next.t)}</span></span>
+            <span class="count">${next.estimated ? "~" : ""}${until(next.t, now)}</span></div>
+          ${stream}
+        </div>
+        <div class="news">
+          <span class="eyebrow">Latest from HoYoLAB</span>
+          <ul>${g.news.slice(0, 5).map(n => `<li><a href="${post(n.id)}"><span class="title">${esc(n.title)}</span><span class="t">${n.kind} · ${fmtShort.format(Date.parse(n.time))}</span></a></li>`).join("")}</ul>
+        </div>
+      </article>`;
+    }).join("");
+
+    drawTimeline(plans, now);
+
+    $("history").innerHTML = plans.map(({ game, vs }) => {
+      const rows = vs.slice().reverse().map(v => `<tr><td>${esc(v.label)}</td><td>${fmtYear.format(v.t)}${v.name ? `<span class="n">${esc(v.name)}</span>` : ""}</td><td>${v.t > now ? "Upcoming" : `${v.endKnown ? "" : "~"}${Math.round((v.e - v.t) / DAY)} days`}</td></tr>`);
+      const table = r => `<table><thead><tr><th>Ver.</th><th>Released</th><th>Length</th></tr></thead><tbody>${r.join("")}</tbody></table>`;
+      return `<div class="card" style="--accent: var(${game.accent})"><h3>${game.name}</h3>${table(rows.slice(0, 8))}` +
+        (rows.length > 8 ? `<details><summary>Show ${rows.length - 8} older versions</summary>${table(rows.slice(8))}</details>` : "") + `</div>`;
+    }).join("");
+  }
+
+  function drawTimeline(plans, now) {
+    const svg = $("chart"), css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+    const W = Math.max(320, svg.parentElement.clientWidth - 40), small = W < 560;
+    const left = small ? 0 : 150, top = 24, rowH = small ? 62 : 46, H = top + plans.length * rowH + 4;
+    const from = now - 150 * DAY, to = now + 90 * DAY;
+    const x = t => left + (Math.min(Math.max(t, from), to) - from) / (to - from) * (W - left);
+    let out = "";
+    // month lines and labels
+    for (let d = new Date(new Date(from).getFullYear(), new Date(from).getMonth() + 1, 1); d < to; d.setMonth(d.getMonth() + 1)) {
+      const px = x(+d);
+      out += `<line x1="${px}" y1="${top - 6}" x2="${px}" y2="${H}" stroke="${css("--grid")}" />`;
+      out += `<text x="${px + 4}" y="${top - 10}" font-size="11" fill="${css("--ink-soft")}">${d.toLocaleDateString(undefined, { month: "short" })}</text>`;
+    }
+    plans.forEach(({ game, vs, current, next, later, livestream }, i) => {
+      const y = top + i * rowH + (small ? 18 : 6), h = small ? 30 : 32, accent = css(game.accent);
+      if (small) out += `<text x="0" y="${y - 5}" font-size="11" font-weight="600" fill="${css("--ink")}">${game.name}</text>`;
+      else out += `<text x="0" y="${y + h / 2 + 4}" font-size="12" font-weight="600" fill="${css("--ink")}">${game.name}</text>`;
+      const bars = [...vs.filter(v => v.e > from && v.t < to), ...(vs.includes(current) ? [] : [current]), ...(vs.includes(next) ? [] : [next]), ...later];
+      bars.filter(v => v.t < to).forEach((v, k) => {
+        const x0 = x(v.t), x1 = x(v.e), w = Math.max(0, x1 - x0 - 2);
+        const est = v.estimated || (!vs.includes(v));
+        out += est
+          ? `<rect x="${x0 + 1}" y="${y}" width="${w}" height="${h}" rx="2" fill="none" stroke="${accent}" stroke-width="1.5" stroke-dasharray="4 3"/>`
+          : `<rect x="${x0 + 1}" y="${y}" width="${w}" height="${h}" rx="2" fill="${accent}" fill-opacity="${k % 2 ? 0.55 : 0.85}" stroke="${css("--ink")}" stroke-width="1.5"/>`;
+        const label = v.label.replace("Luna ", small ? "L" : "Luna ");
+        if (w > label.length * 7 + 6) out += `<text x="${x0 + 1 + w / 2}" y="${y + h / 2 + 4}" text-anchor="middle" font-size="12" font-weight="600" fill="${est ? css("--ink-soft") : css("--ink")}">${esc(label)}</text>`;
+      });
+      // livestreams of the versions on screen
+      Object.entries(plans[i].g.livestreams).forEach(([, ls]) => {
+        const t = Date.parse(ls.time);
+        if (t < from || t > to) return;
+        const px = x(t), py = y + h + 1;
+        out += `<path d="M${px} ${py - 5} l5 5 l-5 5 l-5 -5 z" fill="${css("--ink")}" stroke="${css("--board")}" stroke-width="1.5"><title>${game.name} livestream, ${fmtShort.format(t)}</title></path>`;
+      });
+    });
+    const nx = x(now);
+    out += `<line x1="${nx}" y1="${top - 6}" x2="${nx}" y2="${H}" stroke="${css("--apple")}" stroke-width="2.5"/>`;
+    svg.setAttribute("viewBox", `0 0 ${W} ${H + 8}`);
+    svg.innerHTML = out;
+  }
+
+  // a calendar file with every upcoming update and livestream
+  function ics(events) {
+    const stamp = t => new Date(t).toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
+    const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//mentalplatypus//HoYo Version Tracker//EN", "CALSCALE:GREGORIAN"];
+    for (const ev of events) {
+      const title = `${ev.what} ${ev.kind.toLowerCase()}${ev.estimated ? " (estimated)" : ""}`;
+      lines.push("BEGIN:VEVENT", `UID:${ev.p.game.key}-${ev.p.next.label.replace(/\s/g, "")}-${ev.kind}@mentalplatypus.github.io`, `DTSTAMP:${stamp(Date.now())}`,
+        `DTSTART:${stamp(ev.t)}`, `DTEND:${stamp(ev.t + (ev.kind === "Update" ? 5 : 1) * 36e5)}`, `SUMMARY:${title}`,
+        `DESCRIPTION:${ev.kind === "Update" ? "Update maintenance begins. Times from HoYoLAB announcements." : "Special program livestream."}`, "END:VEVENT");
+    }
+    lines.push("END:VCALENDAR");
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([lines.join("\r\n")], { type: "text/calendar" }));
+    a.download = "hoyo-versions.ics";
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }
+
+  let data;
+  fetch("data/tracker.json", { cache: "no-cache" })
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(json => {
+      data = json;
+      render(data);
+      setInterval(() => render(data), 30e3);
+      addEventListener("resize", () => drawTimeline(GAMES.map(game => ({ game, g: data.games[game.key], ...plan(data.games[game.key], Date.now()) })), Date.now()));
+      matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => render(data));
+    })
+    .catch(() => {
+      $("soon").innerHTML = "";
+      $("games").innerHTML = `<p class="error">Couldn't load the version data. Try refreshing the page.</p>`;
+    });
+  $("ics").addEventListener("click", () => window.upcoming && ics(window.upcoming));
+</script>

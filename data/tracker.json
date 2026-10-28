@@ -1,0 +1,934 @@
+{
+  "games": {
+    "genshin": {
+      "versions": [
+        {
+          "label": "7.2",
+          "name": "Hour of Ruin",
+          "post": "47176546"
+        },
+        {
+          "label": "1.4",
+          "start": "2021-03-16T22:00:00Z",
+          "post": "244378",
+          "name": "Invitation of Windblume"
+        },
+        {
+          "label": "1.5",
+          "start": "2021-04-27T22:00:00Z",
+          "post": "321317",
+          "name": "Explanations of"
+        },
+        {
+          "label": "2.1",
+          "start": "2021-08-31T22:00:00Z",
+          "name": "Explanations of",
+          "post": "780532"
+        },
+        {
+          "label": "2.2",
+          "start": "2021-10-12T22:00:00Z",
+          "post": "1189663",
+          "name": "Into the Perilous Labyrinth of Fog"
+        },
+        {
+          "label": "2.4",
+          "start": "2022-01-04T22:00:00Z",
+          "post": "1822661",
+          "name": "Fleeting Colors in Flight"
+        },
+        {
+          "label": "2.5",
+          "start": "2022-02-15T22:00:00Z",
+          "post": "3355051",
+          "name": "When the Sakura Bloom"
+        },
+        {
+          "label": "2.6",
+          "start": "2022-03-29T22:00:00Z",
+          "post": "3992100",
+          "name": "Zephyr of the Violet Garden"
+        },
+        {
+          "label": "2.7",
+          "start": "2022-05-30T22:00:00Z",
+          "post": "4978050",
+          "name": "Hidden Dreams in the Depths"
+        },
+        {
+          "label": "2.8",
+          "start": "2022-07-12T22:00:00Z",
+          "post": "5914916",
+          "name": "Summer Fantasia"
+        },
+        {
+          "label": "3.0",
+          "start": "2022-08-23T22:00:00Z",
+          "name": "The Morn a Thousand Roses Brings",
+          "post": "7148857"
+        },
+        {
+          "label": "3.3",
+          "start": "2022-12-06T22:00:00Z",
+          "post": "14134466",
+          "name": "All Senses Clear, All Existence Void"
+        },
+        {
+          "label": "3.4",
+          "start": "2023-01-17T22:00:00Z",
+          "post": "15052123",
+          "name": "The Exquisite Night Chimes"
+        },
+        {
+          "label": "3.5",
+          "start": "2023-02-28T22:00:00Z",
+          "post": "16630379",
+          "name": "Windblume's Breath"
+        },
+        {
+          "label": "3.6",
+          "start": "2023-04-11T22:00:00Z",
+          "post": "17590298",
+          "name": "A Parade of Providence"
+        },
+        {
+          "label": "3.7",
+          "start": "2023-05-23T22:00:00Z",
+          "post": "18698133",
+          "name": "Duel! The Summoners' Summit!"
+        },
+        {
+          "label": "3.8",
+          "start": "2023-07-04T22:00:00Z",
+          "post": "19770260",
+          "name": "Secret Summer Paradise"
+        },
+        {
+          "label": "4.0",
+          "start": "2023-08-15T22:00:00Z",
+          "post": "20855425",
+          "name": "As Light Rain Falls Without Reason"
+        },
+        {
+          "label": "4.1",
+          "start": "2023-09-26T22:00:00Z",
+          "post": "21852988",
+          "name": "To the Stars Shining in the Depths"
+        },
+        {
+          "label": "4.2",
+          "start": "2023-11-07T22:00:00Z",
+          "post": "22781545",
+          "name": "Masquerade of the Guilty"
+        },
+        {
+          "label": "4.3",
+          "start": "2023-12-19T22:00:00Z",
+          "name": "Roses and Muskets",
+          "post": "23705134"
+        },
+        {
+          "label": "4.5",
+          "start": "2024-03-12T22:00:00Z",
+          "post": "25832645",
+          "name": "Blades Weaving Betwixt Brocade"
+        },
+        {
+          "label": "4.6",
+          "start": "2024-04-23T22:00:00Z",
+          "post": "27518305",
+          "name": "Two Worlds Aflame, the Crimson Night Fades"
+        },
+        {
+          "label": "4.7",
+          "start": "2024-06-04T22:00:00Z",
+          "post": "29434543",
+          "name": "An Everlasting Dream Intertwined"
+        },
+        {
+          "label": "4.8",
+          "start": "2024-07-16T22:00:00Z",
+          "post": "31069151",
+          "name": "Summertide Scales and Tales"
+        },
+        {
+          "label": "5.0",
+          "start": "2024-08-27T22:00:00Z",
+          "post": "32489658",
+          "name": "Flowers Resplendent on the Sun-Scorched Sojourn"
+        },
+        {
+          "label": "5.1",
+          "start": "2024-10-08T22:00:00Z",
+          "post": "34009802",
+          "name": "The Rainbow Destined to Burn"
+        },
+        {
+          "label": "5.2",
+          "start": "2024-11-19T22:00:00Z",
+          "post": "35015197",
+          "name": "Tapestry of Spirit and Flame"
+        },
+        {
+          "label": "5.3",
+          "start": "2024-12-31T22:00:00Z",
+          "post": "35948283",
+          "name": "Incandescent Ode of Resurrection"
+        },
+        {
+          "label": "5.4",
+          "start": "2025-02-11T22:00:00Z",
+          "post": "36970453",
+          "name": "Moonlight Amidst Dreams"
+        },
+        {
+          "label": "5.5",
+          "start": "2025-03-25T22:00:00Z",
+          "post": "37812368",
+          "name": "Day of the Flame's Return"
+        },
+        {
+          "label": "5.6",
+          "start": "2025-05-06T22:00:00Z",
+          "post": "38610459",
+          "name": "Paralogism"
+        },
+        {
+          "label": "5.7",
+          "start": "2025-06-17T22:00:00Z",
+          "post": "39353021",
+          "name": "A Space and Time for You"
+        },
+        {
+          "label": "5.8",
+          "start": "2025-07-29T22:00:00Z",
+          "post": "40242287",
+          "name": "Sunspray Summer Resort"
+        },
+        {
+          "label": "Luna I",
+          "name": "Song of the Welkin Moon: Segue - 'A Dance of Snowy Tides and Hoarfrost Groves'",
+          "post": "40794247",
+          "start": "2025-09-09T22:00:00Z"
+        },
+        {
+          "label": "Luna II",
+          "name": "Song of the Welkin Moon: Reprise — \"An Elegy for Faded Moonlight\"",
+          "post": "41645850",
+          "start": "2025-10-21T22:00:00Z"
+        },
+        {
+          "label": "Luna III",
+          "name": "Song of the Welkin Moon: Interlude - A Nocturne of the Far North",
+          "post": "42427116",
+          "start": "2025-12-02T22:00:00Z"
+        },
+        {
+          "label": "Luna IV",
+          "name": "Song of the Welkin Moon: Postlude — \"A Traveler on a Winter's Night\"",
+          "post": "43040188",
+          "start": "2026-01-13T22:00:00Z"
+        },
+        {
+          "label": "Luna V",
+          "name": "Song of the Welkin Moon: Variation — Homeward, He Who Caught the Wind",
+          "post": "43760152",
+          "start": "2026-02-24T22:00:00Z"
+        },
+        {
+          "label": "Luna VI",
+          "name": "Song of the Welkin Moon: Rondo — Augured Homecoming",
+          "post": "44378130",
+          "start": "2026-04-07T22:00:00Z"
+        },
+        {
+          "label": "Luna VII",
+          "name": "Song of the Welkin Moon: Andante — Truth Amongst the Pages of Purana",
+          "post": "44964618",
+          "start": "2026-05-19T22:00:00Z"
+        },
+        {
+          "label": "Luna VIII",
+          "name": "Song of the Welkin Moon: Scherzo — Sunny Summer Fontinalia",
+          "post": "45508502",
+          "start": "2026-06-30T22:00:00Z"
+        },
+        {
+          "label": "7.0",
+          "name": "Everwinter Without Mercy",
+          "post": "46078609",
+          "start": "2026-08-11T22:00:00Z"
+        },
+        {
+          "label": "7.1",
+          "name": "A Rekviem for the Underworld",
+          "post": "46661029",
+          "start": "2026-09-22T22:00:00Z"
+        }
+      ],
+      "livestreams": {
+        "Luna II": {
+          "time": "2025-10-10T12:00:00Z",
+          "post": "41609082"
+        },
+        "Luna III": {
+          "time": "2025-11-21T12:00:00Z",
+          "post": "42397861"
+        },
+        "Luna V": {
+          "time": "2026-02-13T12:00:00Z",
+          "post": "43724101"
+        },
+        "Luna VI": {
+          "time": "2026-03-27T12:00:00Z",
+          "post": "44327317"
+        },
+        "Luna VII": {
+          "time": "2026-05-08T12:00:00Z",
+          "post": "44938288"
+        },
+        "Luna VIII": {
+          "time": "2026-06-18T12:00:00Z",
+          "post": "45478467"
+        },
+        "7.0": {
+          "time": "2026-07-31T12:00:00Z",
+          "post": "46039635"
+        },
+        "7.1": {
+          "time": "2026-09-12T12:00:00Z",
+          "post": "46604275"
+        },
+        "7.2": {
+          "time": "2026-10-23T12:00:00Z",
+          "post": "47151000"
+        }
+      },
+      "mentions": {
+        "1.1": "2020-11-09T02:25:22Z",
+        "1.2": "2020-12-21T02:30:08Z",
+        "1.3": "2021-02-01T02:00:16Z",
+        "1.6": "2021-03-01T04:30:02Z",
+        "1.4": "2021-03-15T02:00:02Z",
+        "1.5": "2021-04-25T02:30:01Z",
+        "2.0": "2021-07-19T02:30:02Z",
+        "2.1": "2021-08-30T02:30:02Z",
+        "2.2": "2021-10-11T03:09:00Z",
+        "2.3": "2021-11-22T03:00:02Z",
+        "2.4": "2021-12-31T02:30:01Z",
+        "2.5": "2022-02-14T02:30:01Z",
+        "2.6": "2022-03-28T02:30:02Z",
+        "2.7": "2022-04-29T02:30:02Z",
+        "2.8": "2022-07-11T02:30:06Z",
+        "3.0": "2022-08-22T02:30:09Z",
+        "3.1": "2022-09-26T02:30:07Z",
+        "3.2": "2022-11-01T23:00:06Z",
+        "3.3": "2022-12-04T10:30:08Z",
+        "3.4": "2023-01-16T02:30:07Z",
+        "3.5": "2023-02-27T02:30:07Z",
+        "3.6": "2023-04-10T02:30:08Z",
+        "3.7": "2023-05-22T02:30:10Z",
+        "3.8": "2023-07-03T02:30:12Z",
+        "4.0": "2023-08-14T03:05:09Z",
+        "4.1": "2023-09-25T03:05:05Z",
+        "4.2": "2023-10-27T07:25:24Z",
+        "4.3": "2023-12-18T03:05:04Z",
+        "4.4": "2024-01-29T03:10:23Z",
+        "4.5": "2024-03-11T03:06:16Z",
+        "4.6": "2024-04-22T03:05:07Z",
+        "4.7": "2024-06-03T03:05:09Z",
+        "4.8": "2024-07-15T03:05:08Z",
+        "5.0": "2024-08-26T03:05:10Z",
+        "5.1": "2024-10-07T03:05:12Z",
+        "5.2": "2024-11-18T03:05:13Z",
+        "5.3": "2024-12-30T03:05:14Z",
+        "5.4": "2025-02-10T03:05:10Z",
+        "5.5": "2025-03-24T03:05:10Z",
+        "5.6": "2025-05-05T03:05:48Z",
+        "5.7": "2025-06-16T03:05:08Z",
+        "5.8": "2025-07-28T03:05:07Z",
+        "Luna I": "2025-08-29T13:25:03Z",
+        "Luna II": "2025-10-08T04:00:05Z",
+        "Luna III": "2025-11-19T04:00:05Z",
+        "Luna IV": "2025-12-10T10:00:03Z",
+        "Luna V": "2026-02-11T04:00:05Z",
+        "Luna VI": "2026-03-25T04:00:06Z",
+        "Luna VII": "2026-05-06T04:00:06Z",
+        "Luna VIII": "2026-06-16T04:00:03Z",
+        "7.0": "2026-07-09T04:10:05Z",
+        "7.1": "2026-09-07T04:00:05Z",
+        "7.2": "2026-10-21T04:00:04Z"
+      },
+      "news": [
+        {
+          "id": "47220086",
+          "title": "Version 7.2 - \"Raiment Collection\" Event Elite Cosmetics",
+          "time": "2026-10-27T08:00:02Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47219694",
+          "title": "Version 7.2 - Standard Ode Elite Cosmetics",
+          "time": "2026-10-27T07:00:05Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47219349",
+          "title": "Version 7.2 - Event Ode Elite Cosmetics",
+          "time": "2026-10-27T06:00:03Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47218990",
+          "title": "Version 7.2 - Miliastra Shop Exceptional Cosmetics",
+          "time": "2026-10-27T05:00:02Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47218674",
+          "title": "The Version 7.2 Event Calendar exclusive wallpaper is now available!",
+          "time": "2026-10-27T04:10:08Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47218636",
+          "title": "Character Skill Showcase — \"Rules Set at Naught\" Mitya",
+          "time": "2026-10-27T04:05:09Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47218605",
+          "title": "Version 7.2 - Miliastra Shop Elite Cosmetics",
+          "time": "2026-10-27T04:00:04Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47209123",
+          "title": "Version 7.2 - Chronicles/Epic of the Realms Elite Cosmetics",
+          "time": "2026-10-26T06:00:01Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47208256",
+          "title": "Version 7.2 - Event Ode Legendary Cosmetics",
+          "time": "2026-10-26T04:00:04Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47185414",
+          "title": "\"Overflowing Favor\" Event: Double Drops With Artifacts",
+          "time": "2026-10-24T04:00:06Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47177975",
+          "title": "Version 7.2 Event Calendar",
+          "time": "2026-10-23T13:35:05Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47176929",
+          "title": "The \"Miliastra Wonderland Creator Contest: Moments to Treasure\" Event Is Coming Soon",
+          "time": "2026-10-23T12:55:02Z",
+          "kind": "Info"
+        }
+      ]
+    },
+    "hsr": {
+      "versions": [
+        {
+          "label": "4.7",
+          "name": "Now, Lay Laughter to All Stars",
+          "post": "47210911"
+        },
+        {
+          "label": "1.3",
+          "start": "2023-08-29T22:00:00Z",
+          "post": "21195657",
+          "name": "Celestial Eyes Above Mortal Ruins"
+        },
+        {
+          "label": "3.6",
+          "name": "Back to Earth in Evernight",
+          "post": "40956279",
+          "start": "2025-09-23T22:00:00Z"
+        },
+        {
+          "label": "3.7",
+          "name": "As Tomorrow Became Yesterday",
+          "post": "41851609",
+          "start": "2025-11-04T22:00:00Z"
+        },
+        {
+          "label": "3.8",
+          "name": "Memories are the Prelude to Dreams",
+          "post": "42567447",
+          "start": "2025-12-16T22:00:00Z"
+        },
+        {
+          "label": "4.0",
+          "name": "No Aha at Full Moon",
+          "post": "43583727",
+          "start": "2026-02-12T22:00:00Z",
+          "end": "2026-03-24T22:00:00Z"
+        },
+        {
+          "label": "4.1",
+          "name": "Unraveled for Daybreak",
+          "post": "44121213",
+          "start": "2026-03-24T22:00:00Z",
+          "end": "2026-04-21T22:00:00Z"
+        },
+        {
+          "label": "4.2",
+          "name": "So Laughed the Masses",
+          "post": "44517208",
+          "start": "2026-04-21T22:00:00Z"
+        },
+        {
+          "label": "4.3",
+          "name": "The Lethe Below the Living",
+          "post": "45079646",
+          "start": "2026-05-31T22:00:00Z",
+          "end": "2026-07-14T22:00:00Z"
+        },
+        {
+          "label": "4.4",
+          "name": "In Ravages Does the Whistle Sound",
+          "post": "45650870",
+          "start": "2026-07-14T22:00:00Z",
+          "end": "2026-08-25T22:00:00Z"
+        },
+        {
+          "label": "4.5",
+          "name": "To Roll the Stars in Astropolis",
+          "post": "46211816",
+          "start": "2026-08-25T22:00:00Z",
+          "end": "2026-09-27T22:00:00Z"
+        },
+        {
+          "label": "4.6",
+          "name": "Dance With the Beast Before Moonrise",
+          "post": "46691962",
+          "start": "2026-09-27T22:00:00Z",
+          "end": "2026-11-10T22:00:00Z"
+        }
+      ],
+      "livestreams": {
+        "2.0": {
+          "time": "2024-01-26T11:30:00Z",
+          "post": "24527335"
+        },
+        "2.1": {
+          "time": "2024-03-16T11:30:00Z",
+          "post": "25837715"
+        },
+        "2.3": {
+          "time": "2024-06-07T11:30:00Z",
+          "post": "29446450"
+        },
+        "3.3": {
+          "time": "2025-05-09T11:30:00Z",
+          "post": "38615920"
+        },
+        "3.4": {
+          "time": "2025-06-20T11:30:00Z",
+          "post": "39358088"
+        },
+        "3.6": {
+          "time": "2025-09-12T11:30:00Z",
+          "post": "40956279"
+        },
+        "3.7": {
+          "time": "2025-10-24T11:30:00Z",
+          "post": "41851609"
+        },
+        "3.8": {
+          "time": "2025-12-05T11:30:00Z",
+          "post": "42567447"
+        },
+        "4.0": {
+          "time": "2026-02-06T11:30:00Z",
+          "post": "43583727"
+        },
+        "4.1": {
+          "time": "2026-03-13T11:30:00Z",
+          "post": "44121213"
+        },
+        "4.2": {
+          "time": "2026-04-10T11:30:00Z",
+          "post": "44517208"
+        },
+        "4.3": {
+          "time": "2026-05-22T11:30:00Z",
+          "post": "45079646"
+        },
+        "4.4": {
+          "time": "2026-07-03T11:30:00Z",
+          "post": "45650870"
+        },
+        "4.5": {
+          "time": "2026-08-14T11:30:00Z",
+          "post": "46211816"
+        },
+        "4.6": {
+          "time": "2026-09-20T11:30:00Z",
+          "post": "46691962"
+        },
+        "4.7": {
+          "time": "2026-10-30T11:30:00Z",
+          "post": "47210911"
+        }
+      },
+      "mentions": {
+        "1.0": "2023-04-22T08:00:06Z",
+        "1.1": "2023-06-05T06:30:10Z",
+        "1.2": "2023-07-17T06:30:06Z",
+        "1.3": "2023-08-27T03:00:09Z",
+        "1.4": "2023-10-09T03:00:05Z",
+        "1.5": "2023-11-11T06:00:05Z",
+        "1.6": "2023-12-24T05:00:04Z",
+        "2.0": "2024-01-22T10:29:31Z",
+        "2.1": "2024-03-11T10:00:04Z",
+        "2.2": "2024-05-04T03:30:09Z",
+        "2.3": "2024-06-03T10:32:41Z",
+        "2.4": "2024-07-26T03:00:08Z",
+        "2.5": "2024-09-04T07:00:09Z",
+        "2.6": "2024-10-18T05:00:09Z",
+        "2.7": "2024-11-28T06:00:07Z",
+        "3.0": "2025-01-07T03:00:16Z",
+        "3.1": "2025-02-20T04:30:14Z",
+        "3.2": "2025-03-28T12:40:15Z",
+        "3.3": "2025-05-05T10:30:08Z",
+        "3.4": "2025-06-16T04:00:05Z",
+        "3.5": "2025-07-28T10:12:09Z",
+        "3.6": "2025-09-08T10:14:07Z",
+        "3.7": "2025-10-20T10:11:27Z",
+        "3.8": "2025-12-01T10:05:42Z",
+        "4.0": "2026-02-02T10:06:30Z",
+        "4.1": "2026-02-06T13:10:04Z",
+        "4.2": "2026-04-06T10:07:40Z",
+        "4.3": "2026-05-18T10:13:01Z",
+        "4.4": "2026-06-29T10:06:20Z",
+        "4.5": "2026-08-10T10:04:37Z",
+        "4.6": "2026-09-14T10:10:36Z",
+        "4.7": "2026-10-26T10:00:04Z"
+      },
+      "news": [
+        {
+          "id": "47218607",
+          "title": "Extraterrestrial Satellite Communication | Ellen",
+          "time": "2026-10-27T04:00:06Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47210911",
+          "title": "Honkai: Star Rail Version 4.7 \"Now, Lay Laughter to All Stars\" Special Program",
+          "time": "2026-10-26T10:00:04Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47208258",
+          "title": "\"The Laughter Outsmarts miHoYo\" Episode 6 | Retreat",
+          "time": "2026-10-26T04:00:07Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47197197",
+          "title": "You Are Cordially Invited to the Currency Wars Annual Awards Ceremony | Fun Data Review",
+          "time": "2026-10-25T04:00:06Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47172160",
+          "title": "Phantasmoon Games Season Recap | Express Crew Clearance Log",
+          "time": "2026-10-23T04:00:08Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47162014",
+          "title": "\"The Laughter Outsmarts miHoYo\" Episode 5 | Changing Fate",
+          "time": "2026-10-22T04:00:07Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47142215",
+          "title": "Version 4.6 Event Warp: Phase II",
+          "time": "2026-10-20T06:00:08Z",
+          "kind": "Notice"
+        },
+        {
+          "id": "47141115",
+          "title": "\"Interastral Peace Gala: One Take\": Complete the audition challenges to obtain rewards such as Tracks of Destiny and Stellar Jades!",
+          "time": "2026-10-20T03:00:05Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47109162",
+          "title": "\"The Laughter Outsmarts miHoYo\" Episode 4 | Meeting",
+          "time": "2026-10-17T04:00:07Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47055659",
+          "title": "\"The Laughter Outsmarts miHoYo\" Episode 3 | Training",
+          "time": "2026-10-12T04:00:06Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47043223",
+          "title": "Planar Fissure Event: Planar Ornaments Drop Rate Doubled for a Limited Time",
+          "time": "2026-10-11T03:00:03Z",
+          "kind": "Notice"
+        },
+        {
+          "id": "47030882",
+          "title": "New Honkai: Star Rail Merchandise Available on Amazon!",
+          "time": "2026-10-10T02:00:02Z",
+          "kind": "Info"
+        }
+      ]
+    },
+    "zzz": {
+      "versions": [
+        {
+          "label": "1.6",
+          "name": "Among the Forgotten Ruins",
+          "post": "37545678",
+          "start": "2025-03-11T22:00:00Z"
+        },
+        {
+          "label": "1.7",
+          "name": "Bury Your Tears With the Past",
+          "post": "38354513",
+          "start": "2025-04-22T22:00:00Z"
+        },
+        {
+          "label": "2.0",
+          "name": "Where Clouds Embrace the Dawn",
+          "post": "39122537",
+          "start": "2025-06-05T22:00:00Z"
+        },
+        {
+          "label": "2.1",
+          "name": "The Impending Crash of Waves",
+          "post": "39984559",
+          "start": "2025-07-15T22:00:00Z"
+        },
+        {
+          "label": "2.2",
+          "name": "Do Not Go Gentle Into That Good Night",
+          "post": "40634164",
+          "start": "2025-09-03T22:00:00Z"
+        },
+        {
+          "label": "2.3",
+          "name": "Memories of Dreams Bygone",
+          "post": "41364134",
+          "start": "2025-10-14T22:00:00Z"
+        },
+        {
+          "label": "2.4",
+          "name": "On the Precipice of the Abyss",
+          "post": "42300532",
+          "start": "2025-11-25T22:00:00Z"
+        },
+        {
+          "label": "2.5",
+          "name": "To Be Fuel for the Night",
+          "post": "42778534",
+          "start": "2025-12-29T22:00:00Z"
+        },
+        {
+          "label": "2.6",
+          "name": "Encore for an Old Dream",
+          "post": "43535384",
+          "start": "2026-02-05T22:00:00Z",
+          "end": "2026-03-23T22:00:00Z"
+        },
+        {
+          "label": "2.7",
+          "name": "Champions Never Fall to the Past",
+          "post": "44152516",
+          "start": "2026-03-23T22:00:00Z",
+          "end": "2026-05-05T22:00:00Z"
+        },
+        {
+          "label": "2.8",
+          "name": "New: Eridan Sunset",
+          "post": "44721142",
+          "start": "2026-05-05T22:00:00Z",
+          "end": "2026-06-16T22:00:00Z"
+        },
+        {
+          "label": "3.0",
+          "name": "A Sleepwalker's Confession",
+          "post": "45287039",
+          "start": "2026-06-16T22:00:00Z",
+          "end": "2026-07-28T22:00:00Z"
+        },
+        {
+          "label": "3.1",
+          "name": "The Long Goodbye",
+          "post": "45832085",
+          "start": "2026-07-28T22:00:00Z",
+          "end": "2026-09-08T22:00:00Z"
+        },
+        {
+          "label": "3.2",
+          "name": "Their Secret Histories",
+          "post": "46427336",
+          "start": "2026-09-08T22:00:00Z",
+          "end": "2026-10-20T22:00:00Z"
+        },
+        {
+          "label": "3.3",
+          "name": "Journey to the Sky",
+          "post": "46972907",
+          "start": "2026-10-20T22:00:00Z",
+          "end": "2026-12-01T22:00:00Z"
+        }
+      ],
+      "livestreams": {
+        "2.2": {
+          "time": "2025-08-22T11:30:00Z",
+          "post": "40634164"
+        },
+        "2.3": {
+          "time": "2025-09-29T11:30:00Z",
+          "post": "41364134"
+        },
+        "2.4": {
+          "time": "2025-11-14T11:30:00Z",
+          "post": "42300532"
+        },
+        "2.5": {
+          "time": "2025-12-19T11:30:00Z",
+          "post": "42778534"
+        },
+        "2.7": {
+          "time": "2026-03-14T11:30:00Z",
+          "post": "44152516"
+        },
+        "2.8": {
+          "time": "2026-04-24T11:30:00Z",
+          "post": "44721142"
+        },
+        "3.0": {
+          "time": "2026-06-06T11:30:00Z",
+          "post": "45287039"
+        },
+        "3.1": {
+          "time": "2026-07-17T11:30:00Z",
+          "post": "45832085"
+        },
+        "3.2": {
+          "time": "2026-08-28T11:30:00Z",
+          "post": "46427336"
+        },
+        "3.3": {
+          "time": "2026-10-09T11:30:00Z",
+          "post": "46972907"
+        }
+      },
+      "mentions": {
+        "1.0": "2024-06-20T10:42:08Z",
+        "1.1": "2024-08-12T04:00:18Z",
+        "1.2": "2024-09-23T04:00:12Z",
+        "1.3": "2024-11-04T04:00:16Z",
+        "1.4": "2024-12-16T04:00:17Z",
+        "1.5": "2025-01-15T13:05:14Z",
+        "1.6": "2025-03-10T04:00:23Z",
+        "1.7": "2025-04-21T04:00:22Z",
+        "2.0": "2025-06-02T10:10:05Z",
+        "2.1": "2025-07-14T04:00:05Z",
+        "2.2": "2025-08-20T04:00:05Z",
+        "2.3": "2025-09-26T10:00:05Z",
+        "2.4": "2025-11-12T04:00:03Z",
+        "2.5": "2025-12-15T04:15:04Z",
+        "2.6": "2026-01-30T12:20:05Z",
+        "2.7": "2026-03-12T04:00:08Z",
+        "2.8": "2026-04-20T04:00:04Z",
+        "3.0": "2026-06-01T04:00:03Z",
+        "3.1": "2026-07-13T04:00:05Z",
+        "3.2": "2026-08-24T04:00:06Z",
+        "3.3": "2026-10-05T04:00:03Z"
+      },
+      "news": [
+        {
+          "id": "47208493",
+          "title": "\"Cyber Miracle Healer, on Duty!\" Event Details",
+          "time": "2026-10-26T04:30:07Z",
+          "kind": "Notice"
+        },
+        {
+          "id": "47197199",
+          "title": "Enemy Dossier 丨 Etheric Other - Truvia",
+          "time": "2026-10-25T04:00:07Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47185774",
+          "title": "Agent Record | Robin",
+          "time": "2026-10-24T04:35:05Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47185723",
+          "title": "Agent Record | Robin",
+          "time": "2026-10-24T04:30:07Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47185643",
+          "title": "Agent Record | Kafka",
+          "time": "2026-10-24T04:20:05Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47185592",
+          "title": "Agent Record | Kafka",
+          "time": "2026-10-24T04:15:08Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47185415",
+          "title": "Preview Showcase - Sunbringer 丨 Zenless Zone Zero",
+          "time": "2026-10-24T04:00:07Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47174033",
+          "title": "Lindverne Sunbringer",
+          "time": "2026-10-23T08:01:09Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47172488",
+          "title": "Zenless Zone Zero Version 3.3 Character Avatars",
+          "time": "2026-10-23T04:30:08Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47172217",
+          "title": "Agent Record | Sunbringer",
+          "time": "2026-10-23T04:05:04Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47172159",
+          "title": "Agent Record | Sunbringer",
+          "time": "2026-10-23T04:00:08Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47172014",
+          "title": "Eldreda Sunbringer",
+          "time": "2026-10-23T03:45:03Z",
+          "kind": "Info"
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-28T03:46:59Z"
+}
