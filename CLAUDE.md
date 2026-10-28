@@ -4,7 +4,7 @@ Tracks version updates for Genshin Impact, Honkai: Star Rail and Zenless Zone Ze
 
 - Repository: https://github.com/mentalplatypus/HoyoVersionTracker (public, branch `main`)
 - Live site: https://mentalplatypus.github.io/HoyoVersionTracker/ (GitHub Pages redeploys on every push to `main`)
-- Listed under "Ongoing projects" on the home page (`mentalplatypus/mentalplatypus.github.io`, branch `master`). Move it to "Finished projects" when David says it's done.
+- Listed under "Finished projects" on the home page (`mentalplatypus/mentalplatypus.github.io`, branch `master`), above Paper Arcade; David marked it finished on 2026-10-28. The data workflow keeps running.
 
 ## Files
 
