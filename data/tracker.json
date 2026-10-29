@@ -361,6 +361,18 @@
       },
       "news": [
         {
+          "id": "47240755",
+          "title": "Version 7.2: Paimon's Version Update Notes",
+          "time": "2026-10-29T10:00:04Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47238346",
+          "title": "Character Teaser - \"Mitya: Just a Little Trick\" | Genshin Impact",
+          "time": "2026-10-29T04:00:06Z",
+          "kind": "Info"
+        },
+        {
           "id": "47231296",
           "title": "Mitya's Flights of Fancy",
           "time": "2026-10-28T10:30:06Z",
@@ -418,18 +430,6 @@
           "id": "47218605",
           "title": "Version 7.2 - Miliastra Shop Elite Cosmetics",
           "time": "2026-10-27T04:00:04Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47209123",
-          "title": "Version 7.2 - Chronicles/Epic of the Realms Elite Cosmetics",
-          "time": "2026-10-26T06:00:01Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47208256",
-          "title": "Version 7.2 - Event Ode Legendary Cosmetics",
-          "time": "2026-10-26T04:00:04Z",
           "kind": "Info"
         }
       ]
@@ -616,6 +616,18 @@
       },
       "news": [
         {
+          "id": "47238347",
+          "title": "Myriad Celestia Trailer: Fables About the Stars Part 3 | Honkai: Star Rail",
+          "time": "2026-10-29T04:00:07Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47238004",
+          "title": "Garden of Plenty Event: Calyx Drop Rate Doubled for a Limited Time",
+          "time": "2026-10-29T03:00:06Z",
+          "kind": "Notice"
+        },
+        {
           "id": "47228524",
           "title": "Extraterrestrial Satellite Communication | Astra Yao",
           "time": "2026-10-28T04:00:08Z",
@@ -674,18 +686,6 @@
           "title": "\"The Laughter Outsmarts miHoYo\" Episode 4 | Meeting",
           "time": "2026-10-17T04:00:07Z",
           "kind": "Info"
-        },
-        {
-          "id": "47055659",
-          "title": "\"The Laughter Outsmarts miHoYo\" Episode 3 | Training",
-          "time": "2026-10-12T04:00:06Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47043223",
-          "title": "Planar Fissure Event: Planar Ornaments Drop Rate Doubled for a Limited Time",
-          "time": "2026-10-11T03:00:03Z",
-          "kind": "Notice"
         }
       ]
     },
@@ -856,6 +856,12 @@
       },
       "news": [
         {
+          "id": "47240756",
+          "title": "Wallpaper Sharing | Phoenix Themed Wallpapers",
+          "time": "2026-10-29T10:00:05Z",
+          "kind": "Info"
+        },
+        {
           "id": "47208493",
           "title": "\"Cyber Miracle Healer, on Duty!\" Event Details",
           "time": "2026-10-26T04:30:07Z",
@@ -920,15 +926,9 @@
           "title": "Agent Record | Sunbringer",
           "time": "2026-10-23T04:00:08Z",
           "kind": "Info"
-        },
-        {
-          "id": "47172014",
-          "title": "Eldreda Sunbringer",
-          "time": "2026-10-23T03:45:03Z",
-          "kind": "Info"
         }
       ]
     }
   },
-  "updated": "2026-10-28T13:06:36Z"
+  "updated": "2026-10-29T10:07:39Z"
 }
