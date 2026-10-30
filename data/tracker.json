@@ -361,6 +361,24 @@
       },
       "news": [
         {
+          "id": "47250717",
+          "title": "\"Genshin Impact Miliastra Wonderland\" Polyphonic Season Overview",
+          "time": "2026-10-30T10:00:05Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47247929",
+          "title": "Accept Mitya's Invitation for a Stroll?",
+          "time": "2026-10-30T04:00:04Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47247786",
+          "title": "Beware of Phishing Websites: Keep Your Account Secure",
+          "time": "2026-10-30T03:30:07Z",
+          "kind": "Notice"
+        },
+        {
           "id": "47240755",
           "title": "Version 7.2: Paimon's Version Update Notes",
           "time": "2026-10-29T10:00:04Z",
@@ -412,24 +430,6 @@
           "id": "47218990",
           "title": "Version 7.2 - Miliastra Shop Exceptional Cosmetics",
           "time": "2026-10-27T05:00:02Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47218674",
-          "title": "The Version 7.2 Event Calendar exclusive wallpaper is now available!",
-          "time": "2026-10-27T04:10:08Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47218636",
-          "title": "Character Skill Showcase — \"Rules Set at Naught\" Mitya",
-          "time": "2026-10-27T04:05:09Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47218605",
-          "title": "Version 7.2 - Miliastra Shop Elite Cosmetics",
-          "time": "2026-10-27T04:00:04Z",
           "kind": "Info"
         }
       ]
@@ -930,5 +930,5 @@
       ]
     }
   },
-  "updated": "2026-10-29T10:07:39Z"
+  "updated": "2026-10-30T10:09:32Z"
 }
