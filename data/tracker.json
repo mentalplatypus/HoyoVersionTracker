@@ -616,6 +616,66 @@
       },
       "news": [
         {
+          "id": "47252651",
+          "title": "Affinitive Eidolon Coming Soon!",
+          "time": "2026-10-30T12:55:05Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47252649",
+          "title": "Version 4.7 Store Update",
+          "time": "2026-10-30T12:55:04Z",
+          "kind": "Notice"
+        },
+        {
+          "id": "47252512",
+          "title": "Star Lotto | Aeon ★ Aha's New Outfit",
+          "time": "2026-10-30T12:45:10Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47252509",
+          "title": "\"Cosmic Aesthetics: Phantasia Showstage\" Outfit Draw Event Details",
+          "time": "2026-10-30T12:45:07Z",
+          "kind": "Notice"
+        },
+        {
+          "id": "47252376",
+          "title": "Version 4.7 \"Now, Lay Laughter to All Stars\" Highlights Page Is Now Online",
+          "time": "2026-10-30T12:35:07Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47252283",
+          "title": "\"Currency Wars: Voyage Into the Canvas\" Highlights Page Is Now Live",
+          "time": "2026-10-30T12:30:07Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47252183",
+          "title": "A Brief on the Version 4.7 Special Program",
+          "time": "2026-10-30T12:25:09Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47252073",
+          "title": "Version 4.7 Bonuses Available!",
+          "time": "2026-10-30T12:20:08Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47252072",
+          "title": "\"Grab Your Opening Gifts\" Event Details",
+          "time": "2026-10-30T12:20:07Z",
+          "kind": "Notice"
+        },
+        {
+          "id": "47252000",
+          "title": "Version 4.7 Trailer: \"Now, Lay Laughter to All Stars\" | Honkai: Star Rail",
+          "time": "2026-10-30T12:15:07Z",
+          "kind": "Info"
+        },
+        {
           "id": "47238347",
           "title": "Myriad Celestia Trailer: Fables About the Stars Part 3 | Honkai: Star Rail",
           "time": "2026-10-29T04:00:07Z",
@@ -626,66 +686,6 @@
           "title": "Garden of Plenty Event: Calyx Drop Rate Doubled for a Limited Time",
           "time": "2026-10-29T03:00:06Z",
           "kind": "Notice"
-        },
-        {
-          "id": "47228524",
-          "title": "Extraterrestrial Satellite Communication | Astra Yao",
-          "time": "2026-10-28T04:00:08Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47218607",
-          "title": "Extraterrestrial Satellite Communication | Ellen",
-          "time": "2026-10-27T04:00:06Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47210911",
-          "title": "Honkai: Star Rail Version 4.7 \"Now, Lay Laughter to All Stars\" Special Program",
-          "time": "2026-10-26T10:00:04Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47208258",
-          "title": "\"The Laughter Outsmarts miHoYo\" Episode 6 | Retreat",
-          "time": "2026-10-26T04:00:07Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47197197",
-          "title": "You Are Cordially Invited to the Currency Wars Annual Awards Ceremony | Fun Data Review",
-          "time": "2026-10-25T04:00:06Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47172160",
-          "title": "Phantasmoon Games Season Recap | Express Crew Clearance Log",
-          "time": "2026-10-23T04:00:08Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47162014",
-          "title": "\"The Laughter Outsmarts miHoYo\" Episode 5 | Changing Fate",
-          "time": "2026-10-22T04:00:07Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47142215",
-          "title": "Version 4.6 Event Warp: Phase II",
-          "time": "2026-10-20T06:00:08Z",
-          "kind": "Notice"
-        },
-        {
-          "id": "47141115",
-          "title": "\"Interastral Peace Gala: One Take\": Complete the audition challenges to obtain rewards such as Tracks of Destiny and Stellar Jades!",
-          "time": "2026-10-20T03:00:05Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47109162",
-          "title": "\"The Laughter Outsmarts miHoYo\" Episode 4 | Meeting",
-          "time": "2026-10-17T04:00:07Z",
-          "kind": "Info"
         }
       ]
     },
@@ -930,5 +930,5 @@
       ]
     }
   },
-  "updated": "2026-10-30T10:09:32Z"
+  "updated": "2026-10-30T18:04:34Z"
 }
