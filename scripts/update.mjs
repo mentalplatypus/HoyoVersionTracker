@@ -10,10 +10,15 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 
 const GAMES = [
-  { key: "genshin", gid: 2 },
-  { key: "hsr", gid: 6 },
-  { key: "zzz", gid: 8 },
+  { key: "genshin", gid: 2, codes: "genshin" },
+  { key: "hsr", gid: 6, codes: "hkrpg" },
+  { key: "zzz", gid: 8, codes: "nap" },
 ];
+// Working redeem codes: hoyo-codes (github.com/seriaati/hoyo-codes) gathers them from HoYoLAB and fan sites and
+// checks each one by redeeming it, so expired codes drop off. HoYoLAB's own guide module carries the official
+// livestream codes while a special program is on.
+const CODES_API = "https://hoyo-codes.seria.moe/codes?game=";
+const MATERIAL = "https://bbs-api-os.hoyolab.com/community/painter/wapi/circle/channel/guide/material?game_id=";
 const API = "https://bbs-api-os.hoyolab.com/community/post/wapi";
 const HEADERS = { "x-rpc-language": "en-us", "User-Agent": "HoyoVersionTracker (github.com/mentalplatypus/HoyoVersionTracker)" };
 const DATA = new URL("../data/tracker.json", import.meta.url);
@@ -87,6 +92,42 @@ async function postText(id) {
   try { text = JSON.parse(post.structured_content).map(op => typeof op.insert === "string" ? op.insert : " ").join(""); } catch {}
   if (text.trim().length < 40) text = post.content.replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&");
   return text.replace(/\s+/g, " ");
+}
+
+// "Primogem*60;Mora*20000" → "Primogem ×60, Mora ×20,000"; prose rewards are kept as written
+const rewardsText = raw => (raw || "").includes("*")
+  ? raw.split(";").map(r => r.trim()).filter(Boolean).map(r => { const [item, n] = r.split("*"); return `${item.trim()} ×${Number(n.replace(/,/g, "")).toLocaleString("en-US")}`; }).join(", ")
+  : (raw || "").replace(/^\w/, c => c.toUpperCase());
+
+// Codes that work now, keeping when each was first seen. A code first seen within two days after a livestream,
+// or listed in HoYoLAB's guide module, is marked as that livestream's code (those usually expire within a day).
+async function codes(game, g, firstRun) {
+  const res = await fetch(CODES_API + game.codes, { headers: HEADERS });
+  if (!res.ok) throw new Error(`codes HTTP ${res.status}`);
+  const list = (await res.json()).codes.filter(c => c.status === "OK");
+  let official = [];
+  try {
+    const material = await getJSON(MATERIAL + game.gid);
+    official = (material.modules || []).flatMap(m => m.exchange_group?.bonuses || []).map(b => b.exchange_code?.trim()).filter(Boolean);
+  } catch (err) { console.error(`${game.key}: HoYoLAB guide module: ${err.message}`); }
+  const before = Object.fromEntries((g.codes || []).map(c => [c.code, c]));
+  const now = new Date().toISOString().replace(/\.\d+Z$/, "Z");
+  const streams = Object.entries(g.livestreams);
+  const found = [...new Set([...list.map(c => c.code), ...official])];
+  return found.map(code => {
+    const old = before[code], from = list.find(c => c.code === code);
+    const c = { code, rewards: rewardsText(from?.rewards) || old?.rewards || "", seen: old?.seen || now };
+    let label = old?.livestream;
+    // livestream codes give exactly 100 of the premium currency, which also identifies them on a first run
+    const hundred = /(primogems?|stellar jade|polychromes?)\s*[x×]\s*100\b|\b100 (primogems?|stellar jade|polychromes?)/i.test(c.rewards);
+    if (!label && (!firstRun || hundred)) {
+      const t = Date.parse(c.seen);
+      label = streams.find(([, s]) => t >= Date.parse(s.time) - 2 * 3600e3 && t <= Date.parse(s.time) + 48 * 3600e3)?.[0];
+    }
+    if (!label && official.includes(code)) label = streams.at(-1)?.[0];
+    if (label) c.livestream = label;
+    return c;
+  }).sort((a, b) => b.seen.localeCompare(a.seen) || a.code.localeCompare(b.code));
 }
 
 const versionOf = title => title.match(VERSION)?.[1].replace(/^luna/i, "Luna");
@@ -170,7 +211,8 @@ for (const game of GAMES) {
   g.versions.sort((a, b) => (a.start || "~").localeCompare(b.start || "~"));
   g.news = posts.sort((a, b) => b.time - a.time).slice(0, 12)
     .map(p => ({ id: p.id, title: p.title, time: new Date(p.time * 1000).toISOString().replace(".000Z", "Z"), kind: p.type === 1 ? "Notice" : "Info" }));
-  console.log(`${game.key}: ${g.versions.length} versions, latest ${g.versions.at(-1)?.label}`);
+  try { g.codes = await codes(game, g, !g.codes); } catch (err) { console.error(`${game.key}: couldn't read codes, keeping old ones. ${err.message}`); }
+  console.log(`${game.key}: ${g.versions.length} versions, latest ${g.versions.at(-1)?.label}; ${g.codes?.length ?? 0} codes`);
 }
 
 if (failures === GAMES.length) process.exit(1);

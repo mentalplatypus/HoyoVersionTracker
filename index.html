@@ -129,6 +129,19 @@
   .news a:hover .title { color: var(--accent); }
   .news .t { display: block; font-size: 0.72rem; color: var(--ink-soft); margin-top: 2px; }
 
+  /* redeem codes: a card per game, one row per code with copy and redeem buttons */
+  .codes { list-style: none; margin: 0; padding: 0; }
+  .codes li { padding: 12px 0; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px; }
+  .codes li:first-child { border-top: 0; padding-top: 4px; }
+  .codes .top { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .codes b { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 1rem; font-weight: 700; letter-spacing: 0.04em; overflow-wrap: anywhere; }
+  .codes p { margin: 0; font-size: 0.8rem; line-height: 1.45; color: var(--ink-soft); }
+  .codes .btns { display: flex; gap: 6px; }
+  .codes .btns > * { font: 600 0.74rem var(--font-body); color: var(--ink); background: var(--surface); padding: 5px 11px; border: 1px solid var(--line); border-radius: 99px; cursor: pointer; text-decoration: none; }
+  .codes .btns > *:hover { border-color: var(--accent); color: var(--accent); }
+  .chip.live { color: var(--apple); background: color-mix(in srgb, var(--apple) 14%, transparent); margin-left: 0; }
+  .codes-note { margin: 0; font-size: 0.78rem; color: var(--ink-soft); line-height: 1.5; }
+
   /* timeline: one row per game, a bar per version, dashed bars are estimates */
   .timeline svg { display: block; width: 100%; height: auto; }
   .legend { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 12px 0 0; padding: 0; list-style: none; font-size: 0.78rem; color: var(--ink-soft); }
@@ -209,6 +222,11 @@
     <div class="games" id="games"></div>
   </section>
 
+  <section aria-labelledby="codes-h">
+    <h2 id="codes-h">Redeem codes <small>Codes that work right now</small></h2>
+    <div class="games" id="codes"></div>
+  </section>
+
   <section aria-labelledby="timeline-h" class="timeline">
     <h2 id="timeline-h">Timeline <small>Past five months and the next three</small></h2>
     <div class="card">
@@ -237,9 +255,9 @@
 <script>
   const DAY = 864e5, CYCLE = 42 * DAY;
   const GAMES = [
-    { key: "genshin", name: "Genshin Impact", accent: "--leaf" },
-    { key: "hsr", name: "Honkai: Star Rail", accent: "--pen" },
-    { key: "zzz", name: "Zenless Zone Zero", accent: "--win" },
+    { key: "genshin", name: "Genshin Impact", accent: "--leaf", redeem: "https://genshin.hoyoverse.com/en/gift?code=" },
+    { key: "hsr", name: "Honkai: Star Rail", accent: "--pen", redeem: "https://hsr.hoyoverse.com/gift?code=" },
+    { key: "zzz", name: "Zenless Zone Zero", accent: "--win", redeem: "https://zenless.hoyoverse.com/redemption?code=" },
   ];
   const $ = id => document.getElementById(id);
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -326,7 +344,7 @@
         ? `<div class="row"><span><b>Livestream</b><span class="t">Not announced yet</span></span></div>`
         : livestream.t > now
           ? `<div class="row"><span><b>Livestream</b><span class="t"><a href="${post(livestream.post)}">${when(livestream.t)}</a></span></span><span class="count">${until(livestream.t, now)}</span></div>`
-          : `<div class="row"><span><b>Livestream</b><span class="t"><a href="${post(livestream.post)}">Aired ${fmtDay.format(livestream.t)}</a></span></span></div>`;
+          : `<div class="row"><span><b>Livestream</b><span class="t"><a href="${post(livestream.post)}">Aired ${fmtDay.format(livestream.t)}</a>${streamCodes(g, next.label)}</span></span></div>`;
       return `
       <article class="card game" style="--accent: var(${game.accent})">
         <h3>${game.name}</h3>
@@ -353,6 +371,24 @@
       </article>`;
     }).join("");
 
+    // redeem codes, livestream codes first since they expire soonest
+    $("codes").innerHTML = plans.map(({ game, g }) => {
+      const list = (g.codes || []).slice().sort((a, b) => Boolean(b.livestream) - Boolean(a.livestream) || b.seen.localeCompare(a.seen));
+      const live = list.filter(c => c.livestream);
+      return `
+      <article class="card game" style="--accent: var(${game.accent})">
+        <h3>${game.name}</h3>
+        ${live.length ? `<p class="codes-note">Livestream codes usually stop working about a day after the stream, so redeem them soon.</p>` : ""}
+        ${list.length ? `<ul class="codes">${list.map(c => `
+          <li>
+            <div class="top"><b>${esc(c.code)}</b>
+              <span class="btns"><button type="button" data-copy="${esc(c.code)}">Copy</button><a href="${game.redeem}${encodeURIComponent(c.code)}" target="_blank" rel="noopener">Redeem</a></span></div>
+            ${c.rewards ? `<p>${esc(c.rewards)}</p>` : ""}
+            ${c.livestream ? `<span><span class="chip live">${esc(c.livestream)} livestream</span></span>` : ""}
+          </li>`).join("")}</ul>` : `<p class="codes-note">No working codes right now.</p>`}
+      </article>`;
+    }).join("");
+
     drawTimeline(plans, now);
 
     $("history").innerHTML = plans.map(({ game, vs }) => {
@@ -361,6 +397,12 @@
       return `<div class="card" style="--accent: var(${game.accent})"><h3>${game.name}</h3>${table(rows.slice(0, 8))}` +
         (rows.length > 8 ? `<details><summary>Show ${rows.length - 8} older versions</summary>${table(rows.slice(8))}</details>` : "") + `</div>`;
     }).join("");
+  }
+
+  // " · 3 codes", linking to the codes section, while a livestream's codes still work
+  function streamCodes(g, label) {
+    const n = (g.codes || []).filter(c => c.livestream === label).length;
+    return n ? ` · <a href="#codes-h">${n} code${n > 1 ? "s" : ""}</a>` : "";
   }
 
   function drawTimeline(plans, now) {
@@ -438,4 +480,9 @@
       $("games").innerHTML = `<p class="error">Couldn't load the version data. Try refreshing the page.</p>`;
     });
   $("ics").addEventListener("click", () => window.upcoming && ics(window.upcoming));
+  $("codes").addEventListener("click", e => {
+    const b = e.target.closest("[data-copy]");
+    if (!b) return;
+    navigator.clipboard.writeText(b.dataset.copy).then(() => { b.textContent = "Copied"; setTimeout(() => { b.textContent = "Copy"; }, 1500); });
+  });
 </script>

@@ -432,6 +432,58 @@
           "time": "2026-10-27T05:00:02Z",
           "kind": "Info"
         }
+      ],
+      "codes": [
+        {
+          "code": "6LS3F3LS5K87",
+          "rewards": "Primogem ×20, Geode of Replication ×160",
+          "seen": "2026-10-31T02:03:48Z"
+        },
+        {
+          "code": "DATG5HG1PL89",
+          "rewards": "Mora ×10,000, Adventurer's Experience ×10, Fine Enhancement Ore ×5, Stir-Fried Fish Noodles ×5, Jueyun Chili Chicken ×5",
+          "seen": "2026-10-31T02:03:48Z"
+        },
+        {
+          "code": "EPIC2026",
+          "rewards": "40 primogems, five hero's wit, and 20k mora",
+          "seen": "2026-10-31T02:03:48Z"
+        },
+        {
+          "code": "NEEI8A8341OW",
+          "rewards": "",
+          "seen": "2026-10-31T02:03:48Z"
+        },
+        {
+          "code": "NEEIJB764CA3",
+          "rewards": "Primogem ×60",
+          "seen": "2026-10-31T02:03:48Z"
+        },
+        {
+          "code": "OKTCV81F9H8D",
+          "rewards": "Mora ×10,000, Adventurer's Experience ×10, Fine Enhancement Ore ×5, Stir-Fried Fish Noodles ×5, Jueyun Chili Chicken ×5",
+          "seen": "2026-10-31T02:03:48Z"
+        },
+        {
+          "code": "OPERACOLLAB",
+          "rewards": "Primogem ×30, Mora ×20,000, Hero's Wit ×2",
+          "seen": "2026-10-31T02:03:48Z"
+        },
+        {
+          "code": "PJ2KEBRAYSRM",
+          "rewards": "Primogem ×60, Adventurer's Experience ×5",
+          "seen": "2026-10-31T02:03:48Z"
+        },
+        {
+          "code": "PNKZ3WLNN8G6",
+          "rewards": "Teachings of Charity ×5, Teachings of Fortitude ×5, Teachings of Glory ×5",
+          "seen": "2026-10-31T02:03:48Z"
+        },
+        {
+          "code": "Y6JYMKV6JKSL",
+          "rewards": "Primogem ×60, Adventurer's Experience ×5",
+          "seen": "2026-10-31T02:03:48Z"
+        }
       ]
     },
     "hsr": {
@@ -616,6 +668,12 @@
       },
       "news": [
         {
+          "id": "47259176",
+          "title": "Stellar Journey Diary | Let's prepare a little prank~",
+          "time": "2026-10-31T02:00:07Z",
+          "kind": "Info"
+        },
+        {
           "id": "47252651",
           "title": "Affinitive Eidolon Coming Soon!",
           "time": "2026-10-30T12:55:05Z",
@@ -680,12 +738,76 @@
           "title": "Myriad Celestia Trailer: Fables About the Stars Part 3 | Honkai: Star Rail",
           "time": "2026-10-29T04:00:07Z",
           "kind": "Info"
+        }
+      ],
+      "codes": [
+        {
+          "code": "4TKSX77Y58QK",
+          "rewards": "30 stellar jade, three traveler’s guides, five condensed aether, four lost gold fragments, and 20k credits",
+          "seen": "2026-10-31T02:03:50Z"
         },
         {
-          "id": "47238004",
-          "title": "Garden of Plenty Event: Calyx Drop Rate Doubled for a Limited Time",
-          "time": "2026-10-29T03:00:06Z",
-          "kind": "Notice"
+          "code": "5S6ZHRWTDNJB",
+          "rewards": "60 stellar jade",
+          "seen": "2026-10-31T02:03:50Z"
+        },
+        {
+          "code": "AHABLESSYOU",
+          "rewards": "Stellar Jade x100, Refined Aether x4",
+          "seen": "2026-10-31T02:03:50Z",
+          "livestream": "4.7"
+        },
+        {
+          "code": "CREATIONNYMPH",
+          "rewards": "60 stellar jade and one fuel",
+          "seen": "2026-10-31T02:03:50Z"
+        },
+        {
+          "code": "CTK5DRQVT48F",
+          "rewards": "",
+          "seen": "2026-10-31T02:03:50Z"
+        },
+        {
+          "code": "DSLSPNBREASP",
+          "rewards": "50 stellar jade and 10k credits",
+          "seen": "2026-10-31T02:03:50Z"
+        },
+        {
+          "code": "FAREWELL",
+          "rewards": "60 stellar jade and one fuel",
+          "seen": "2026-10-31T02:03:50Z"
+        },
+        {
+          "code": "IFYOUAREREADINGTHIS",
+          "rewards": "60 stellar jade and one fuel",
+          "seen": "2026-10-31T02:03:50Z"
+        },
+        {
+          "code": "NEVERGONNAGIVE",
+          "rewards": "Stellar Jade x100, Credit x50000",
+          "seen": "2026-10-31T02:03:50Z",
+          "livestream": "4.7"
+        },
+        {
+          "code": "NEVERGONNAMAKE",
+          "rewards": "Stellar Jade x100, Traveler's Guide x5",
+          "seen": "2026-10-31T02:03:50Z",
+          "livestream": "4.7"
+        },
+        {
+          "code": "OMEGA",
+          "rewards": "60 stellar jade and one fuel",
+          "seen": "2026-10-31T02:03:50Z"
+        },
+        {
+          "code": "PEARLAPPRAISE",
+          "rewards": "Three traveler's guides and two cold jokes",
+          "seen": "2026-10-31T02:03:50Z"
+        },
+        {
+          "code": "STARRAILGIFT",
+          "rewards": "50 stellar jade, 10k credits, two traveler’s guides, and five bottled soda",
+          "seen": "2026-10-31T02:03:50Z"
         }
       ]
     },
@@ -927,8 +1049,30 @@
           "time": "2026-10-23T04:00:08Z",
           "kind": "Info"
         }
+      ],
+      "codes": [
+        {
+          "code": "HOLLOWRUN33",
+          "rewards": "Polychrome ×20, Denny ×2,222",
+          "seen": "2026-10-31T02:03:52Z"
+        },
+        {
+          "code": "INKSHIFT33",
+          "rewards": "Polychrome ×20, Denny ×2,222",
+          "seen": "2026-10-31T02:03:52Z"
+        },
+        {
+          "code": "LEVELUP33",
+          "rewards": "Polychrome ×20, Denny ×2,222",
+          "seen": "2026-10-31T02:03:52Z"
+        },
+        {
+          "code": "ZENLESSGIFT",
+          "rewards": "50 polychrome, two official investigator logs, three w-engine power supplies, and one bangboo algorithm module",
+          "seen": "2026-10-31T02:03:52Z"
+        }
       ]
     }
   },
-  "updated": "2026-10-30T18:04:34Z"
+  "updated": "2026-10-31T02:03:52Z"
 }

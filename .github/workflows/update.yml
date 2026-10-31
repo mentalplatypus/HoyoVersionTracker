@@ -1,9 +1,10 @@
 name: Update tracker data
 
-# Every three hours, read the latest HoYoLAB announcements and commit data/ if anything changed.
+# Every hour, read the latest HoYoLAB announcements and redeem codes and commit data/ if anything changed.
+# Hourly because livestream codes only work for about a day.
 on:
   schedule:
-    - cron: "17 */3 * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:
