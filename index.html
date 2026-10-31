@@ -10,8 +10,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Inter:wght@400;500;600&display=swap">
 <style>
   /* Layout: header, "Coming up" list, one card per game, a timeline of versions, then version history.
-     Dusk theme, shared with the home page: a soft indigo → lilac → peach gradient (night blue → violet → plum in dark mode)
-     with translucent rounded cards. Each game has an accent: Genshin green, Star Rail blue, ZZZ yellow. */
+     Dusk theme colours and translucent rounded cards, shared with the home page, over an ink-wash mountain scene that
+     turns from day to night with the light/dark switch (drawn by the script after the switch). Each game has an accent:
+     Genshin green, Star Rail blue, ZZZ yellow. */
   :root {
     --bg-1: #eef0ff; --bg-2: #f6eefc; --bg-3: #fff1ea;
     --surface: rgba(255, 255, 255, 0.78);
@@ -48,14 +49,14 @@
     margin: 0;
     min-height: 100vh;
     background-color: var(--bg-1);
-    background-image: linear-gradient(160deg, var(--bg-1) 0%, var(--bg-2) 50%, var(--bg-3) 100%);
-    background-attachment: fixed;
     color: var(--ink);
     font-family: var(--font-body);
     padding-block: 56px;
     padding-left: max(16px, env(safe-area-inset-left, 0px));
     padding-right: max(16px, env(safe-area-inset-right, 0px));
   }
+  /* ink-wash backdrop behind everything; the page colour shows until it paints */
+  .scene { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; height: 100lvh; z-index: -1; pointer-events: none; display: block; }
   .wrap { max-width: 1040px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px; }
   a { color: inherit; }
   a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
@@ -198,6 +199,214 @@
     window.addEventListener("storage", function (e) { if (e.key === "theme" && (e.newValue === "light" || e.newValue === "dark")) apply(e.newValue); });
     mq.addEventListener("change", paint);
     paint();
+  })();
+</script>
+
+<canvas class="scene" id="scene" aria-hidden="true"></canvas>
+<script>
+  // Ink-wash backdrop: layered mountain ridges in drifting mist under a sky that is rice paper by day (a pale red sun,
+  // petals on the wind) and indigo by night (moon, stars, fireflies, paper lanterns rising from behind the ridges).
+  // The light/dark switch plays dusk or dawn over 1.6 s: the sun sinks behind the ridges as the moon rises, the petals
+  // give way to fireflies and the lanterns light one by one (or go out in reverse). The ridges drift up at different
+  // speeds as the page scrolls. Drawn in code, no images. Still for reduced motion; paused in background tabs.
+  (() => {
+    "use strict";
+    const cv = document.getElementById("scene"), ctx = cv.getContext("2d"), root = document.documentElement;
+    const still = matchMedia("(prefers-reduced-motion: reduce)"), mq = matchMedia("(prefers-color-scheme: dark)");
+    const isDark = () => (root.dataset.theme || (mq.matches ? "dark" : "light")) === "dark";
+    const hex = (s) => [1, 3, 5].map((i) => parseInt(s.slice(i, i + 2), 16));
+    const mix = (a, b, t) => a.map((v, i) => v + (b[i] - v) * t);
+    const rgba = (c, a = 1) => `rgba(${c.map(Math.round).join(",")},${a})`;
+    const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+    const rand = (a, b) => a + Math.random() * (b - a);
+    const ease = (x) => (x < 0.5 ? 2 * x * x : 1 - (-2 * x + 2) ** 2 / 2);
+    // seeded, so the mountains have the same shape on every visit
+    let seed = 7;
+    const rnd = () => {
+      seed = (seed + 0x6d2b79f5) | 0;
+      let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+    // a craggy ridge line by midpoint displacement: 129 heights from 0 to 1
+    function ridge(rough) {
+      const n = 128, p = new Array(n + 1).fill(0);
+      p[0] = rnd(); p[n] = rnd();
+      for (let step = n, amp = 1; step > 1; step /= 2, amp *= rough)
+        for (let i = step / 2; i < n; i += step) p[i] = (p[i - step / 2] + p[i + step / 2]) / 2 + (rnd() - 0.5) * amp;
+      const lo = Math.min(...p), hi = Math.max(...p);
+      return p.map((v) => (v - lo) / (hi - lo));
+    }
+    // back to front: where each ridge's foot sits (fraction of the window height), how tall it is, how fast it drifts up
+    // on scroll, and its colour and opacity by day and by night. Kept pale by day so the text over them stays readable.
+    const LAYERS = [
+      { base: 0.5, amp: 0.24, par: 0.03, light: "#d3cfdf", dark: "#2b2952", la: 0.5, da: 0.85 },
+      { base: 0.6, amp: 0.2, par: 0.06, light: "#c2bed3", dark: "#221f45", la: 0.5, da: 0.9 },
+      { base: 0.7, amp: 0.17, par: 0.1, light: "#b1adc5", dark: "#191737", la: 0.52, da: 0.92 },
+      { base: 0.82, amp: 0.15, par: 0.15, light: "#a09cb6", dark: "#100e26", la: 0.55, da: 0.95 },
+    ].map((l, i) => ({ ...l, pts: ridge(0.52 + i * 0.03), light: hex(l.light), dark: hex(l.dark) }));
+    const SKY = { light: ["#f5f0e8", "#efe7ee"].map(hex), dark: ["#0a0c1f", "#241a35"].map(hex) };
+    const PETAL = [[240, 170, 190], [246, 200, 210], [232, 150, 175]];
+    // soft glows, drawn once and stamped: lantern light and firefly light
+    const glow = (c) => {
+      const s = document.createElement("canvas"), x = s.getContext("2d"), g = x.createRadialGradient(32, 32, 0, 32, 32, 32);
+      s.width = s.height = 64;
+      g.addColorStop(0, rgba(c, 1)); g.addColorStop(1, rgba(c, 0));
+      x.fillStyle = g; x.fillRect(0, 0, 64, 64);
+      return s;
+    };
+    const EMBER = glow([255, 170, 90]), FIREFLY = glow([240, 230, 140]);
+
+    let w = 0, h = 0, petals = [], flies = [], lanterns = [], stars = [];
+    let night = isDark() ? 1 : 0, from = night, to = night, t0 = 0, raf = 0, last = 0;
+    const DUR = 1600;
+
+    function populate() {
+      const area = clamp((w * h) / (1280 * 800), 0.35, 1.6), n = Math.round(clamp(w / 1280, 0.5, 1.2) * 9);
+      stars = Array.from({ length: Math.round(110 * area) }, () => ({ x: Math.random(), y: rand(0, 0.5), r: rand(0.6, 1.6), a: rand(0.4, 0.9), f: rand(0.5, 1.8), p: rand(0, 6.3) }));
+      petals = Array.from({ length: Math.round(16 * area) }, () => ({
+        x: rand(0, w), y: rand(0, h), vx: rand(18, 40), vy: rand(14, 30), a: rand(0, 6.3), spin: rand(-1.5, 1.5),
+        r: rand(3.5, 6), f: rand(1, 2.5), p: rand(0, 6.3), c: PETAL[Math.floor(rand(0, 3))],
+      }));
+      flies = Array.from({ length: Math.round(24 * area) }, () => ({ x: rand(0, w), y: rand(0.4, 1) * h, d: rand(0, 6.3), v: rand(8, 20), f: rand(0.8, 2), p: rand(0, 6.3), r: rand(1.2, 2.2) }));
+      // two in three are far away, small and behind the front ridge; each lights at its own point of the dusk
+      const order = Array.from({ length: n }, (_, i) => i).sort(() => Math.random() - 0.5);
+      lanterns = order.map((o, i) => {
+        const far = i % 3 !== 0, s = far ? rand(5, 8) : rand(9, 13);
+        return { x: rand(0.05, 0.95) * w, y: rand(0.2, 1.1) * h, s, far, k: 0.2 + (0.7 * o) / Math.max(1, n - 1), v: s * rand(0.9, 1.5), p: rand(0, 6.3) };
+      });
+    }
+
+    // mist pooling at the foot of a ridge: a faint band plus two wide wisps drifting sideways
+    function mist(L, i, off, sec, n) {
+      const y = (L.base + 0.03) * h + off, c = mix([255, 255, 255], [150, 140, 210], n), a = 0.5 - 0.4 * n, ry = h * 0.05, rx = w * 0.35;
+      const band = ctx.createLinearGradient(0, y - ry, 0, y + ry);
+      band.addColorStop(0, rgba(c, 0)); band.addColorStop(0.5, rgba(c, a * 0.6)); band.addColorStop(1, rgba(c, 0));
+      ctx.fillStyle = band; ctx.fillRect(0, y - ry, w, 2 * ry);
+      for (let k = 0; k < 2; k++) {
+        const x = ((((sec * (6 + i * 3) * (k ? 1 : -1)) / w + k * 0.5 + i * 0.3) % 1) + 1) % 1 * (w + 2 * rx) - rx;
+        ctx.save(); ctx.translate(x, y); ctx.scale(rx / ry, 1);
+        const g = ctx.createRadialGradient(0, 0, 0, 0, 0, ry);
+        g.addColorStop(0, rgba(c, a)); g.addColorStop(1, rgba(c, 0));
+        ctx.fillStyle = g; ctx.fillRect(-ry, -ry, 2 * ry, 2 * ry);
+        ctx.restore();
+      }
+    }
+
+    function drawLanterns(far, sec, dt, n) {
+      const vis = clamp(n * 1.6, 0, 1);
+      for (const L of lanterns) {
+        if (L.far !== far) continue;
+        L.y -= L.v * dt; L.x += Math.sin(sec * 0.5 + L.p) * 4 * dt;
+        if (L.y < -L.s * 5) { L.y = h + L.s * 5 + rand(0, h * 0.3); L.x = rand(0.05, 0.95) * w; }
+        if (vis <= 0) continue;
+        const s = L.s, lit = clamp((n - L.k) / 0.12, 0, 1) * (0.92 + 0.08 * Math.sin(sec * 9 + L.p * 3));
+        if (lit > 0) { ctx.globalAlpha = lit * 0.55 * vis; ctx.drawImage(EMBER, L.x - s * 5, L.y - s * 5, s * 10, s * 10); }
+        ctx.globalAlpha = vis;
+        ctx.fillStyle = rgba(mix([70, 45, 60], [255, 170, 95], lit));
+        ctx.beginPath(); ctx.roundRect(L.x - s / 2, L.y - s * 0.65, s, s * 1.3, s * 0.35); ctx.fill();
+        ctx.fillStyle = rgba(mix([40, 25, 35], [170, 60, 40], lit));
+        ctx.fillRect(L.x - s * 0.3, L.y - s * 0.72, s * 0.6, s * 0.14);
+        ctx.fillRect(L.x - s * 0.3, L.y + s * 0.58, s * 0.6, s * 0.14);
+      }
+      ctx.globalAlpha = 1;
+    }
+
+    function draw(t) {
+      const dt = last ? Math.min(0.05, (t - last) / 1000) : 0, sec = t / 1000;
+      last = t;
+      if (night !== to) { const p = clamp((t - t0) / DUR, 0, 1); night = p >= 1 ? to : from + (to - from) * ease(p); }
+      const n = night, day = 1 - n, se = document.scrollingElement;
+      const scroll = still.matches ? 0 : se.scrollTop / Math.max(1, se.scrollHeight - se.clientHeight);
+
+      const sky = ctx.createLinearGradient(0, 0, 0, h);
+      sky.addColorStop(0, rgba(mix(SKY.light[0], SKY.dark[0], n))); sky.addColorStop(1, rgba(mix(SKY.light[1], SKY.dark[1], n)));
+      ctx.fillStyle = sky; ctx.fillRect(0, 0, w, h);
+      if (n > 0.02) {
+        ctx.fillStyle = "#fff";
+        for (const s of stars) { ctx.globalAlpha = n * s.a * (0.6 + 0.4 * Math.sin(sec * s.f + s.p)); ctx.fillRect(s.x * w, s.y * h, s.r, s.r); }
+        ctx.globalAlpha = 1;
+      }
+      // the sun sinks behind the ridges as the moon rises from them; they sit in the side margins beside the content
+      // (1040px wide), or small in the top-right corner when there's no room, so they never sit behind the title
+      const lift = -scroll * h * 0.02, side = (w - 1040) / 2, r = Math.max(22, Math.min(w, h) * 0.045), roomy = side > r * 3;
+      const sx = roomy ? w - side / 2 : w * 0.86, mx = roomy ? side / 2 : w * 0.86, hy = roomy ? 0.2 : 0.1, rr = roomy ? r : 16;
+      if (day > 0.01) {
+        ctx.fillStyle = rgba([224, 113, 95], 0.55 * day);
+        ctx.beginPath(); ctx.arc(sx, h * (hy + 0.5 * n) + lift, rr, 0, 7); ctx.fill();
+      }
+      if (n > 0.01) {
+        const r = rr, my = h * (hy + 0.5 * day) + lift, g = ctx.createRadialGradient(mx, my, r * 0.8, mx, my, r * 5);
+        g.addColorStop(0, `rgba(200,195,255,${0.22 * n})`); g.addColorStop(1, "rgba(200,195,255,0)");
+        ctx.fillStyle = g; ctx.fillRect(0, 0, w, h);
+        ctx.fillStyle = `rgba(236,233,255,${0.9 * n})`;
+        ctx.beginPath(); ctx.arc(mx, my, r * 0.8, 0, 7); ctx.fill();
+      }
+      LAYERS.forEach((L, i) => {
+        const front = i === LAYERS.length - 1;
+        if (front) drawLanterns(true, sec, dt, n);
+        const off = -scroll * h * L.par, top = (L.base - L.amp) * h + off, c = mix(L.light, L.dark, n), a = L.la + (L.da - L.la) * n;
+        const f = ctx.createLinearGradient(0, top, 0, h);
+        f.addColorStop(0, rgba(c, a)); f.addColorStop(1, rgba(c, a * (0.35 + 0.65 * n))); // a misty foot by day
+        ctx.fillStyle = f;
+        ctx.beginPath(); ctx.moveTo(0, h);
+        L.pts.forEach((v, j) => ctx.lineTo((j / 128) * w, (L.base - v * L.amp) * h + off));
+        ctx.lineTo(w, h); ctx.closePath(); ctx.fill();
+        if (!front) mist(L, i, off, sec, n);
+      });
+      drawLanterns(false, sec, dt, n);
+
+      for (const p of petals) {
+        p.x += (p.vx + Math.sin(sec * 0.8 + p.p) * 12) * dt; p.y += p.vy * dt; p.a += p.spin * dt;
+        if (p.y > h + 10 || p.x > w + 10) {
+          if (Math.random() < w / (w + h)) { p.x = rand(-20, w); p.y = -10; } else { p.x = -10; p.y = rand(0, h); }
+        }
+        if (day <= 0.01) continue;
+        ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.a); ctx.scale(1, 0.35 + 0.65 * Math.abs(Math.sin(sec * p.f + p.p)));
+        ctx.fillStyle = rgba(p.c, 0.75 * day);
+        ctx.beginPath(); ctx.ellipse(0, 0, p.r, p.r * 0.6, 0, 0, 7); ctx.fill();
+        ctx.restore();
+      }
+      for (const f of flies) {
+        f.d += (Math.random() - 0.5) * 2 * dt;
+        f.x += Math.cos(f.d) * f.v * dt; f.y += Math.sin(f.d) * f.v * dt;
+        if (f.x < 0) f.x += w; else if (f.x > w) f.x -= w;
+        if (f.y < h * 0.35 || f.y > h) { f.d = -f.d; f.y = clamp(f.y, h * 0.35, h); }
+        const a = n * Math.max(0, Math.sin(sec * f.f + f.p));
+        if (a <= 0.01) continue;
+        ctx.globalAlpha = a * 0.5; ctx.drawImage(FIREFLY, f.x - 10, f.y - 10, 20, 20);
+        ctx.globalAlpha = a; ctx.fillStyle = "#faf0aa";
+        ctx.beginPath(); ctx.arc(f.x, f.y, f.r, 0, 7); ctx.fill();
+      }
+      ctx.globalAlpha = 1;
+    }
+
+    function loop(t) { draw(t); raf = document.hidden ? 0 : requestAnimationFrame(loop); }
+    function start() {
+      cancelAnimationFrame(raf); last = 0;
+      if (still.matches) { night = to; draw(performance.now()); } else raf = requestAnimationFrame(loop);
+    }
+    function size() {
+      const nw = cv.clientWidth, nh = cv.clientHeight;
+      if (nw === w && nh === h) return;
+      const reseed = nw !== w; // a phone's address bar only changes the height
+      w = cv.width = nw; h = cv.height = nh;
+      if (reseed) populate();
+      start();
+    }
+    // dusk or dawn, from wherever the scene is now (clicking twice mid-way turns it back)
+    function retheme() {
+      const d = isDark() ? 1 : 0;
+      if (d === to) return;
+      from = night; to = d; t0 = performance.now();
+      start();
+    }
+    addEventListener("resize", size);
+    addEventListener("themechange", retheme);
+    mq.addEventListener("change", retheme);
+    still.addEventListener("change", start);
+    document.addEventListener("visibilitychange", () => { if (!document.hidden) start(); });
+    size();
   })();
 </script>
 

@@ -1,8 +1,10 @@
 # HoYo Version Tracker
 
-Tracks version updates and redeem codes for Genshin Impact, Honkai: Star Rail and Zenless Zone Zero on one page. Uses the Dusk theme shared with the home page (see its CLAUDE.md): a soft gradient background, translucent rounded cards, Bricolage Grotesque headings and Inter text, in light and dark. Graph paper is reserved for Paper Arcade. Each game has an accent color: Genshin `--leaf`, Star Rail `--pen`, ZZZ `--win`.
+Tracks version updates and redeem codes for Genshin Impact, Honkai: Star Rail and Zenless Zone Zero on one page. Uses the Dusk theme colours shared with the home page (see its CLAUDE.md): translucent rounded cards, Bricolage Grotesque headings and Inter text, in light and dark. Graph paper is reserved for Paper Arcade. Each game has an accent color: Genshin `--leaf`, Star Rail `--pen`, ZZZ `--win`.
 
 Has the site-wide light/dark switch (top right; see the home page CLAUDE.md). The timeline redraws on the `themechange` event.
+
+**Ink-wash backdrop** (David, 2026-10-31; he wanted a background that changes with the light/dark switch, and every project gets its own): a fixed canvas (`#scene`, the script right after the switch) draws four seeded mountain ridges (same shape every visit) in drifting mist. Day (light mode): rice-paper sky, a pale red sun, petals on the wind, ridges kept pale so text over them stays readable. Night (dark mode): indigo sky, moon, stars, fireflies, and paper lanterns rising from behind the front ridge (two in three are far and behind it). The switch plays dusk or dawn over 1.6 s instead of jumping: the sun sinks behind the ridges as the moon rises, petals give way to fireflies, and each lantern lights at its own point of the dusk so they come on one by one (and go out in reverse). Clicking again mid-way turns it back from where it is. The sun and moon sit in the side margins beside the 1040px content, or small in the top-right corner when there is no room (so they never sit behind the title on phones). Ridges drift up at different speeds as the page scrolls. No images. Static (no transition, no parallax) for reduced motion; paused in background tabs.
 
 - Repository: https://github.com/mentalplatypus/HoyoVersionTracker (public, branch `main`)
 - Live site: https://mentalplatypus.github.io/HoyoVersionTracker/ (GitHub Pages redeploys on every push to `main`)
@@ -38,7 +40,7 @@ A version ends when the next starts, on its announced end date, or 42 days after
 
 ## Testing locally
 
-Node.js is installed (`C:/Program Files/nodejs`, since 2026-10-31; Python isn't). Use it to run the script and serve the folder over http (the page fetches JSON, so `file://` won't work). Check light and dark mode and about 375px width before pushing.
+Node.js is installed (`C:/Program Files/nodejs`, since 2026-10-31; Python isn't). Use it to run the script and serve the folder over http (the page fetches JSON, so `file://` won't work). Check light and dark mode (including the dusk/dawn transition when switching) and about 375px width before pushing.
 
 ## Git workflow (required)
 
