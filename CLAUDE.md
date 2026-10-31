@@ -38,7 +38,7 @@ A version ends when the next starts, on its announced end date, or 42 days after
 
 ## Testing locally
 
-Node and Python aren't installed on this machine; use a temporary portable Node in the scratchpad to run the script and serve the folder over http (the page fetches JSON, so `file://` won't work). Check light and dark mode and about 375px width before pushing.
+Node.js is installed (`C:/Program Files/nodejs`, since 2026-10-31; Python isn't). Use it to run the script and serve the folder over http (the page fetches JSON, so `file://` won't work). Check light and dark mode and about 375px width before pushing.
 
 ## Git workflow (required)
 
