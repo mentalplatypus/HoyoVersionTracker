@@ -361,6 +361,18 @@
       },
       "news": [
         {
+          "id": "47260080",
+          "title": "I hope I can help too... | Furina: The Latest",
+          "time": "2026-10-31T04:05:06Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47260024",
+          "title": "\"To Temper Thyself and Journey Far\": Rewards of Dedication",
+          "time": "2026-10-31T04:00:06Z",
+          "kind": "Info"
+        },
+        {
           "id": "47250717",
           "title": "\"Genshin Impact Miliastra Wonderland\" Polyphonic Season Overview",
           "time": "2026-10-30T10:00:05Z",
@@ -418,18 +430,6 @@
           "id": "47219694",
           "title": "Version 7.2 - Standard Ode Elite Cosmetics",
           "time": "2026-10-27T07:00:05Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47219349",
-          "title": "Version 7.2 - Event Ode Elite Cosmetics",
-          "time": "2026-10-27T06:00:03Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47218990",
-          "title": "Version 7.2 - Miliastra Shop Exceptional Cosmetics",
-          "time": "2026-10-27T05:00:02Z",
           "kind": "Info"
         }
       ],
@@ -744,12 +744,14 @@
         {
           "code": "4TKSX77Y58QK",
           "rewards": "30 stellar jade, three traveler’s guides, five condensed aether, four lost gold fragments, and 20k credits",
-          "seen": "2026-10-31T02:03:50Z"
+          "seen": "2026-10-31T02:03:50Z",
+          "livestream": "4.7"
         },
         {
           "code": "5S6ZHRWTDNJB",
           "rewards": "60 stellar jade",
-          "seen": "2026-10-31T02:03:50Z"
+          "seen": "2026-10-31T02:03:50Z",
+          "livestream": "4.7"
         },
         {
           "code": "AHABLESSYOU",
@@ -760,27 +762,32 @@
         {
           "code": "CREATIONNYMPH",
           "rewards": "60 stellar jade and one fuel",
-          "seen": "2026-10-31T02:03:50Z"
+          "seen": "2026-10-31T02:03:50Z",
+          "livestream": "4.7"
         },
         {
           "code": "CTK5DRQVT48F",
           "rewards": "",
-          "seen": "2026-10-31T02:03:50Z"
+          "seen": "2026-10-31T02:03:50Z",
+          "livestream": "4.7"
         },
         {
           "code": "DSLSPNBREASP",
           "rewards": "50 stellar jade and 10k credits",
-          "seen": "2026-10-31T02:03:50Z"
+          "seen": "2026-10-31T02:03:50Z",
+          "livestream": "4.7"
         },
         {
           "code": "FAREWELL",
           "rewards": "60 stellar jade and one fuel",
-          "seen": "2026-10-31T02:03:50Z"
+          "seen": "2026-10-31T02:03:50Z",
+          "livestream": "4.7"
         },
         {
           "code": "IFYOUAREREADINGTHIS",
           "rewards": "60 stellar jade and one fuel",
-          "seen": "2026-10-31T02:03:50Z"
+          "seen": "2026-10-31T02:03:50Z",
+          "livestream": "4.7"
         },
         {
           "code": "NEVERGONNAGIVE",
@@ -797,17 +804,20 @@
         {
           "code": "OMEGA",
           "rewards": "60 stellar jade and one fuel",
-          "seen": "2026-10-31T02:03:50Z"
+          "seen": "2026-10-31T02:03:50Z",
+          "livestream": "4.7"
         },
         {
           "code": "PEARLAPPRAISE",
           "rewards": "Three traveler's guides and two cold jokes",
-          "seen": "2026-10-31T02:03:50Z"
+          "seen": "2026-10-31T02:03:50Z",
+          "livestream": "4.7"
         },
         {
           "code": "STARRAILGIFT",
           "rewards": "50 stellar jade, 10k credits, two traveler’s guides, and five bottled soda",
-          "seen": "2026-10-31T02:03:50Z"
+          "seen": "2026-10-31T02:03:50Z",
+          "livestream": "4.7"
         }
       ]
     },
@@ -978,6 +988,18 @@
       },
       "news": [
         {
+          "id": "47260352",
+          "title": "Airspace Patrol Routine Investigation Records | The Beckford Street Anomaly",
+          "time": "2026-10-31T04:30:07Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47260187",
+          "title": "Happy Birthday, Phoenix 丨 Prevention is Better than Revival",
+          "time": "2026-10-31T04:15:08Z",
+          "kind": "Info"
+        },
+        {
           "id": "47240756",
           "title": "Wallpaper Sharing | Phoenix Themed Wallpapers",
           "time": "2026-10-29T10:00:05Z",
@@ -1036,18 +1058,6 @@
           "title": "Zenless Zone Zero Version 3.3 Character Avatars",
           "time": "2026-10-23T04:30:08Z",
           "kind": "Info"
-        },
-        {
-          "id": "47172217",
-          "title": "Agent Record | Sunbringer",
-          "time": "2026-10-23T04:05:04Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47172159",
-          "title": "Agent Record | Sunbringer",
-          "time": "2026-10-23T04:00:08Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -1074,5 +1084,5 @@
       ]
     }
   },
-  "updated": "2026-10-31T02:03:52Z"
+  "updated": "2026-10-31T08:28:49Z"
 }
