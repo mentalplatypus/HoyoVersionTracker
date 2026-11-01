@@ -361,6 +361,12 @@
       },
       "news": [
         {
+          "id": "47271766",
+          "title": "Into the Uncharted Reaches of Snezhnaya",
+          "time": "2026-11-01T04:00:04Z",
+          "kind": "Info"
+        },
+        {
           "id": "47260080",
           "title": "I hope I can help too... | Furina: The Latest",
           "time": "2026-10-31T04:05:06Z",
@@ -424,12 +430,6 @@
           "id": "47220086",
           "title": "Version 7.2 - \"Raiment Collection\" Event Elite Cosmetics",
           "time": "2026-10-27T08:00:02Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47219694",
-          "title": "Version 7.2 - Standard Ode Elite Cosmetics",
-          "time": "2026-10-27T07:00:05Z",
           "kind": "Info"
         }
       ],
@@ -658,6 +658,18 @@
       },
       "news": [
         {
+          "id": "47271769",
+          "title": "A brand-new season of \"Currency Wars: Voyage Into the Canvas\" is here!",
+          "time": "2026-11-01T04:00:05Z",
+          "kind": "Notice"
+        },
+        {
+          "id": "47271770",
+          "title": "A brand-new season of \"Currency Wars: Voyage Into the Canvas\" is here!",
+          "time": "2026-11-01T04:00:05Z",
+          "kind": "Info"
+        },
+        {
           "id": "47259176",
           "title": "Stellar Journey Diary | Let's prepare a little prank~",
           "time": "2026-10-31T02:00:07Z",
@@ -716,18 +728,6 @@
           "title": "\"Grab Your Opening Gifts\" Event Details",
           "time": "2026-10-30T12:20:07Z",
           "kind": "Notice"
-        },
-        {
-          "id": "47252000",
-          "title": "Version 4.7 Trailer: \"Now, Lay Laughter to All Stars\" | Honkai: Star Rail",
-          "time": "2026-10-30T12:15:07Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47238347",
-          "title": "Myriad Celestia Trailer: Fables About the Stars Part 3 | Honkai: Star Rail",
-          "time": "2026-10-29T04:00:07Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -960,6 +960,12 @@
       },
       "news": [
         {
+          "id": "47271767",
+          "title": "ZZZ Nov 2026 Calendar Wallpaper",
+          "time": "2026-11-01T04:00:04Z",
+          "kind": "Info"
+        },
+        {
           "id": "47260352",
           "title": "Airspace Patrol Routine Investigation Records | The Beckford Street Anomaly",
           "time": "2026-10-31T04:30:07Z",
@@ -1024,12 +1030,6 @@
           "title": "Lindverne Sunbringer",
           "time": "2026-10-23T08:01:09Z",
           "kind": "Info"
-        },
-        {
-          "id": "47172488",
-          "title": "Zenless Zone Zero Version 3.3 Character Avatars",
-          "time": "2026-10-23T04:30:08Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -1056,5 +1056,5 @@
       ]
     }
   },
-  "updated": "2026-10-31T20:00:31Z"
+  "updated": "2026-11-01T06:13:13Z"
 }
