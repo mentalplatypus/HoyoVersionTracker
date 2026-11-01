@@ -361,6 +361,12 @@
       },
       "news": [
         {
+          "id": "47275053",
+          "title": "\"The Grand Defense: Defy the Unjust Judgment\" Event Overview: Participate to Invite a 4-Star Character of Your Choice",
+          "time": "2026-11-01T10:00:08Z",
+          "kind": "Info"
+        },
+        {
           "id": "47271766",
           "title": "Into the Uncharted Reaches of Snezhnaya",
           "time": "2026-11-01T04:00:04Z",
@@ -424,12 +430,6 @@
           "id": "47228525",
           "title": "Character Introduction and Skill Showcase - \"Fort Fulguration\" Valeriy",
           "time": "2026-10-28T04:00:10Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47220086",
-          "title": "Version 7.2 - \"Raiment Collection\" Event Elite Cosmetics",
-          "time": "2026-10-27T08:00:02Z",
           "kind": "Info"
         }
       ],
@@ -1056,5 +1056,5 @@
       ]
     }
   },
-  "updated": "2026-11-01T06:13:13Z"
+  "updated": "2026-11-01T13:32:37Z"
 }
