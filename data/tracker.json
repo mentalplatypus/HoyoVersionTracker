@@ -362,6 +362,42 @@
       },
       "news": [
         {
+          "id": "47298708",
+          "title": "\"Polyphonic Season\" Season Opening Announcement",
+          "time": "2026-11-03T09:00:05Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47298205",
+          "title": "Take Part in \"Raiment Collection: Radiance Ablaze\" to Obtain an \"Tinker's Treasures\" Manekin Cosmetic Set of Your Choice",
+          "time": "2026-11-03T08:00:03Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47297954",
+          "title": "\"Wonderland Treasures: Frosty Court\" – New Manekin Cosmetics Now Available",
+          "time": "2026-11-03T07:30:06Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47297661",
+          "title": "\"Wonderland Treasures: Polyphonic Harmony\": New Manekin Cosmetics Now Available",
+          "time": "2026-11-03T07:00:06Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47296221",
+          "title": "The \"Miliastra Wonderland Creator Contest: Moments to Treasure\" Event Will Begin on November 4!",
+          "time": "2026-11-03T04:05:02Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47296173",
+          "title": "Character Trailer - \"Mitya: Everything's in Order\" | Genshin Impact",
+          "time": "2026-11-03T04:00:04Z",
+          "kind": "Info"
+        },
+        {
           "id": "47284233",
           "title": "\"Hour of Ruin\" Version 7.2 Events Overview - Phase I",
           "time": "2026-11-02T04:10:08Z",
@@ -395,42 +431,6 @@
           "id": "47284167",
           "title": "Complete the Archon Quest \"Hour of Ruin\" Within the Specified Duration to Obtain Additional Primogems, Character Ascension Materials, and Other Rewards",
           "time": "2026-11-02T04:00:06Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47284162",
-          "title": "\"Genius Invokation TCG\" The Forge Realm's Temper: Endless Swarm",
-          "time": "2026-11-02T04:00:06Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47284163",
-          "title": "Where Kristall Roots Run Deep: Complete the Exploration Missions Within the Specified Duration to Obtain an Additional Reward of Primogems ×400",
-          "time": "2026-11-02T04:00:06Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47284161",
-          "title": "Character Trailer - \"Valeriy: Order in Practice\" | Genshin Impact",
-          "time": "2026-11-02T04:00:05Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47283828",
-          "title": "Version 7.2 Update Maintenance Preview",
-          "time": "2026-11-02T03:10:05Z",
-          "kind": "Notice"
-        },
-        {
-          "id": "47275053",
-          "title": "\"The Grand Defense: Defy the Unjust Judgment\" Event Overview: Participate to Invite a 4-Star Character of Your Choice",
-          "time": "2026-11-01T10:00:08Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47271766",
-          "title": "Into the Uncharted Reaches of Snezhnaya",
-          "time": "2026-11-01T04:00:04Z",
           "kind": "Info"
         }
       ],
@@ -659,6 +659,12 @@
       },
       "news": [
         {
+          "id": "47296174",
+          "title": "Keeping Up With Star Rail — Aeon ★ Aha: Claiming to be an Aeon to Dodge Deadlines? | Honkai: Star Rail",
+          "time": "2026-11-03T04:00:05Z",
+          "kind": "Info"
+        },
+        {
           "id": "47271769",
           "title": "A brand-new season of \"Currency Wars: Voyage Into the Canvas\" is here!",
           "time": "2026-11-01T04:00:05Z",
@@ -723,12 +729,6 @@
           "title": "Version 4.7 Bonuses Available!",
           "time": "2026-10-30T12:20:08Z",
           "kind": "Info"
-        },
-        {
-          "id": "47252072",
-          "title": "\"Grab Your Opening Gifts\" Event Details",
-          "time": "2026-10-30T12:20:07Z",
-          "kind": "Notice"
         }
       ],
       "codes": [
@@ -961,6 +961,12 @@
       },
       "news": [
         {
+          "id": "47296176",
+          "title": "Happy Birthday Orphie & Magus 丨 Special Approval",
+          "time": "2026-11-03T04:00:05Z",
+          "kind": "Info"
+        },
+        {
           "id": "47284265",
           "title": "Happy Birthday, Yuzuha 丨 Golden Windfall",
           "time": "2026-11-02T04:15:08Z",
@@ -1025,12 +1031,6 @@
           "title": "Agent Record | Kafka",
           "time": "2026-10-24T04:20:05Z",
           "kind": "Info"
-        },
-        {
-          "id": "47185592",
-          "title": "Agent Record | Kafka",
-          "time": "2026-10-24T04:15:08Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -1057,5 +1057,5 @@
       ]
     }
   },
-  "updated": "2026-11-02T11:16:58Z"
+  "updated": "2026-11-03T10:56:51Z"
 }
