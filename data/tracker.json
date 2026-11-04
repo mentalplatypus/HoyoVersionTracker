@@ -362,6 +362,12 @@
       },
       "news": [
         {
+          "id": "47307203",
+          "title": "Version 7.2 - Editor and Miliastra Sandbox Update and Fix Notes",
+          "time": "2026-11-04T02:00:07Z",
+          "kind": "Info"
+        },
+        {
           "id": "47306125",
           "title": "\"Hour of Ruin\" Version 7.2 Update Details",
           "time": "2026-11-03T23:00:05Z",
@@ -426,15 +432,14 @@
           "title": "Repertoire of Myriad Melodies Update - Encounter: Interlude of the Long Journey",
           "time": "2026-11-02T04:00:06Z",
           "kind": "Info"
-        },
-        {
-          "id": "47284166",
-          "title": "\"The Grand Defense: Defy the Unjust Judgment\" Event: Participate to Invite a 4-Star Character of Your Choice",
-          "time": "2026-11-02T04:00:06Z",
-          "kind": "Info"
         }
       ],
       "codes": [
+        {
+          "code": "KEEPUPWITHMITYA",
+          "rewards": "",
+          "seen": "2026-11-04T06:30:49Z"
+        },
         {
           "code": "NEEI8A8341OW",
           "rewards": "",
@@ -644,6 +649,24 @@
       },
       "news": [
         {
+          "id": "47310096",
+          "title": "Light Cone Preview | Version 4.7 \"Now, Lay Laughter to All Stars\"",
+          "time": "2026-11-04T05:00:04Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47309012",
+          "title": "Improv Tour Trailer: \"When Aha Comes Knocking\" | Honkai: Star Rail",
+          "time": "2026-11-04T04:00:06Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47307963",
+          "title": "Aeon Preview | Aeon ★ Aha",
+          "time": "2026-11-04T03:00:10Z",
+          "kind": "Info"
+        },
+        {
           "id": "47296174",
           "title": "Keeping Up With Star Rail — Aeon ★ Aha: Claiming to be an Aeon to Dodge Deadlines? | Honkai: Star Rail",
           "time": "2026-11-03T04:00:05Z",
@@ -695,24 +718,6 @@
           "id": "47252376",
           "title": "Version 4.7 \"Now, Lay Laughter to All Stars\" Highlights Page Is Now Online",
           "time": "2026-10-30T12:35:07Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47252283",
-          "title": "\"Currency Wars: Voyage Into the Canvas\" Highlights Page Is Now Live",
-          "time": "2026-10-30T12:30:07Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47252183",
-          "title": "A Brief on the Version 4.7 Special Program",
-          "time": "2026-10-30T12:25:09Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47252073",
-          "title": "Version 4.7 Bonuses Available!",
-          "time": "2026-10-30T12:20:08Z",
           "kind": "Info"
         }
       ],
@@ -946,6 +951,18 @@
       },
       "news": [
         {
+          "id": "47309557",
+          "title": "Unarchived Agent Footage | Severian",
+          "time": "2026-11-04T04:30:09Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47309009",
+          "title": "Random Play | Holographic Trial - Severian",
+          "time": "2026-11-04T04:00:04Z",
+          "kind": "Info"
+        },
+        {
           "id": "47296176",
           "title": "Happy Birthday Orphie & Magus 丨 Special Approval",
           "time": "2026-11-03T04:00:05Z",
@@ -1004,18 +1021,6 @@
           "title": "Agent Record | Robin",
           "time": "2026-10-24T04:35:05Z",
           "kind": "Info"
-        },
-        {
-          "id": "47185723",
-          "title": "Agent Record | Robin",
-          "time": "2026-10-24T04:30:07Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47185643",
-          "title": "Agent Record | Kafka",
-          "time": "2026-10-24T04:20:05Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -1042,5 +1047,5 @@
       ]
     }
   },
-  "updated": "2026-11-04T00:00:14Z"
+  "updated": "2026-11-04T06:30:53Z"
 }
