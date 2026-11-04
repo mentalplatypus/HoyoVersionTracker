@@ -362,6 +362,12 @@
       },
       "news": [
         {
+          "id": "47306125",
+          "title": "\"Hour of Ruin\" Version 7.2 Update Details",
+          "time": "2026-11-03T23:00:05Z",
+          "kind": "Notice"
+        },
+        {
           "id": "47298708",
           "title": "\"Polyphonic Season\" Season Opening Announcement",
           "time": "2026-11-03T09:00:05Z",
@@ -424,12 +430,6 @@
         {
           "id": "47284166",
           "title": "\"The Grand Defense: Defy the Unjust Judgment\" Event: Participate to Invite a 4-Star Character of Your Choice",
-          "time": "2026-11-02T04:00:06Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47284167",
-          "title": "Complete the Archon Quest \"Hour of Ruin\" Within the Specified Duration to Obtain Additional Primogems, Character Ascension Materials, and Other Rewards",
           "time": "2026-11-02T04:00:06Z",
           "kind": "Info"
         }
@@ -1042,5 +1042,5 @@
       ]
     }
   },
-  "updated": "2026-11-03T18:28:12Z"
+  "updated": "2026-11-04T00:00:14Z"
 }
