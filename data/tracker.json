@@ -362,6 +362,24 @@
       },
       "news": [
         {
+          "id": "47314817",
+          "title": "As the Holy Soil phenomenon spreads, representatives of the seven nations gather in Snezhnaya",
+          "time": "2026-11-04T10:00:05Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47314815",
+          "title": "Miliastra Wonderland Inspiration Incentive Program Genshin Impact Version 7.2",
+          "time": "2026-11-04T10:00:03Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47312224",
+          "title": "V7.2 Known Issues & Update",
+          "time": "2026-11-04T07:16:27Z",
+          "kind": "Notice"
+        },
+        {
           "id": "47307203",
           "title": "Version 7.2 - Editor and Miliastra Sandbox Update and Fix Notes",
           "time": "2026-11-04T02:00:07Z",
@@ -414,30 +432,22 @@
           "title": "\"Hour of Ruin\" Version 7.2 Events Overview - Phase I",
           "time": "2026-11-02T04:10:08Z",
           "kind": "Info"
-        },
-        {
-          "id": "47284168",
-          "title": "Version 7.2 Event Wishes Notice - Phase I",
-          "time": "2026-11-02T04:00:07Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47284164",
-          "title": "\"Across the Frozen Wilds, Honing One's Edge\" Event: New Travelers Can Invite a 5-Star Character of Your Choice From the \"Wanderlust Invocation\" Standard Wish",
-          "time": "2026-11-02T04:00:06Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47284165",
-          "title": "Repertoire of Myriad Melodies Update - Encounter: Interlude of the Long Journey",
-          "time": "2026-11-02T04:00:06Z",
-          "kind": "Info"
         }
       ],
       "codes": [
         {
+          "code": "CDOF4X83H7X2",
+          "rewards": "Mora ×10,000, Adventurer's Experience ×10, Fine Enhancement Ore ×5, Stir-Fried Fish Noodles ×5, Jueyun Chili Chicken ×5",
+          "seen": "2026-11-04T15:28:18Z"
+        },
+        {
+          "code": "MIJIQ23V2437",
+          "rewards": "Mora ×10,000, Adventurer's Experience ×10, Fine Enhancement Ore ×5, Stir-Fried Fish Noodles ×5, Jueyun Chili Chicken ×5",
+          "seen": "2026-11-04T15:28:18Z"
+        },
+        {
           "code": "KEEPUPWITHMITYA",
-          "rewards": "",
+          "rewards": "Guide to Charity ×3, \"Energy-Replenishing Meal\" ×3, Kristallfold ×3",
           "seen": "2026-11-04T06:30:49Z"
         },
         {
@@ -1047,5 +1057,5 @@
       ]
     }
   },
-  "updated": "2026-11-04T06:30:53Z"
+  "updated": "2026-11-04T15:28:22Z"
 }
