@@ -659,6 +659,12 @@
       },
       "news": [
         {
+          "id": "47330493",
+          "title": "Holy Furboly! Nihilux | Aha: Magic Tour",
+          "time": "2026-11-05T10:00:05Z",
+          "kind": "Info"
+        },
+        {
           "id": "47310096",
           "title": "Light Cone Preview | Version 4.7 \"Now, Lay Laughter to All Stars\"",
           "time": "2026-11-04T05:00:04Z",
@@ -723,12 +729,6 @@
           "title": "\"Cosmic Aesthetics: Phantasia Showstage\" Outfit Draw Event Details",
           "time": "2026-10-30T12:45:07Z",
           "kind": "Notice"
-        },
-        {
-          "id": "47252376",
-          "title": "Version 4.7 \"Now, Lay Laughter to All Stars\" Highlights Page Is Now Online",
-          "time": "2026-10-30T12:35:07Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -961,6 +961,18 @@
       },
       "news": [
         {
+          "id": "47328314",
+          "title": "Zenless Zone Zero Compatibility Notice for iPhone Duo Models",
+          "time": "2026-11-05T06:00:05Z",
+          "kind": "Notice"
+        },
+        {
+          "id": "47327352",
+          "title": "Agent Mechanics Intro | Severian",
+          "time": "2026-11-05T04:00:08Z",
+          "kind": "Info"
+        },
+        {
           "id": "47309557",
           "title": "Unarchived Agent Footage | Severian",
           "time": "2026-11-04T04:30:09Z",
@@ -1019,18 +1031,6 @@
           "title": "\"Cyber Miracle Healer, on Duty!\" Event Details",
           "time": "2026-10-26T04:30:07Z",
           "kind": "Notice"
-        },
-        {
-          "id": "47197199",
-          "title": "Enemy Dossier 丨 Etheric Other - Truvia",
-          "time": "2026-10-25T04:00:07Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47185774",
-          "title": "Agent Record | Robin",
-          "time": "2026-10-24T04:35:05Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -1057,5 +1057,5 @@
       ]
     }
   },
-  "updated": "2026-11-04T15:28:22Z"
+  "updated": "2026-11-05T11:00:13Z"
 }
