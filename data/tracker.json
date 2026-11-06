@@ -362,8 +362,14 @@
       },
       "news": [
         {
+          "id": "47342930",
+          "title": "\"Hour of Ruin\" Version 7.2 Miliastra Wonderland Stage Creation Guide Submission Event",
+          "time": "2026-11-06T10:00:05Z",
+          "kind": "Info"
+        },
+        {
           "id": "47339559",
-          "title": "She cuts through the snow and parts the night, until dawn breaks clear at last",
+          "title": "Dawn Breaks the Long Winter",
           "time": "2026-11-06T04:00:04Z",
           "kind": "Info"
         },
@@ -425,12 +431,6 @@
           "id": "47296221",
           "title": "The \"Miliastra Wonderland Creator Contest: Moments to Treasure\" Event Will Begin on November 4!",
           "time": "2026-11-03T04:05:02Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47296173",
-          "title": "Character Trailer - \"Mitya: Everything's in Order\" | Genshin Impact",
-          "time": "2026-11-03T04:00:04Z",
           "kind": "Info"
         }
       ],
@@ -659,6 +659,12 @@
       },
       "news": [
         {
+          "id": "47342931",
+          "title": "Aha All-Stars | \"Dunelation\"",
+          "time": "2026-11-06T10:00:07Z",
+          "kind": "Info"
+        },
+        {
           "id": "47340203",
           "title": "Color Restoration Magic",
           "time": "2026-11-06T05:00:07Z",
@@ -723,12 +729,6 @@
           "title": "Version 4.7 Store Update",
           "time": "2026-10-30T12:55:04Z",
           "kind": "Notice"
-        },
-        {
-          "id": "47252512",
-          "title": "Star Lotto | Aeon ★ Aha's New Outfit",
-          "time": "2026-10-30T12:45:10Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -961,6 +961,12 @@
       },
       "news": [
         {
+          "id": "47342929",
+          "title": "For Display Only | Severian",
+          "time": "2026-11-06T10:00:05Z",
+          "kind": "Info"
+        },
+        {
           "id": "47339558",
           "title": "Severian Character Demo - \"The Making of a Commissioner\" | Zenless Zone Zero",
           "time": "2026-11-06T04:00:04Z",
@@ -1025,12 +1031,6 @@
           "title": "Happy Birthday, Phoenix 丨 Prevention is Better than Revival",
           "time": "2026-10-31T04:15:08Z",
           "kind": "Info"
-        },
-        {
-          "id": "47240756",
-          "title": "Wallpaper Sharing | Phoenix Themed Wallpapers",
-          "time": "2026-10-29T10:00:05Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -1057,5 +1057,5 @@
       ]
     }
   },
-  "updated": "2026-11-06T07:57:18Z"
+  "updated": "2026-11-06T15:57:15Z"
 }
