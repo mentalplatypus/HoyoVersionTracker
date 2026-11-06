@@ -362,6 +362,12 @@
       },
       "news": [
         {
+          "id": "47339559",
+          "title": "She cuts through the snow and parts the night, until dawn breaks clear at last",
+          "time": "2026-11-06T04:00:04Z",
+          "kind": "Info"
+        },
+        {
           "id": "47314817",
           "title": "As the Holy Soil phenomenon spreads, representatives of the seven nations gather in Snezhnaya",
           "time": "2026-11-04T10:00:05Z",
@@ -425,12 +431,6 @@
           "id": "47296173",
           "title": "Character Trailer - \"Mitya: Everything's in Order\" | Genshin Impact",
           "time": "2026-11-03T04:00:04Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47284233",
-          "title": "\"Hour of Ruin\" Version 7.2 Events Overview - Phase I",
-          "time": "2026-11-02T04:10:08Z",
           "kind": "Info"
         }
       ],
@@ -659,6 +659,12 @@
       },
       "news": [
         {
+          "id": "47340203",
+          "title": "Color Restoration Magic",
+          "time": "2026-11-06T05:00:07Z",
+          "kind": "Info"
+        },
+        {
           "id": "47330493",
           "title": "Holy Furboly! Nihilux | Aha: Magic Tour",
           "time": "2026-11-05T10:00:05Z",
@@ -723,12 +729,6 @@
           "title": "Star Lotto | Aeon ★ Aha's New Outfit",
           "time": "2026-10-30T12:45:10Z",
           "kind": "Info"
-        },
-        {
-          "id": "47252509",
-          "title": "\"Cosmic Aesthetics: Phantasia Showstage\" Outfit Draw Event Details",
-          "time": "2026-10-30T12:45:07Z",
-          "kind": "Notice"
         }
       ],
       "codes": [
@@ -961,6 +961,12 @@
       },
       "news": [
         {
+          "id": "47339558",
+          "title": "Severian Character Demo - \"The Making of a Commissioner\" | Zenless Zone Zero",
+          "time": "2026-11-06T04:00:04Z",
+          "kind": "Info"
+        },
+        {
           "id": "47328314",
           "title": "Zenless Zone Zero Compatibility Notice for iPhone Duo Models",
           "time": "2026-11-05T06:00:05Z",
@@ -1025,12 +1031,6 @@
           "title": "Wallpaper Sharing | Phoenix Themed Wallpapers",
           "time": "2026-10-29T10:00:05Z",
           "kind": "Info"
-        },
-        {
-          "id": "47208493",
-          "title": "\"Cyber Miracle Healer, on Duty!\" Event Details",
-          "time": "2026-10-26T04:30:07Z",
-          "kind": "Notice"
         }
       ],
       "codes": [
@@ -1057,5 +1057,5 @@
       ]
     }
   },
-  "updated": "2026-11-05T11:00:13Z"
+  "updated": "2026-11-06T07:57:18Z"
 }
