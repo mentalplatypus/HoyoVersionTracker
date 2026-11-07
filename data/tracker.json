@@ -362,6 +362,12 @@
       },
       "news": [
         {
+          "id": "47351623",
+          "title": "Steel Sheathed in Courtly Poise",
+          "time": "2026-11-07T04:00:06Z",
+          "kind": "Info"
+        },
+        {
           "id": "47342930",
           "title": "\"Hour of Ruin\" Version 7.2 Miliastra Wonderland Stage Creation Guide Submission Event",
           "time": "2026-11-06T10:00:05Z",
@@ -425,12 +431,6 @@
           "id": "47297661",
           "title": "\"Wonderland Treasures: Polyphonic Harmony\": New Manekin Cosmetics Now Available",
           "time": "2026-11-03T07:00:06Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47296221",
-          "title": "The \"Miliastra Wonderland Creator Contest: Moments to Treasure\" Event Will Begin on November 4!",
-          "time": "2026-11-03T04:05:02Z",
           "kind": "Info"
         }
       ],
@@ -659,6 +659,18 @@
       },
       "news": [
         {
+          "id": "47351677",
+          "title": "Version 4.7 \"Nameless Honor\" Update",
+          "time": "2026-11-07T04:05:06Z",
+          "kind": "Notice"
+        },
+        {
+          "id": "47351625",
+          "title": "\"Now, Lay Laughter to All Stars\" Version 4.7 Preview",
+          "time": "2026-11-07T04:00:09Z",
+          "kind": "Info"
+        },
+        {
           "id": "47342931",
           "title": "Aha All-Stars | \"Dunelation\"",
           "time": "2026-11-06T10:00:07Z",
@@ -717,18 +729,6 @@
           "title": "Stellar Journey Diary | Let's prepare a little prank~",
           "time": "2026-10-31T02:00:07Z",
           "kind": "Info"
-        },
-        {
-          "id": "47252651",
-          "title": "Affinitive Eidolon Coming Soon!",
-          "time": "2026-10-30T12:55:05Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47252649",
-          "title": "Version 4.7 Store Update",
-          "time": "2026-10-30T12:55:04Z",
-          "kind": "Notice"
         }
       ],
       "codes": [
@@ -961,6 +961,18 @@
       },
       "news": [
         {
+          "id": "47352196",
+          "title": "Incarcerating Grip W-Engine Showcase",
+          "time": "2026-11-07T05:00:05Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47350776",
+          "title": "New Zenless Zone Zero Merch Now Available on Amazon!",
+          "time": "2026-11-07T02:00:04Z",
+          "kind": "Info"
+        },
+        {
           "id": "47342929",
           "title": "For Display Only | Severian",
           "time": "2026-11-06T10:00:05Z",
@@ -1019,18 +1031,6 @@
           "title": "ZZZ Nov 2026 Calendar Wallpaper",
           "time": "2026-11-01T04:00:04Z",
           "kind": "Info"
-        },
-        {
-          "id": "47260352",
-          "title": "Airspace Patrol Routine Investigation Records | The Beckford Street Anomaly",
-          "time": "2026-10-31T04:30:07Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47260187",
-          "title": "Happy Birthday, Phoenix 丨 Prevention is Better than Revival",
-          "time": "2026-10-31T04:15:08Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -1057,5 +1057,5 @@
       ]
     }
   },
-  "updated": "2026-11-06T15:57:15Z"
+  "updated": "2026-11-07T08:50:34Z"
 }
