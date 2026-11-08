@@ -362,6 +362,12 @@
       },
       "news": [
         {
+          "id": "47363693",
+          "title": "Observations on Specialist Mitya",
+          "time": "2026-11-08T04:00:07Z",
+          "kind": "Info"
+        },
+        {
           "id": "47351623",
           "title": "Steel Sheathed in Courtly Poise",
           "time": "2026-11-07T04:00:06Z",
@@ -425,12 +431,6 @@
           "id": "47297954",
           "title": "\"Wonderland Treasures: Frosty Court\" – New Manekin Cosmetics Now Available",
           "time": "2026-11-03T07:30:06Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47297661",
-          "title": "\"Wonderland Treasures: Polyphonic Harmony\": New Manekin Cosmetics Now Available",
-          "time": "2026-11-03T07:00:06Z",
           "kind": "Info"
         }
       ],
@@ -659,6 +659,12 @@
       },
       "news": [
         {
+          "id": "47363694",
+          "title": "Aeon ★ Aha Character Trailer: \"Let the Die Fly\" | Honkai: Star Rail",
+          "time": "2026-11-08T04:00:08Z",
+          "kind": "Info"
+        },
+        {
           "id": "47354878",
           "title": "Aha All-Stars | \"Veteran's Got Talent\"",
           "time": "2026-11-07T10:00:04Z",
@@ -723,12 +729,6 @@
           "title": "A brand-new season of \"Currency Wars: Voyage Into the Canvas\" is here!",
           "time": "2026-11-01T04:00:05Z",
           "kind": "Notice"
-        },
-        {
-          "id": "47271770",
-          "title": "A brand-new season of \"Currency Wars: Voyage Into the Canvas\" is here!",
-          "time": "2026-11-01T04:00:05Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -961,6 +961,12 @@
       },
       "news": [
         {
+          "id": "47363692",
+          "title": "Severian's Solemnly Impeccable outfit will be available on November 11!",
+          "time": "2026-11-08T04:00:05Z",
+          "kind": "Info"
+        },
+        {
           "id": "47354877",
           "title": "Ridu Happenings  | Demon Lord-Turned-Kitty",
           "time": "2026-11-07T10:00:01Z",
@@ -1025,12 +1031,6 @@
           "title": "Happy Birthday, Yuzuha 丨 Golden Windfall",
           "time": "2026-11-02T04:15:08Z",
           "kind": "Info"
-        },
-        {
-          "id": "47284170",
-          "title": "\"Advanced Bounty: Area Patrol\" Event Details",
-          "time": "2026-11-02T04:00:07Z",
-          "kind": "Notice"
         }
       ],
       "codes": [
@@ -1057,5 +1057,5 @@
       ]
     }
   },
-  "updated": "2026-11-07T15:41:37Z"
+  "updated": "2026-11-08T06:08:16Z"
 }
