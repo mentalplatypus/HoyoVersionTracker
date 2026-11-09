@@ -362,6 +362,12 @@
       },
       "news": [
         {
+          "id": "47375132",
+          "title": "Stygian Onslaught Event: Disturbance-affected Ley Line challenges",
+          "time": "2026-11-09T04:00:04Z",
+          "kind": "Info"
+        },
+        {
           "id": "47363693",
           "title": "Observations on Specialist Mitya",
           "time": "2026-11-08T04:00:07Z",
@@ -426,12 +432,6 @@
           "title": "Take Part in \"Raiment Collection: Radiance Ablaze\" to Obtain an \"Tinker's Treasures\" Manekin Cosmetic Set of Your Choice",
           "time": "2026-11-03T08:00:03Z",
           "kind": "Info"
-        },
-        {
-          "id": "47297954",
-          "title": "\"Wonderland Treasures: Frosty Court\" – New Manekin Cosmetics Now Available",
-          "time": "2026-11-03T07:30:06Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -479,11 +479,6 @@
     },
     "hsr": {
       "versions": [
-        {
-          "label": "4.7",
-          "name": "Now, Lay Laughter to All Stars",
-          "post": "47210911"
-        },
         {
           "label": "1.3",
           "start": "2023-08-29T22:00:00Z",
@@ -555,6 +550,12 @@
           "post": "46691962",
           "start": "2026-09-27T22:00:00Z",
           "end": "2026-11-10T22:00:00Z"
+        },
+        {
+          "label": "4.7",
+          "name": "Now, Lay Laughter to All Stars",
+          "post": "47210911",
+          "start": "2026-11-10T22:00:00Z"
         }
       ],
       "livestreams": {
@@ -659,6 +660,36 @@
       },
       "news": [
         {
+          "id": "47377831",
+          "title": "Aha All-Stars | \"Here Comes the Ha\"",
+          "time": "2026-11-09T10:00:07Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47375930",
+          "title": "Version 4.7 Update and Maintenance Notice",
+          "time": "2026-11-09T06:00:04Z",
+          "kind": "Notice"
+        },
+        {
+          "id": "47375703",
+          "title": "Relic Recon: Participate to get 5-star +15 Relics!",
+          "time": "2026-11-09T05:30:08Z",
+          "kind": "Notice"
+        },
+        {
+          "id": "47375599",
+          "title": "Version 4.7 New Stages",
+          "time": "2026-11-09T05:15:07Z",
+          "kind": "Notice"
+        },
+        {
+          "id": "47375521",
+          "title": "\"Now, Lay Laughter to All Stars\" Mission Description",
+          "time": "2026-11-09T05:00:07Z",
+          "kind": "Notice"
+        },
+        {
           "id": "47366686",
           "title": "Aha All-Stars | \"My Broke Bestie Is Actually the Richest Person in the Universe\"",
           "time": "2026-11-08T10:00:05Z",
@@ -698,36 +729,6 @@
           "id": "47340203",
           "title": "Color Restoration Magic",
           "time": "2026-11-06T05:00:07Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47330493",
-          "title": "Holy Furboly! Nihilux | Aha: Magic Tour",
-          "time": "2026-11-05T10:00:05Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47310096",
-          "title": "Light Cone Preview | Version 4.7 \"Now, Lay Laughter to All Stars\"",
-          "time": "2026-11-04T05:00:04Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47309012",
-          "title": "Improv Tour Trailer: \"When Aha Comes Knocking\" | Honkai: Star Rail",
-          "time": "2026-11-04T04:00:06Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47307963",
-          "title": "Aeon Preview | Aeon ★ Aha",
-          "time": "2026-11-04T03:00:10Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47296174",
-          "title": "Keeping Up With Star Rail — Aeon ★ Aha: Claiming to be an Aeon to Dodge Deadlines? | Honkai: Star Rail",
-          "time": "2026-11-03T04:00:05Z",
           "kind": "Info"
         }
       ],
@@ -961,6 +962,36 @@
       },
       "news": [
         {
+          "id": "47376180",
+          "title": "\"'En-Nah' Into Your Lap\" Event Details",
+          "time": "2026-11-09T06:30:05Z",
+          "kind": "Notice"
+        },
+        {
+          "id": "47376055",
+          "title": "\"Trails of the Hobbling Crow\" Event Details",
+          "time": "2026-11-09T06:15:05Z",
+          "kind": "Notice"
+        },
+        {
+          "id": "47375931",
+          "title": "V3.3 Limited-Time Channels (Phase II)",
+          "time": "2026-11-09T06:00:05Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47375346",
+          "title": "Solemnly Impeccable | Severian's New Outfit Showcase",
+          "time": "2026-11-09T04:30:07Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47375133",
+          "title": "Severian EP - \"Gambit\" | Zenless Zone Zero",
+          "time": "2026-11-09T04:00:04Z",
+          "kind": "Info"
+        },
+        {
           "id": "47363692",
           "title": "Severian's Solemnly Impeccable outfit will be available on November 11!",
           "time": "2026-11-08T04:00:05Z",
@@ -1001,36 +1032,6 @@
           "title": "Zenless Zone Zero Compatibility Notice for iPhone Duo Models",
           "time": "2026-11-05T06:00:05Z",
           "kind": "Notice"
-        },
-        {
-          "id": "47327352",
-          "title": "Agent Mechanics Intro | Severian",
-          "time": "2026-11-05T04:00:08Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47309557",
-          "title": "Unarchived Agent Footage | Severian",
-          "time": "2026-11-04T04:30:09Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47309009",
-          "title": "Random Play | Holographic Trial - Severian",
-          "time": "2026-11-04T04:00:04Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47296176",
-          "title": "Happy Birthday Orphie & Magus 丨 Special Approval",
-          "time": "2026-11-03T04:00:05Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47284265",
-          "title": "Happy Birthday, Yuzuha 丨 Golden Windfall",
-          "time": "2026-11-02T04:15:08Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -1057,5 +1058,5 @@
       ]
     }
   },
-  "updated": "2026-11-08T13:29:58Z"
+  "updated": "2026-11-09T11:39:49Z"
 }
