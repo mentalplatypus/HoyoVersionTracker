@@ -758,12 +758,6 @@
           "livestream": "4.7"
         },
         {
-          "code": "DSLSPNBREASP",
-          "rewards": "50 stellar jade and 10k credits",
-          "seen": "2026-10-31T02:03:50Z",
-          "livestream": "4.7"
-        },
-        {
           "code": "FAREWELL",
           "rewards": "60 stellar jade and one fuel",
           "seen": "2026-10-31T02:03:50Z",
@@ -778,12 +772,6 @@
         {
           "code": "OMEGA",
           "rewards": "60 stellar jade and one fuel",
-          "seen": "2026-10-31T02:03:50Z",
-          "livestream": "4.7"
-        },
-        {
-          "code": "PEARLAPPRAISE",
-          "rewards": "Three traveler's guides and two cold jokes",
           "seen": "2026-10-31T02:03:50Z",
           "livestream": "4.7"
         },
@@ -1058,5 +1046,5 @@
       ]
     }
   },
-  "updated": "2026-11-10T13:30:18Z"
+  "updated": "2026-11-10T20:51:03Z"
 }
