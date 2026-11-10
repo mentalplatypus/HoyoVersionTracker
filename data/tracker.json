@@ -660,6 +660,18 @@
       },
       "news": [
         {
+          "id": "47385591",
+          "title": "Keeping Up With Star Rail — \"Currency Wars: Voyage Into the Canvas\" Special Program | Honkai: Star Rail",
+          "time": "2026-11-10T04:00:07Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47385253",
+          "title": "Version 4.7 Event Warp: Phase I",
+          "time": "2026-11-10T03:00:06Z",
+          "kind": "Notice"
+        },
+        {
           "id": "47377831",
           "title": "Aha All-Stars | \"Here Comes the Ha\"",
           "time": "2026-11-09T10:00:07Z",
@@ -717,18 +729,6 @@
           "id": "47351625",
           "title": "\"Now, Lay Laughter to All Stars\" Version 4.7 Preview",
           "time": "2026-11-07T04:00:09Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47342931",
-          "title": "Aha All-Stars | \"Dunelation\"",
-          "time": "2026-11-06T10:00:07Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47340203",
-          "title": "Color Restoration Magic",
-          "time": "2026-11-06T05:00:07Z",
           "kind": "Info"
         }
       ],
@@ -962,6 +962,12 @@
       },
       "news": [
         {
+          "id": "47385589",
+          "title": "Version 3.3 New Stock in the Store",
+          "time": "2026-11-10T04:00:06Z",
+          "kind": "Notice"
+        },
+        {
           "id": "47376180",
           "title": "\"'En-Nah' Into Your Lap\" Event Details",
           "time": "2026-11-09T06:30:05Z",
@@ -1026,12 +1032,6 @@
           "title": "Severian Character Demo - \"The Making of a Commissioner\" | Zenless Zone Zero",
           "time": "2026-11-06T04:00:04Z",
           "kind": "Info"
-        },
-        {
-          "id": "47328314",
-          "title": "Zenless Zone Zero Compatibility Notice for iPhone Duo Models",
-          "time": "2026-11-05T06:00:05Z",
-          "kind": "Notice"
         }
       ],
       "codes": [
@@ -1058,5 +1058,5 @@
       ]
     }
   },
-  "updated": "2026-11-09T11:39:49Z"
+  "updated": "2026-11-10T04:38:37Z"
 }
