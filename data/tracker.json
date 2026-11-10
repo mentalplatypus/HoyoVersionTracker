@@ -660,6 +660,24 @@
       },
       "news": [
         {
+          "id": "47387949",
+          "title": "Aha All-Stars | \"World's End Beauty Salon\"",
+          "time": "2026-11-10T10:00:05Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47386628",
+          "title": "\"Interastral Peace Gala: Road to Fame\" Event Introduction",
+          "time": "2026-11-10T07:00:04Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47386304",
+          "title": "You have an inheritance from \"Blurry_QR_Colt\" to claim (Note: Real estate)",
+          "time": "2026-11-10T06:00:07Z",
+          "kind": "Info"
+        },
+        {
           "id": "47385591",
           "title": "Keeping Up With Star Rail — \"Currency Wars: Voyage Into the Canvas\" Special Program | Honkai: Star Rail",
           "time": "2026-11-10T04:00:07Z",
@@ -711,24 +729,6 @@
           "id": "47363694",
           "title": "Aeon ★ Aha Character Trailer: \"Let the Die Fly\" | Honkai: Star Rail",
           "time": "2026-11-08T04:00:08Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47354878",
-          "title": "Aha All-Stars | \"Veteran's Got Talent\"",
-          "time": "2026-11-07T10:00:04Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47351677",
-          "title": "Version 4.7 \"Nameless Honor\" Update",
-          "time": "2026-11-07T04:05:06Z",
-          "kind": "Notice"
-        },
-        {
-          "id": "47351625",
-          "title": "\"Now, Lay Laughter to All Stars\" Version 4.7 Preview",
-          "time": "2026-11-07T04:00:09Z",
           "kind": "Info"
         }
       ],
@@ -1058,5 +1058,5 @@
       ]
     }
   },
-  "updated": "2026-11-10T04:38:37Z"
+  "updated": "2026-11-10T13:30:18Z"
 }
