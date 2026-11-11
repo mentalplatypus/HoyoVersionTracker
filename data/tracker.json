@@ -661,6 +661,30 @@
       },
       "news": [
         {
+          "id": "47398071",
+          "title": "Version 4.7 Now, Lay Laughter to All Stars Discord Quest Event",
+          "time": "2026-11-11T06:00:04Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47396790",
+          "title": "The player return web event \"Come With Me, Take the Journey\" is now available. Participate to obtain up to 480 Stellar Jades and more!",
+          "time": "2026-11-11T04:30:05Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47396370",
+          "title": "Project Astro-Warp Beta Sign-Up Reminder",
+          "time": "2026-11-11T04:00:03Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47396371",
+          "title": "Animated Short: \"A Joyful Funeral Beneath the Moon\" | Honkai: Star Rail",
+          "time": "2026-11-11T04:00:03Z",
+          "kind": "Info"
+        },
+        {
           "id": "47394097",
           "title": "Version 4.7 \"Now, Lay Laughter to All Stars\" Update Details",
           "time": "2026-11-10T23:00:03Z",
@@ -707,33 +731,14 @@
           "title": "Version 4.7 Update and Maintenance Notice",
           "time": "2026-11-09T06:00:04Z",
           "kind": "Notice"
-        },
-        {
-          "id": "47375703",
-          "title": "Relic Recon: Participate to get 5-star +15 Relics!",
-          "time": "2026-11-09T05:30:08Z",
-          "kind": "Notice"
-        },
-        {
-          "id": "47375599",
-          "title": "Version 4.7 New Stages",
-          "time": "2026-11-09T05:15:07Z",
-          "kind": "Notice"
-        },
-        {
-          "id": "47375521",
-          "title": "\"Now, Lay Laughter to All Stars\" Mission Description",
-          "time": "2026-11-09T05:00:07Z",
-          "kind": "Notice"
-        },
-        {
-          "id": "47366686",
-          "title": "Aha All-Stars | \"My Broke Bestie Is Actually the Richest Person in the Universe\"",
-          "time": "2026-11-08T10:00:05Z",
-          "kind": "Info"
         }
       ],
       "codes": [
+        {
+          "code": "AEONAHA",
+          "rewards": "",
+          "seen": "2026-11-11T07:48:41Z"
+        },
         {
           "code": "4TKSX77Y58QK",
           "rewards": "30 stellar jade, three traveler’s guides, five condensed aether, four lost gold fragments, and 20k credits",
@@ -951,6 +956,18 @@
       },
       "news": [
         {
+          "id": "47396584",
+          "title": "Happy Birthday, Nicole | Recycling Old Appliances",
+          "time": "2026-11-11T04:15:05Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47396372",
+          "title": "Journey to the Sky | Version 3.3 Content Overview (Phase II)",
+          "time": "2026-11-11T04:00:04Z",
+          "kind": "Info"
+        },
+        {
           "id": "47385589",
           "title": "Version 3.3 New Stock in the Store",
           "time": "2026-11-10T04:00:06Z",
@@ -1009,18 +1026,6 @@
           "title": "New Zenless Zone Zero Merch Now Available on Amazon!",
           "time": "2026-11-07T02:00:04Z",
           "kind": "Info"
-        },
-        {
-          "id": "47342929",
-          "title": "For Display Only | Severian",
-          "time": "2026-11-06T10:00:05Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47339558",
-          "title": "Severian Character Demo - \"The Making of a Commissioner\" | Zenless Zone Zero",
-          "time": "2026-11-06T04:00:04Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -1047,5 +1052,5 @@
       ]
     }
   },
-  "updated": "2026-11-11T01:16:16Z"
+  "updated": "2026-11-11T07:48:43Z"
 }
