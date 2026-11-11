@@ -555,7 +555,8 @@
           "label": "4.7",
           "name": "Now, Lay Laughter to All Stars",
           "post": "47210911",
-          "start": "2026-11-10T22:00:00Z"
+          "start": "2026-11-10T22:00:00Z",
+          "end": "2026-12-22T22:00:00Z"
         }
       ],
       "livestreams": {
@@ -660,6 +661,12 @@
       },
       "news": [
         {
+          "id": "47394097",
+          "title": "Version 4.7 \"Now, Lay Laughter to All Stars\" Update Details",
+          "time": "2026-11-10T23:00:03Z",
+          "kind": "Notice"
+        },
+        {
           "id": "47387949",
           "title": "Aha All-Stars | \"World's End Beauty Salon\"",
           "time": "2026-11-10T10:00:05Z",
@@ -723,12 +730,6 @@
           "id": "47366686",
           "title": "Aha All-Stars | \"My Broke Bestie Is Actually the Richest Person in the Universe\"",
           "time": "2026-11-08T10:00:05Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47363694",
-          "title": "Aeon ★ Aha Character Trailer: \"Let the Die Fly\" | Honkai: Star Rail",
-          "time": "2026-11-08T04:00:08Z",
           "kind": "Info"
         }
       ],
@@ -1046,5 +1047,5 @@
       ]
     }
   },
-  "updated": "2026-11-10T20:51:03Z"
+  "updated": "2026-11-11T01:16:16Z"
 }
