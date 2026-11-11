@@ -661,6 +661,18 @@
       },
       "news": [
         {
+          "id": "47401368",
+          "title": "A Moment Among the Stars — \"All's Well That Ends Well\" | Honkai: Star Rail",
+          "time": "2026-11-11T10:00:06Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47399652",
+          "title": "Discord \"Account Linking Check-In Event\" Reminder",
+          "time": "2026-11-11T08:00:08Z",
+          "kind": "Info"
+        },
+        {
           "id": "47398071",
           "title": "Version 4.7 Now, Lay Laughter to All Stars Discord Quest Event",
           "time": "2026-11-11T06:00:04Z",
@@ -718,18 +730,6 @@
           "id": "47385253",
           "title": "Version 4.7 Event Warp: Phase I",
           "time": "2026-11-10T03:00:06Z",
-          "kind": "Notice"
-        },
-        {
-          "id": "47377831",
-          "title": "Aha All-Stars | \"Here Comes the Ha\"",
-          "time": "2026-11-09T10:00:07Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47375930",
-          "title": "Version 4.7 Update and Maintenance Notice",
-          "time": "2026-11-09T06:00:04Z",
           "kind": "Notice"
         }
       ],
@@ -1052,5 +1052,5 @@
       ]
     }
   },
-  "updated": "2026-11-11T07:48:43Z"
+  "updated": "2026-11-11T16:13:32Z"
 }
