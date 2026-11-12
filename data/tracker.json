@@ -362,6 +362,12 @@
       },
       "news": [
         {
+          "id": "47413470",
+          "title": "Cutscene Animation: \"Stone and Contracts\" | Genshin Impact",
+          "time": "2026-11-12T04:00:05Z",
+          "kind": "Info"
+        },
+        {
           "id": "47375132",
           "title": "Stygian Onslaught Event: Disturbance-affected Ley Line challenges",
           "time": "2026-11-09T04:00:04Z",
@@ -425,12 +431,6 @@
           "id": "47298708",
           "title": "\"Polyphonic Season\" Season Opening Announcement",
           "time": "2026-11-03T09:00:05Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47298205",
-          "title": "Take Part in \"Raiment Collection: Radiance Ablaze\" to Obtain an \"Tinker's Treasures\" Manekin Cosmetic Set of Your Choice",
-          "time": "2026-11-03T08:00:03Z",
           "kind": "Info"
         }
       ],
@@ -662,6 +662,24 @@
       },
       "news": [
         {
+          "id": "47415456",
+          "title": "[Event with Rewards] Aeon ★ Aha Spotlight — Reddit Event!",
+          "time": "2026-11-12T08:00:02Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47414506",
+          "title": "Planarcadia Brand-New OST \"Let There Be Laughter (Part 3)\" Now Online",
+          "time": "2026-11-12T06:00:03Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47413467",
+          "title": "Honkai: Star Rail EP: Ex Nihilo",
+          "time": "2026-11-12T04:00:04Z",
+          "kind": "Info"
+        },
+        {
           "id": "47413033",
           "title": "Version 5.5 | Who Else Remains Beyond the Story",
           "time": "2026-11-12T03:12:04Z",
@@ -714,27 +732,14 @@
           "title": "Version 4.7 \"Now, Lay Laughter to All Stars\" Update Details",
           "time": "2026-11-10T23:00:03Z",
           "kind": "Notice"
-        },
-        {
-          "id": "47387949",
-          "title": "Aha All-Stars | \"World's End Beauty Salon\"",
-          "time": "2026-11-10T10:00:05Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47386628",
-          "title": "\"Interastral Peace Gala: Road to Fame\" Event Introduction",
-          "time": "2026-11-10T07:00:04Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47386304",
-          "title": "You have an inheritance from \"Blurry_QR_Colt\" to claim (Note: Real estate)",
-          "time": "2026-11-10T06:00:07Z",
-          "kind": "Info"
         }
       ],
       "codes": [
+        {
+          "code": "NS4DU8AAGXBP",
+          "rewards": "",
+          "seen": "2026-11-12T12:47:57Z"
+        },
         {
           "code": "AEONAHA",
           "rewards": "",
@@ -1053,5 +1058,5 @@
       ]
     }
   },
-  "updated": "2026-11-12T03:50:28Z"
+  "updated": "2026-11-12T12:47:59Z"
 }
