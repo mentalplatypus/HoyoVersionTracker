@@ -362,6 +362,12 @@
       },
       "news": [
         {
+          "id": "47424977",
+          "title": "Cutscene Animation: \"Thunder and Eternity\" | Genshin Impact",
+          "time": "2026-11-13T04:00:06Z",
+          "kind": "Info"
+        },
+        {
           "id": "47413470",
           "title": "Cutscene Animation: \"Stone and Contracts\" | Genshin Impact",
           "time": "2026-11-12T04:00:05Z",
@@ -426,12 +432,6 @@
           "title": "\"Hour of Ruin\" Version 7.2 Update Details",
           "time": "2026-11-03T23:00:05Z",
           "kind": "Notice"
-        },
-        {
-          "id": "47298708",
-          "title": "\"Polyphonic Season\" Season Opening Announcement",
-          "time": "2026-11-03T09:00:05Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -662,6 +662,30 @@
       },
       "news": [
         {
+          "id": "47425538",
+          "title": "\"Reward Event\" Aeon ★ Aha Strategy Discussion Event",
+          "time": "2026-11-13T05:00:04Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47424980",
+          "title": "Destiny's Magic",
+          "time": "2026-11-13T04:00:09Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47424584",
+          "title": "Powerful Enemy Dossifur | Divine Skull of Indulgence",
+          "time": "2026-11-13T03:00:08Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47424274",
+          "title": "New Honkai: Star Rail Merchandise Available on Amazon!",
+          "time": "2026-11-13T02:00:01Z",
+          "kind": "Info"
+        },
+        {
           "id": "47415456",
           "title": "[Event with Rewards] Aeon ★ Aha Spotlight — Reddit Event!",
           "time": "2026-11-12T08:00:02Z",
@@ -708,30 +732,6 @@
           "title": "Version 4.7 Now, Lay Laughter to All Stars Discord Quest Event",
           "time": "2026-11-11T06:00:04Z",
           "kind": "Info"
-        },
-        {
-          "id": "47396790",
-          "title": "The player return web event \"Come With Me, Take the Journey\" is now available. Participate to obtain up to 480 Stellar Jades and more!",
-          "time": "2026-11-11T04:30:05Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47396370",
-          "title": "Project Astro-Warp Beta Sign-Up Reminder",
-          "time": "2026-11-11T04:00:03Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47396371",
-          "title": "Animated Short: \"A Joyful Funeral Beneath the Moon\" | Honkai: Star Rail",
-          "time": "2026-11-11T04:00:03Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47394097",
-          "title": "Version 4.7 \"Now, Lay Laughter to All Stars\" Update Details",
-          "time": "2026-11-10T23:00:03Z",
-          "kind": "Notice"
         }
       ],
       "codes": [
@@ -962,6 +962,12 @@
       },
       "news": [
         {
+          "id": "47424979",
+          "title": "\"Repair! Drifting Art\" Event Details",
+          "time": "2026-11-13T04:00:07Z",
+          "kind": "Notice"
+        },
+        {
           "id": "47421484",
           "title": "Zenless Zone Zero × Discord Theme Showcase",
           "time": "2026-11-12T18:15:03Z",
@@ -1026,12 +1032,6 @@
           "title": "Severian's Solemnly Impeccable outfit will be available on November 11!",
           "time": "2026-11-08T04:00:05Z",
           "kind": "Info"
-        },
-        {
-          "id": "47354877",
-          "title": "Ridu Happenings  | Demon Lord-Turned-Kitty",
-          "time": "2026-11-07T10:00:01Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -1058,5 +1058,5 @@
       ]
     }
   },
-  "updated": "2026-11-12T20:51:46Z"
+  "updated": "2026-11-13T09:35:59Z"
 }
