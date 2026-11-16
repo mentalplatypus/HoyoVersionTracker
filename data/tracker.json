@@ -362,6 +362,12 @@
       },
       "news": [
         {
+          "id": "47459956",
+          "title": "Genshin Impact ｜ Paimon's Paintings Set 54 Emojis Now Available!",
+          "time": "2026-11-16T04:00:07Z",
+          "kind": "Info"
+        },
+        {
           "id": "47448142",
           "title": "Amid the Turmoil, New Mysteries Emerge...",
           "time": "2026-11-15T04:05:06Z",
@@ -426,15 +432,14 @@
           "title": "As the Holy Soil phenomenon spreads, representatives of the seven nations gather in Snezhnaya",
           "time": "2026-11-04T10:00:05Z",
           "kind": "Info"
-        },
-        {
-          "id": "47314815",
-          "title": "Miliastra Wonderland Inspiration Incentive Program Genshin Impact Version 7.2",
-          "time": "2026-11-04T10:00:03Z",
-          "kind": "Info"
         }
       ],
       "codes": [
+        {
+          "code": "ARCHONSANSWERS",
+          "rewards": "Primogem ×40, Hero's Wit ×3, Mora ×30,000",
+          "seen": "2026-11-16T11:29:09Z"
+        },
         {
           "code": "QYJWFB784MFL",
           "rewards": "Primogem ×60, Adventurer's Experience ×5",
@@ -737,7 +742,7 @@
       "codes": [
         {
           "code": "NS4DU8AAGXBP",
-          "rewards": "",
+          "rewards": "50 stellar jade and 10k credits",
           "seen": "2026-11-12T12:47:57Z"
         },
         {
@@ -797,6 +802,11 @@
     },
     "zzz": {
       "versions": [
+        {
+          "label": "3.4",
+          "name": "The Finality of the Day",
+          "post": "47459953"
+        },
         {
           "label": "1.6",
           "name": "Among the Forgotten Ruins",
@@ -935,6 +945,10 @@
         "3.3": {
           "time": "2026-10-09T11:30:00Z",
           "post": "46972907"
+        },
+        "3.4": {
+          "time": "2026-11-20T10:30:00Z",
+          "post": "47459953"
         }
       },
       "mentions": {
@@ -958,9 +972,16 @@
         "3.0": "2026-06-01T04:00:03Z",
         "3.1": "2026-07-13T04:00:05Z",
         "3.2": "2026-08-24T04:00:06Z",
-        "3.3": "2026-10-05T04:00:03Z"
+        "3.3": "2026-10-05T04:00:03Z",
+        "3.4": "2026-11-16T04:00:06Z"
       },
       "news": [
+        {
+          "id": "47459953",
+          "title": "Zenless Zone Zero Version 3.4 \"The Finality of the Day\" Special Program Announcement",
+          "time": "2026-11-16T04:00:06Z",
+          "kind": "Info"
+        },
         {
           "id": "47424979",
           "title": "\"Repair! Drifting Art\" Event Details",
@@ -1026,12 +1047,6 @@
           "title": "Severian EP - \"Gambit\" | Zenless Zone Zero",
           "time": "2026-11-09T04:00:04Z",
           "kind": "Info"
-        },
-        {
-          "id": "47363692",
-          "title": "Severian's Solemnly Impeccable outfit will be available on November 11!",
-          "time": "2026-11-08T04:00:05Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -1058,5 +1073,5 @@
       ]
     }
   },
-  "updated": "2026-11-15T17:45:25Z"
+  "updated": "2026-11-16T11:29:13Z"
 }
