@@ -667,6 +667,12 @@
       },
       "news": [
         {
+          "id": "47464625",
+          "title": "\"Astral Express Strategy Guide\" Website Update: Version 4.7 Strategy Guides Contest Event Is In Full Swing!",
+          "time": "2026-11-16T12:00:05Z",
+          "kind": "Info"
+        },
+        {
           "id": "47436372",
           "title": "Welcome to Arcadia | Invitation from the Starfroster",
           "time": "2026-11-14T04:00:07Z",
@@ -730,12 +736,6 @@
           "id": "47401368",
           "title": "A Moment Among the Stars — \"All's Well That Ends Well\" | Honkai: Star Rail",
           "time": "2026-11-11T10:00:06Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47399652",
-          "title": "Discord \"Account Linking Check-In Event\" Reminder",
-          "time": "2026-11-11T08:00:08Z",
           "kind": "Info"
         }
       ],
@@ -1073,5 +1073,5 @@
       ]
     }
   },
-  "updated": "2026-11-16T11:29:13Z"
+  "updated": "2026-11-16T22:10:03Z"
 }
