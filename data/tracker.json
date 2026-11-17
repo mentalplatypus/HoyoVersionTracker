@@ -456,27 +456,7 @@
           "seen": "2026-11-04T15:28:18Z"
         },
         {
-          "code": "NEEI8A8341OW",
-          "rewards": "",
-          "seen": "2026-10-31T02:03:48Z"
-        },
-        {
-          "code": "NEEIJB764CA3",
-          "rewards": "Primogem ×60",
-          "seen": "2026-10-31T02:03:48Z"
-        },
-        {
           "code": "PJ2KEBRAYSRM",
-          "rewards": "Primogem ×60, Adventurer's Experience ×5",
-          "seen": "2026-10-31T02:03:48Z"
-        },
-        {
-          "code": "PNKZ3WLNN8G6",
-          "rewards": "Teachings of Charity ×5, Teachings of Fortitude ×5, Teachings of Glory ×5",
-          "seen": "2026-10-31T02:03:48Z"
-        },
-        {
-          "code": "Y6JYMKV6JKSL",
           "rewards": "Primogem ×60, Adventurer's Experience ×5",
           "seen": "2026-10-31T02:03:48Z"
         }
@@ -1073,5 +1053,5 @@
       ]
     }
   },
-  "updated": "2026-11-16T22:10:03Z"
+  "updated": "2026-11-17T22:55:22Z"
 }
