@@ -957,6 +957,18 @@
       },
       "news": [
         {
+          "id": "47485642",
+          "title": "Journey to the Sky | Video Archive Sharing",
+          "time": "2026-11-18T10:15:06Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47485496",
+          "title": "Wallpaper Sharing | Severian Themed Wallpapers",
+          "time": "2026-11-18T10:00:06Z",
+          "kind": "Info"
+        },
+        {
           "id": "47482559",
           "title": "Signal Search Statistical Tool Introduction",
           "time": "2026-11-18T04:00:06Z",
@@ -1015,18 +1027,6 @@
           "title": "\"Trails of the Hobbling Crow\" Event Details",
           "time": "2026-11-09T06:15:05Z",
           "kind": "Notice"
-        },
-        {
-          "id": "47375931",
-          "title": "V3.3 Limited-Time Channels (Phase II)",
-          "time": "2026-11-09T06:00:05Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47375346",
-          "title": "Solemnly Impeccable | Severian's New Outfit Showcase",
-          "time": "2026-11-09T04:30:07Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -1053,5 +1053,5 @@
       ]
     }
   },
-  "updated": "2026-11-18T04:27:22Z"
+  "updated": "2026-11-18T14:05:11Z"
 }
