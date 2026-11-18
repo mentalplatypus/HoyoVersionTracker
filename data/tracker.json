@@ -362,6 +362,12 @@
       },
       "news": [
         {
+          "id": "47482557",
+          "title": "\"Stress Block Smashing Project\" Event: Digging Challenge",
+          "time": "2026-11-18T04:00:05Z",
+          "kind": "Info"
+        },
+        {
           "id": "47459956",
           "title": "Genshin Impact ｜ Paimon's Paintings Set 54 Emojis Now Available!",
           "time": "2026-11-16T04:00:07Z",
@@ -425,12 +431,6 @@
           "id": "47339559",
           "title": "Dawn Breaks the Long Winter",
           "time": "2026-11-06T04:00:04Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47314817",
-          "title": "As the Holy Soil phenomenon spreads, representatives of the seven nations gather in Snezhnaya",
-          "time": "2026-11-04T10:00:05Z",
           "kind": "Info"
         }
       ],
@@ -957,6 +957,12 @@
       },
       "news": [
         {
+          "id": "47482559",
+          "title": "Signal Search Statistical Tool Introduction",
+          "time": "2026-11-18T04:00:06Z",
+          "kind": "Info"
+        },
+        {
           "id": "47459953",
           "title": "Zenless Zone Zero Version 3.4 \"The Finality of the Day\" Special Program Announcement",
           "time": "2026-11-16T04:00:06Z",
@@ -1021,12 +1027,6 @@
           "title": "Solemnly Impeccable | Severian's New Outfit Showcase",
           "time": "2026-11-09T04:30:07Z",
           "kind": "Info"
-        },
-        {
-          "id": "47375133",
-          "title": "Severian EP - \"Gambit\" | Zenless Zone Zero",
-          "time": "2026-11-09T04:00:04Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -1053,5 +1053,5 @@
       ]
     }
   },
-  "updated": "2026-11-17T22:55:22Z"
+  "updated": "2026-11-18T04:27:22Z"
 }
