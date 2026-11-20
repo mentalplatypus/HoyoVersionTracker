@@ -362,6 +362,12 @@
       },
       "news": [
         {
+          "id": "47502534",
+          "title": "Genshin Impact's Official Amazon Store Launches a Variety of New Merch for November!",
+          "time": "2026-11-20T02:00:01Z",
+          "kind": "Info"
+        },
+        {
           "id": "47495002",
           "title": "\"Hour of Ruin\" Version 7.2 Events Overview - Phase II",
           "time": "2026-11-19T08:10:07Z",
@@ -425,12 +431,6 @@
           "id": "47413470",
           "title": "Cutscene Animation: \"Stone and Contracts\" | Genshin Impact",
           "time": "2026-11-12T04:00:05Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47375132",
-          "title": "Stygian Onslaught Event: Disturbance-affected Ley Line challenges",
-          "time": "2026-11-09T04:00:04Z",
           "kind": "Info"
         }
       ],
@@ -1053,5 +1053,5 @@
       ]
     }
   },
-  "updated": "2026-11-19T13:16:51Z"
+  "updated": "2026-11-20T03:22:39Z"
 }
