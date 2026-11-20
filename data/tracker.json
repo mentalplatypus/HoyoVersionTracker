@@ -362,6 +362,12 @@
       },
       "news": [
         {
+          "id": "47503139",
+          "title": "Before the Holy Soil Phenomenon Resumes - Part II: \"Shoulder to Shoulder\"",
+          "time": "2026-11-20T04:00:07Z",
+          "kind": "Info"
+        },
+        {
           "id": "47502534",
           "title": "Genshin Impact's Official Amazon Store Launches a Variety of New Merch for November!",
           "time": "2026-11-20T02:00:01Z",
@@ -426,15 +432,14 @@
           "title": "Cutscene Animation: \"Thunder and Eternity\" | Genshin Impact",
           "time": "2026-11-13T04:00:06Z",
           "kind": "Info"
-        },
-        {
-          "id": "47413470",
-          "title": "Cutscene Animation: \"Stone and Contracts\" | Genshin Impact",
-          "time": "2026-11-12T04:00:05Z",
-          "kind": "Info"
         }
       ],
       "codes": [
+        {
+          "code": "POYMANSXF877",
+          "rewards": "Primogem ×20, Geode of Replication ×160",
+          "seen": "2026-11-20T12:58:44Z"
+        },
         {
           "code": "ARCHONSANSWERS",
           "rewards": "Primogem ×40, Hero's Wit ×3, Mora ×30,000",
@@ -647,6 +652,12 @@
       },
       "news": [
         {
+          "id": "47507004",
+          "title": "Log in to claim a limited 5-star character",
+          "time": "2026-11-20T11:15:03Z",
+          "kind": "Info"
+        },
+        {
           "id": "47464625",
           "title": "\"Astral Express Strategy Guide\" Website Update: Version 4.7 Strategy Guides Contest Event Is In Full Swing!",
           "time": "2026-11-16T12:00:05Z",
@@ -710,12 +721,6 @@
           "id": "47412533",
           "title": "Razer | Honkai: Star Rail Collaboration Collection Is Officially Live",
           "time": "2026-11-12T02:00:04Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47401368",
-          "title": "A Moment Among the Stars — \"All's Well That Ends Well\" | Honkai: Star Rail",
-          "time": "2026-11-11T10:00:06Z",
           "kind": "Info"
         }
       ],
@@ -957,6 +962,42 @@
       },
       "news": [
         {
+          "id": "47507327",
+          "title": "Version 3.4 \"The Finality of the Day\" Benefits Express",
+          "time": "2026-11-20T11:40:04Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47507255",
+          "title": "Zenless Zone Zero Version 3.4 \"The Finality of the Day\" Special Program | Intel Report",
+          "time": "2026-11-20T11:35:08Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47507181",
+          "title": "Version 3.4 Teaser - \"The Finality of the Day\" | Zenless Zone Zero",
+          "time": "2026-11-20T11:30:03Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47507109",
+          "title": "Zenless Zone Zero officially announces a special licensed collaboration with the rhythm game DJMAX RESPECT V!",
+          "time": "2026-11-20T11:25:02Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47507076",
+          "title": "The Official Zenless Zone Zero Signal Search Statistical Tool Is Here!",
+          "time": "2026-11-20T11:22:03Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47505988",
+          "title": "Zenless Zone Zero Version 3.4 \"The Finality of the Day\" Special Program - Countdown: 1 Hour Left!",
+          "time": "2026-11-20T09:30:05Z",
+          "kind": "Info"
+        },
+        {
           "id": "47485642",
           "title": "Journey to the Sky | Video Archive Sharing",
           "time": "2026-11-18T10:15:06Z",
@@ -991,45 +1032,15 @@
           "title": "Zenless Zone Zero × Discord Theme Showcase",
           "time": "2026-11-12T18:15:03Z",
           "kind": "Info"
-        },
-        {
-          "id": "47421386",
-          "title": "Zenless Zone Zero × Discord",
-          "time": "2026-11-12T18:00:05Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47396584",
-          "title": "Happy Birthday, Nicole | Recycling Old Appliances",
-          "time": "2026-11-11T04:15:05Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47396372",
-          "title": "Journey to the Sky | Version 3.3 Content Overview (Phase II)",
-          "time": "2026-11-11T04:00:04Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47385589",
-          "title": "Version 3.3 New Stock in the Store",
-          "time": "2026-11-10T04:00:06Z",
-          "kind": "Notice"
-        },
-        {
-          "id": "47376180",
-          "title": "\"'En-Nah' Into Your Lap\" Event Details",
-          "time": "2026-11-09T06:30:05Z",
-          "kind": "Notice"
-        },
-        {
-          "id": "47376055",
-          "title": "\"Trails of the Hobbling Crow\" Event Details",
-          "time": "2026-11-09T06:15:05Z",
-          "kind": "Notice"
         }
       ],
       "codes": [
+        {
+          "code": "SUNCHASER",
+          "rewards": "Polychrome ×300, Senior Investigator Log ×2, W-Engine Energy Module ×3, Denny ×30,000",
+          "seen": "2026-11-20T12:58:48Z",
+          "livestream": "3.4"
+        },
         {
           "code": "HOLLOWRUN33",
           "rewards": "Polychrome ×20, Denny ×2,222",
@@ -1053,5 +1064,5 @@
       ]
     }
   },
-  "updated": "2026-11-20T03:22:39Z"
+  "updated": "2026-11-20T12:58:48Z"
 }
