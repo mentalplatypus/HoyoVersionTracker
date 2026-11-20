@@ -1036,6 +1036,18 @@
       ],
       "codes": [
         {
+          "code": "ZZZ34SUNBRINGER",
+          "rewards": "",
+          "seen": "2026-11-20T21:10:15Z",
+          "livestream": "3.4"
+        },
+        {
+          "code": "ZZZHSRCOLLAB",
+          "rewards": "",
+          "seen": "2026-11-20T21:10:15Z",
+          "livestream": "3.4"
+        },
+        {
           "code": "SUNCHASER",
           "rewards": "Polychrome ×300, Senior Investigator Log ×2, W-Engine Energy Module ×3, Denny ×30,000",
           "seen": "2026-11-20T12:58:48Z",
@@ -1064,5 +1076,5 @@
       ]
     }
   },
-  "updated": "2026-11-20T12:58:48Z"
+  "updated": "2026-11-20T21:10:15Z"
 }
