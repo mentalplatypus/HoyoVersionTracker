@@ -362,6 +362,12 @@
       },
       "news": [
         {
+          "id": "47515888",
+          "title": "Before the Holy Soil Phenomenon Resumes - Interlude: \"Resistance\"",
+          "time": "2026-11-21T04:00:03Z",
+          "kind": "Info"
+        },
+        {
           "id": "47503139",
           "title": "Before the Holy Soil Phenomenon Resumes - Part II: \"Shoulder to Shoulder\"",
           "time": "2026-11-20T04:00:07Z",
@@ -425,12 +431,6 @@
           "id": "47436368",
           "title": "Story Teaser: \"The Bestowed Love\" | Genshin Impact",
           "time": "2026-11-14T04:00:04Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47424977",
-          "title": "Cutscene Animation: \"Thunder and Eternity\" | Genshin Impact",
-          "time": "2026-11-13T04:00:06Z",
           "kind": "Info"
         }
       ],
@@ -962,6 +962,18 @@
       },
       "news": [
         {
+          "id": "47519586",
+          "title": "SEA Year-End Offline Events are coming soon! Let's look forward to them together!",
+          "time": "2026-11-21T11:00:02Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47515889",
+          "title": "Season 3 Retrospective - The Eve of a New World | Zenless Zone Zero",
+          "time": "2026-11-21T04:00:03Z",
+          "kind": "Info"
+        },
+        {
           "id": "47507327",
           "title": "Version 3.4 \"The Finality of the Day\" Benefits Express",
           "time": "2026-11-20T11:40:04Z",
@@ -1020,30 +1032,36 @@
           "title": "Zenless Zone Zero Version 3.4 \"The Finality of the Day\" Special Program Announcement",
           "time": "2026-11-16T04:00:06Z",
           "kind": "Info"
-        },
-        {
-          "id": "47424979",
-          "title": "\"Repair! Drifting Art\" Event Details",
-          "time": "2026-11-13T04:00:07Z",
-          "kind": "Notice"
-        },
-        {
-          "id": "47421484",
-          "title": "Zenless Zone Zero × Discord Theme Showcase",
-          "time": "2026-11-12T18:15:03Z",
-          "kind": "Info"
         }
       ],
       "codes": [
         {
+          "code": "HOLLOWRUN34",
+          "rewards": "Polychrome ×20, Denny ×2,222",
+          "seen": "2026-11-21T11:11:33Z",
+          "livestream": "3.4"
+        },
+        {
+          "code": "INKSHIFT34",
+          "rewards": "Polychrome ×20, Denny ×2,222",
+          "seen": "2026-11-21T11:11:33Z",
+          "livestream": "3.4"
+        },
+        {
+          "code": "LEVELUP34",
+          "rewards": "Polychrome ×20, Denny ×2,222",
+          "seen": "2026-11-21T11:11:33Z",
+          "livestream": "3.4"
+        },
+        {
           "code": "ZZZ34SUNBRINGER",
-          "rewards": "",
+          "rewards": "Polychrome ×60, Denny ×6,666",
           "seen": "2026-11-20T21:10:15Z",
           "livestream": "3.4"
         },
         {
           "code": "ZZZHSRCOLLAB",
-          "rewards": "",
+          "rewards": "Polychrome ×50",
           "seen": "2026-11-20T21:10:15Z",
           "livestream": "3.4"
         },
@@ -1076,5 +1094,5 @@
       ]
     }
   },
-  "updated": "2026-11-20T21:10:15Z"
+  "updated": "2026-11-21T11:11:33Z"
 }
