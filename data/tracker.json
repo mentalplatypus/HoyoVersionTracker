@@ -362,6 +362,12 @@
       },
       "news": [
         {
+          "id": "47526860",
+          "title": "The end may have already been marked out for us, but there is more than one path that leads to it | Notes on Linnea",
+          "time": "2026-11-22T04:00:04Z",
+          "kind": "Info"
+        },
+        {
           "id": "47515888",
           "title": "Before the Holy Soil Phenomenon Resumes - Interlude: \"Resistance\"",
           "time": "2026-11-21T04:00:03Z",
@@ -425,12 +431,6 @@
           "id": "47448094",
           "title": "Cutscene Animation: \"The Gates of the Firmament\" | Genshin Impact",
           "time": "2026-11-15T04:00:06Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47436368",
-          "title": "Story Teaser: \"The Bestowed Love\" | Genshin Impact",
-          "time": "2026-11-14T04:00:04Z",
           "kind": "Info"
         }
       ],
@@ -652,6 +652,12 @@
       },
       "news": [
         {
+          "id": "47526861",
+          "title": "Planar Fissure Event: Planar Ornaments Drop Rate Doubled for a Limited Time",
+          "time": "2026-11-22T04:00:04Z",
+          "kind": "Notice"
+        },
+        {
           "id": "47507004",
           "title": "Log in to claim a limited 5-star character",
           "time": "2026-11-20T11:15:03Z",
@@ -715,12 +721,6 @@
           "id": "47413033",
           "title": "Version 5.5 | Who Else Remains Beyond the Story",
           "time": "2026-11-12T03:12:04Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47412533",
-          "title": "Razer | Honkai: Star Rail Collaboration Collection Is Officially Live",
-          "time": "2026-11-12T02:00:04Z",
           "kind": "Info"
         }
       ],
@@ -962,6 +962,12 @@
       },
       "news": [
         {
+          "id": "47527098",
+          "title": "Happy Birthday Seed | One More!",
+          "time": "2026-11-22T04:30:05Z",
+          "kind": "Info"
+        },
+        {
           "id": "47519586",
           "title": "SEA Year-End Offline Events are coming soon! Let's look forward to them together!",
           "time": "2026-11-21T11:00:02Z",
@@ -1026,12 +1032,6 @@
           "title": "Signal Search Statistical Tool Introduction",
           "time": "2026-11-18T04:00:06Z",
           "kind": "Info"
-        },
-        {
-          "id": "47459953",
-          "title": "Zenless Zone Zero Version 3.4 \"The Finality of the Day\" Special Program Announcement",
-          "time": "2026-11-16T04:00:06Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -1094,5 +1094,5 @@
       ]
     }
   },
-  "updated": "2026-11-21T11:11:33Z"
+  "updated": "2026-11-22T06:55:48Z"
 }
