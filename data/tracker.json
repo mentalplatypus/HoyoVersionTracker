@@ -362,6 +362,12 @@
       },
       "news": [
         {
+          "id": "47529570",
+          "title": "Then, as their god, I shall die among them — Notes on Zibai",
+          "time": "2026-11-22T10:00:06Z",
+          "kind": "Info"
+        },
+        {
           "id": "47526860",
           "title": "The end may have already been marked out for us, but there is more than one path that leads to it | Notes on Linnea",
           "time": "2026-11-22T04:00:04Z",
@@ -425,12 +431,6 @@
           "id": "47448142",
           "title": "Amid the Turmoil, New Mysteries Emerge...",
           "time": "2026-11-15T04:05:06Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47448094",
-          "title": "Cutscene Animation: \"The Gates of the Firmament\" | Genshin Impact",
-          "time": "2026-11-15T04:00:06Z",
           "kind": "Info"
         }
       ],
@@ -1094,5 +1094,5 @@
       ]
     }
   },
-  "updated": "2026-11-22T06:55:48Z"
+  "updated": "2026-11-22T15:23:03Z"
 }
