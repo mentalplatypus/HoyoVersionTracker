@@ -962,6 +962,12 @@
       },
       "news": [
         {
+          "id": "47537269",
+          "title": "\"Data Bounty: Combat Simulation\" Event Details",
+          "time": "2026-11-23T04:00:07Z",
+          "kind": "Notice"
+        },
+        {
           "id": "47527098",
           "title": "Happy Birthday Seed | One More!",
           "time": "2026-11-22T04:30:05Z",
@@ -1026,12 +1032,6 @@
           "title": "Wallpaper Sharing | Severian Themed Wallpapers",
           "time": "2026-11-18T10:00:06Z",
           "kind": "Info"
-        },
-        {
-          "id": "47482559",
-          "title": "Signal Search Statistical Tool Introduction",
-          "time": "2026-11-18T04:00:06Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -1088,5 +1088,5 @@
       ]
     }
   },
-  "updated": "2026-11-22T21:49:49Z"
+  "updated": "2026-11-23T12:54:21Z"
 }
