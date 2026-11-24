@@ -456,11 +456,6 @@
           "seen": "2026-11-04T15:28:18Z"
         },
         {
-          "code": "MIJIQ23V2437",
-          "rewards": "Mora ×10,000, Adventurer's Experience ×10, Fine Enhancement Ore ×5, Stir-Fried Fish Noodles ×5, Jueyun Chili Chicken ×5",
-          "seen": "2026-11-04T15:28:18Z"
-        },
-        {
           "code": "PJ2KEBRAYSRM",
           "rewards": "Primogem ×60, Adventurer's Experience ×5",
           "seen": "2026-10-31T02:03:48Z"
@@ -1088,5 +1083,5 @@
       ]
     }
   },
-  "updated": "2026-11-23T12:54:21Z"
+  "updated": "2026-11-24T21:16:30Z"
 }
