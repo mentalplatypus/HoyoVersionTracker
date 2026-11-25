@@ -647,6 +647,12 @@
       },
       "news": [
         {
+          "id": "47559323",
+          "title": "V4.7 Discord Quest Is Ending Soon!",
+          "time": "2026-11-25T06:00:08Z",
+          "kind": "Info"
+        },
+        {
           "id": "47558482",
           "title": "Pom-Pom Gallery | Now, Lay Laughter to All Stars (I)",
           "time": "2026-11-25T04:00:04Z",
@@ -710,12 +716,6 @@
           "id": "47414506",
           "title": "Planarcadia Brand-New OST \"Let There Be Laughter (Part 3)\" Now Online",
           "time": "2026-11-12T06:00:03Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47413467",
-          "title": "Honkai: Star Rail EP: Ex Nihilo",
-          "time": "2026-11-12T04:00:04Z",
           "kind": "Info"
         }
       ],
@@ -957,6 +957,18 @@
       },
       "news": [
         {
+          "id": "47558871",
+          "title": "Unarchived Agent Footage | Sunbringers",
+          "time": "2026-11-25T05:00:08Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47558687",
+          "title": "Happy Birthday Billy | Starlight - Billy (Aerial Ver.)",
+          "time": "2026-11-25T04:30:04Z",
+          "kind": "Info"
+        },
+        {
           "id": "47558594",
           "title": "Spotlight Theater's Program List | In the Name of Sunbringer",
           "time": "2026-11-25T04:15:04Z",
@@ -1015,18 +1027,6 @@
           "title": "Zenless Zone Zero officially announces a special licensed collaboration with the rhythm game DJMAX RESPECT V!",
           "time": "2026-11-20T11:25:02Z",
           "kind": "Info"
-        },
-        {
-          "id": "47507076",
-          "title": "The Official Zenless Zone Zero Signal Search Statistical Tool Is Here!",
-          "time": "2026-11-20T11:22:03Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47505988",
-          "title": "Zenless Zone Zero Version 3.4 \"The Finality of the Day\" Special Program - Countdown: 1 Hour Left!",
-          "time": "2026-11-20T09:30:05Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -1083,5 +1083,5 @@
       ]
     }
   },
-  "updated": "2026-11-25T04:20:20Z"
+  "updated": "2026-11-25T15:39:47Z"
 }
