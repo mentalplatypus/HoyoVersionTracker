@@ -962,6 +962,18 @@
       },
       "news": [
         {
+          "id": "47568244",
+          "title": "Agent Mechanics Intro | Sunbringer",
+          "time": "2026-11-26T04:30:07Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47568017",
+          "title": "Random Play | Holographic Trial - Sunbringer & Robin",
+          "time": "2026-11-26T04:00:01Z",
+          "kind": "Info"
+        },
+        {
           "id": "47558871",
           "title": "Unarchived Agent Footage | Sunbringers",
           "time": "2026-11-25T05:00:08Z",
@@ -1020,18 +1032,6 @@
           "title": "Zenless Zone Zero Version 3.4 \"The Finality of the Day\" Special Program | Intel Report",
           "time": "2026-11-20T11:35:08Z",
           "kind": "Info"
-        },
-        {
-          "id": "47507181",
-          "title": "Version 3.4 Teaser - \"The Finality of the Day\" | Zenless Zone Zero",
-          "time": "2026-11-20T11:30:03Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47507109",
-          "title": "Zenless Zone Zero officially announces a special licensed collaboration with the rhythm game DJMAX RESPECT V!",
-          "time": "2026-11-20T11:25:02Z",
-          "kind": "Info"
         }
       ],
       "codes": [
@@ -1088,5 +1088,5 @@
       ]
     }
   },
-  "updated": "2026-11-26T00:25:22Z"
+  "updated": "2026-11-26T09:35:02Z"
 }
