@@ -962,6 +962,30 @@
       },
       "news": [
         {
+          "id": "47586428",
+          "title": "Agent Record | Hugie",
+          "time": "2026-11-28T03:05:01Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47586385",
+          "title": "(Catchy) Agent Record | Hugie",
+          "time": "2026-11-28T03:00:04Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47586020",
+          "title": "Agent Record | Cecilia",
+          "time": "2026-11-28T02:05:04Z",
+          "kind": "Info"
+        },
+        {
+          "id": "47585996",
+          "title": "Agent Record | Cecilia",
+          "time": "2026-11-28T02:00:06Z",
+          "kind": "Info"
+        },
+        {
           "id": "47577198",
           "title": "Agent Gameplay Details | Robin",
           "time": "2026-11-27T04:30:10Z",
@@ -1007,30 +1031,6 @@
           "id": "47558687",
           "title": "Happy Birthday Billy | Starlight - Billy (Aerial Ver.)",
           "time": "2026-11-25T04:30:04Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47558594",
-          "title": "Spotlight Theater's Program List | In the Name of Sunbringer",
-          "time": "2026-11-25T04:15:04Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47558480",
-          "title": "Sunbringer Character Demo - \"Before the Sun Fell\" | Zenless Zone Zero",
-          "time": "2026-11-25T04:00:03Z",
-          "kind": "Info"
-        },
-        {
-          "id": "47537269",
-          "title": "\"Data Bounty: Combat Simulation\" Event Details",
-          "time": "2026-11-23T04:00:07Z",
-          "kind": "Notice"
-        },
-        {
-          "id": "47527098",
-          "title": "Happy Birthday Seed | One More!",
-          "time": "2026-11-22T04:30:05Z",
           "kind": "Info"
         }
       ],
@@ -1088,5 +1088,5 @@
       ]
     }
   },
-  "updated": "2026-11-27T12:30:51Z"
+  "updated": "2026-11-28T03:55:50Z"
 }
